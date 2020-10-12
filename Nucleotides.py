@@ -14,7 +14,7 @@ def basesCombinationRecursive(bases, string, n, str_length, combinations):
     # Base case (as we eventually run out of character space, each string)
     if (str_length == 0):
         combinations.append(string)
-        print(string)  # Complete string
+        #print(string)  # Complete string
         return
 
     # Starting with all that begin with 'A' ...
@@ -27,7 +27,10 @@ def basesCombinationRecursive(bases, string, n, str_length, combinations):
 
 
 dinucleotide = basesCombination(nucleotide_bases, 2)
+print("Dinucleotide: " + str(dinucleotide))
 
 trinucleotide = basesCombination(nucleotide_bases, 3)
+print("Trinucleotide: " + str(trinucleotide))
 
 tetranucledotide = basesCombination(nucleotide_bases, 4)
+print("Tetranucledotide: " + str(tetranucledotide))
