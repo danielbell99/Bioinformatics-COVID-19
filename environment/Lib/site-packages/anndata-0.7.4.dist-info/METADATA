@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: anndata
+Version: 0.7.4
+Summary: Annotated Data.
+Home-page: http://github.com/theislab/anndata
+Author: Philipp Angerer*, Alex Wolf*, Isaac Virshup, Sergei Rybakov
+Author-email: philipp.angerer@helmholtz-muenchen.de, f.alex.wolf@gmx.de
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Requires-Dist: pandas (>=1.0)
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: scipy (~=1.0)
+Requires-Dist: h5py
+Requires-Dist: natsort
+Requires-Dist: packaging
+Requires-Dist: importlib-metadata (>=0.7) ; python_version < "3.8"
+
+|PyPI| |Conda| |Docs| |Build Status| |Coverage|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/anndata.svg
+   :target: https://pypi.org/project/anndata
+.. |Conda| image:: https://img.shields.io/conda/vn/conda-forge/anndata.svg
+   :target: https://anaconda.org/conda-forge/anndata
+.. |Docs| image:: https://readthedocs.com/projects/icb-anndata/badge/?version=latest
+   :target: https://anndata.readthedocs.io
+.. |Build Status| image:: https://travis-ci.org/theislab/anndata.svg?branch=master
+   :target: https://travis-ci.org/theislab/anndata
+.. |Coverage| image:: https://api.codacy.com/project/badge/Coverage/b92ae35b691141ceb5f2ee74beaf39d3
+   :target: https://www.codacy.com/manual/theislab/anndata
+
+anndata - Annotated Data
+========================
+
+Install via `pip install anndata` or `conda install anndata -c bioconda`.
+
+Read the `documentation <https://anndata.readthedocs.io>`_.
+
+.. would be nice to have http://falexwolf.de/img/scanpy/anndata.svg also on GitHub, but it’s much too wide there;
+.. GitHub doesn’t plan to resolve scaling images: https://github.com/github/markup/issues/295
+
+
