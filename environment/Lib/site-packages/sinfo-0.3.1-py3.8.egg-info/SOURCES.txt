@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+sinfo/__init__.py
+sinfo/_version.py
+sinfo/main.py
+sinfo.egg-info/PKG-INFO
+sinfo.egg-info/SOURCES.txt
+sinfo.egg-info/dependency_links.txt
+sinfo.egg-info/requires.txt
+sinfo.egg-info/top_level.txt

@@ -34,3 +34,20 @@ print("Trinucleotide: " + str(trinucleotide))
 
 tetranucledotide = basesCombination(nucleotide_bases, 4)
 print("Tetranucledotide: " + str(tetranucledotide))
+
+
+def nucleotidesInSequence(genome):
+    # Count per Nucleotide in genome sequence
+    a = genome.count('A')
+    c = genome.count('C')
+    g = genome.count('G')
+    t = genome.count('T')
+
+    #c = Counter()
+
+    # Nucleotide Content of genome sequence
+    a = (a) / len(genome) * 100
+    print("Adenine content of " + genome + ": ", n)
+
+    # a = (a) / len(sequence) * 100
+    # print(" content of " + filename + ": ", gc_content_SARS)
