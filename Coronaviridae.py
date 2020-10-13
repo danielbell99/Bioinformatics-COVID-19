@@ -3,13 +3,13 @@
 from os import listdir
 from os.path import isfile, join
 
-# Capture filenames from src
-filenames = []
-test = [filenames.append(g) for g in listdir('src/') if isfile(join('src/', g))]
+def readInGenomes():
+    # Capture filenames from src
+    filenames = []
+    [filenames.append(g) for g in listdir('src/') if isfile(join('src/', g))]
 
-
-def readInGenomes(filenames):
     coronaviridae = [] # Virus name, description, complete genome sequence
+
     for f in filenames:
         with open('src/' + f) as genome:
             description = genome.readline() # '>'
@@ -25,6 +25,4 @@ def readInGenomes(filenames):
     print(coronaviridae)
     print("No. Coronaviridae Collected: " + str(len(coronaviridae)))
     return coronaviridae
-
-readInGenomes(filenames)
 
