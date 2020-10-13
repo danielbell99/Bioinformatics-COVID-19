@@ -36,6 +36,7 @@ tetranucledotide = basesCombination(nucleotide_bases, 4)
 print("Tetranucledotide: " + str(tetranucledotide))
 
 
+
 def nucleotidesInSequence(genome):
     # Count per Nucleotide in genome sequence
     a = genome.count('A')
