@@ -65,13 +65,6 @@ MERS = coronaviridae[0]
 SARS = coronaviridae[1]
 SARSCoV2 = coronaviridae[2]
 
-print("************************************")
-print(MERS)
-print("************************************")
-print(SARS)
-print("************************************")
-print(SARSCoV2)
-
 
 def compositionComparison(polymers, *genomes):
     # Plots a chart -  Normalised polynucleotide frequences of bases composition, for n genomes of interest
@@ -81,29 +74,29 @@ def compositionComparison(polymers, *genomes):
 
     print(genomes)
 
-    # To display relevant titles
+    # To display relevant labels
     n = len(polymers[0])  # no. nucleotide units in polymer
     polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Tetranucleotide', 5: 'Pentanucleotide'}
     n_coronavirus = "Coronaviridae" if len(genomes) > 1 else "Coronavirus"  # plural or singular
+    colormap = ["red", "green", "blue", "yellow", "purple"]
 
     # Plot onwards
     plt.figure(figsize=(50, 25))
+    plt.title(polynucleotide[n] + " Composition of " + n_coronavirus, fontsize=15)
 
     # X axis
-    plt.xticks(rotation=60)
-    plt.xlabel(polynucleotide[n], fontsize=30)
-    plt.title(polynucleotide[n] + " Composition of " + n_coronavirus)
+    plt.xlabel(polynucleotide[n], fontsize=10)
+    plt.xticks(rotation=45)
 
     # Y axis
-    plt.ylabel("Normalised " + polynucleotide[n] + " Frequency", fontsize=30)
-    plt.ylim(0, 0.10)
-    plt.yticks(np.arange(0, 0.10, 0.01))
+    plt.ylabel("Normalised " + polynucleotide[n] + " Frequency", fontsize=10)
+    plt.yticks(np.arange(0, 0.5, 0.1))
+    plt.ylim(0, 0.5)
 
-
-    # Content (n genomes)
-    for g in genomes:
+    for g, c in zip(genomes, colormap):
+        # Parallel iteration - g (dictionaries in genomes) & c (colours in colourmap)
         nf = normalisedFrequencies(polymers, g['sequence'])
-        plt.plot(polymers, nf, linewidth=5, color="red")
+        plt.plot(polymers, nf, linewidth=2, color=c)
         plt.legend(g['coronavirus'])
 
     # Additions
@@ -113,10 +106,11 @@ def compositionComparison(polymers, *genomes):
 
     # plt.savefig('polymer_composition.png', format="png")
 
-
-def normalisedFrequencies(polymers, genome_sequence):
+def normalisedFrequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
-    # returns array of percentages, for each polymer, to be plotted in compositionComparison()
+    # returns array of infinitesimals, for each polymer, to be plotted in compositionComparison()
+
+    genome_sequence = ''.join(genome) # concatenates char members of genome as a string object
 
     n = len(polymers[0])  # no. nucleotide units in polymer
     normalisedfreq = []
@@ -128,4 +122,4 @@ def normalisedFrequencies(polymers, genome_sequence):
     return normalisedfreq
 
 
-compositionComparison(trimers, MERS, SARS, SARSCoV2)
+compositionComparison(dimers, MERS, SARS, SARSCoV2)
