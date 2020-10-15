@@ -3,7 +3,7 @@ import Coronaviridae
 import matplotlib.pyplot as plt
 import numpy as np
 
-nucleotide_bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
+nitrogenous_bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 
 def basesCombination(bases, sub_length):
@@ -30,30 +30,48 @@ def basesCombinationRecursive(bases, string, n, str_length, combinations):
     return combinations
 
 
-dimers = basesCombination(nucleotide_bases, 2)  # dinucleotide
+dimers = basesCombination(nitrogenous_bases, 2)  # dinucleotide
 print("Dimers: " + str(dimers))
-
-trimers = basesCombination(nucleotide_bases, 3)  # trinucleotides
+trimers = basesCombination(nitrogenous_bases, 3)  # trinucleotides
 print("Trimers: " + str(trimers))
-
-tetramers = basesCombination(nucleotide_bases, 4)  # tetranucledotides
+tetramers = basesCombination(nitrogenous_bases, 4)  # tetranucledotides
 print("Tetramers: " + str(tetramers))
 
-coronaviridae = Coronaviridae.readInGenomes()
+coronaviridae = Coronaviridae.readInGenomes() # Genome datasets from src
 
+
+def basesContent(name, sequence):
+    # Nitrogenous Bases - AT/GC Ratio:
+    # Guanine & Cytosine as % of DNA (always paired together)
+    # Adenine & Thymine as % of DNA (always paired together)
+
+    # Data
+    gc = ((sequence.count("G") + sequence.count("C")) / len(sequence)) * 100  # GC Content (%)
+    at = ((sequence.count("A") + sequence.count("T")) / len(sequence)) * 100  # AT Content (%)
+    # ratio = (sequence.count("A") + sequence.count("T")) / (sequence.count("G") + sequence.count("C"))
+
+    # Plot onwards
+    plt.title('Main Title')
+    plt.xlabel('Nitrogenous Base Pairs')
+    plt.ylabel('Content as Percentage (%)')
+    x = ["G-C Content", "A-T Content"]
+    y = [gc, at]
+    plt.bar(x, y, color='blue')
+    plt.show()
 
 def nucleotideComposition(genome_dict):
-    dict = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}  # Print name
+    dict = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}  # Print
 
-    print("-- " + genome_dict['coronavirus'] + " --")  # coronavirus
-    print(genome_dict['description'])  # description
-    sequence = genome_dict['sequence']
-    print(sequence)  # sequence
+    print("-- " + genome_dict['coronavirus'] + " --")  # name
+    print(genome_dict['description'])
+    print(genome_dict['sequence'])
 
-    for n in nucleotide_bases:
-        n_count = sequence.count(n)
-        n_comp = round(n_count / len(sequence) * 100, 2)
+    for n in nitrogenous_bases:
+        n_count = genome_dict['sequence'].count(n)
+        n_comp = round(n_count / len(genome_dict['sequence']) * 100, 2)
         print(dict[n] + " Composition: " + str(n_comp) + "%")
+
+    basesContent(genome_dict['coronavirus'], genome_dict['sequence'])
 
 
 nucleotideComposition(coronaviridae[0]) # MERS
@@ -121,7 +139,7 @@ def normalisedFrequencies(polymers, genome):
     return normalisedfreq
 
 
-diComp = compositionComparison(dimers, MERS, SARS, SARSCoV2)
+#diComp = compositionComparison(dimers, MERS, SARS, SARSCoV2)
 #triComp = compositionComparison(trimers, MERS, SARS, SARSCoV2)
 #tetraComp = compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 
