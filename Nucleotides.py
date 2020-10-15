@@ -1,19 +1,15 @@
 # https://en.wikipedia.org/wiki/Tandem_repeat
-import Coronaviridae
 import matplotlib.pyplot as plt
 import numpy as np
 
-nitrogenous_bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
-
-def basesCombination(bases, sub_length):
-    n = len(bases)  # no. Nucleotides, of interest
+def basesCombinations(bases, sub_length):
+    n = len(bases)  # no. Bases
     combinations = []  # Appended by basesCombinationRecursive(), externally
-    basesCombinationRecursive(bases, "", n, sub_length, combinations)
+    basesCombinationsRecursive(bases, "", n, sub_length, combinations)
     return combinations
 
-
-def basesCombinationRecursive(bases, string, n, str_length, combinations):
+def basesCombinationsRecursive(bases, string, n, str_length, combinations):
     # Recursively creates all combinations of input Nucleotide Bases, each with a limit of sub_length
     # Base case (as we eventually run out of character space, each string)
     if (str_length == 0):
@@ -25,20 +21,24 @@ def basesCombinationRecursive(bases, string, n, str_length, combinations):
     for i in range(n):
         # Next Base appended
         newString = string + bases[i]  # we build upon a new string
-        basesCombinationRecursive(bases, newString, n, str_length - 1, combinations)
+        basesCombinationsRecursive(bases, newString, n, str_length - 1, combinations)
 
     return combinations
 
 
-dimers = basesCombination(nitrogenous_bases, 2)  # dinucleotide
-print("Dimers: " + str(dimers))
-trimers = basesCombination(nitrogenous_bases, 3)  # trinucleotides
-print("Trimers: " + str(trimers))
-tetramers = basesCombination(nitrogenous_bases, 4)  # tetranucledotides
-print("Tetramers: " + str(tetramers))
+def composition(bases, genome_dict):
+    dict = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}  # Print
 
-coronaviridae = Coronaviridae.readInGenomes() # Genome datasets from src
+    print("\n-- " + genome_dict['coronavirus'] + " --")  # name
+    print(genome_dict['description'])
+    print(genome_dict['sequence'])
 
+    for n in bases:
+        n_count = genome_dict['sequence'].count(n)
+        n_comp = round(n_count / len(genome_dict['sequence']) * 100, 2)
+        print(dict[n] + " Composition: " + str(n_comp) + "%")
+
+    basesContent(genome_dict['coronavirus'], genome_dict['sequence'])
 
 def basesContent(name, sequence):
     # Nitrogenous Bases - AT/GC Ratio:
@@ -51,37 +51,12 @@ def basesContent(name, sequence):
     # ratio = (sequence.count("A") + sequence.count("T")) / (sequence.count("G") + sequence.count("C"))
 
     # Plot onwards
-    plt.title('Main Title')
-    plt.xlabel('Nitrogenous Base Pairs')
+    plt.title(name + ' Nitrogenous Base Pairs')
     plt.ylabel('Content as Percentage (%)')
     x = ["G-C Content", "A-T Content"]
     y = [gc, at]
     plt.bar(x, y, color='blue')
     plt.show()
-
-def nucleotideComposition(genome_dict):
-    dict = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}  # Print
-
-    print("-- " + genome_dict['coronavirus'] + " --")  # name
-    print(genome_dict['description'])
-    print(genome_dict['sequence'])
-
-    for n in nitrogenous_bases:
-        n_count = genome_dict['sequence'].count(n)
-        n_comp = round(n_count / len(genome_dict['sequence']) * 100, 2)
-        print(dict[n] + " Composition: " + str(n_comp) + "%")
-
-    basesContent(genome_dict['coronavirus'], genome_dict['sequence'])
-
-
-nucleotideComposition(coronaviridae[0]) # MERS
-nucleotideComposition(coronaviridae[1]) # SARS
-nucleotideComposition(coronaviridae[2]) # SARSCoV2
-
-# Genome Dictionaries
-MERS = coronaviridae[0]
-SARS = coronaviridae[1]
-SARSCoV2 = coronaviridae[2]
 
 
 def compositionComparison(polymers, *genomes):
@@ -89,8 +64,6 @@ def compositionComparison(polymers, *genomes):
 
     # polymers - holds basesCombination() output array, x axis
     # *genomes - array holds genome dictionaries, to be plotted
-
-    print(genomes)
 
     # To display relevant labels
     n = len(polymers[0])  # no. nucleotide units in polymer
@@ -137,9 +110,3 @@ def normalisedFrequencies(polymers, genome):
         normalisedfreq.append(nf)
 
     return normalisedfreq
-
-
-#diComp = compositionComparison(dimers, MERS, SARS, SARSCoV2)
-#triComp = compositionComparison(trimers, MERS, SARS, SARSCoV2)
-#tetraComp = compositionComparison(tetramers, MERS, SARS, SARSCoV2)
-
