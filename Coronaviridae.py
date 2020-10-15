@@ -22,7 +22,5 @@ def readInGenomes():
         coronavirius = { 'coronavirus': coronavirus, 'description': description, 'sequence': sequence }
         coronaviridae.append(coronavirius)
 
-    print(coronaviridae)
-    print("No. Coronaviridae Collected: " + str(len(coronaviridae)))
+    print("Coronaviridae Genomes: " + str(len(coronaviridae)))
     return coronaviridae
-
