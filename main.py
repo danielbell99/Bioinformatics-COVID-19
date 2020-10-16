@@ -20,8 +20,8 @@ SARSCoV2 = coronaviridae[2]
 
 
 diComp = Nucleotides.compositionComparison(dimers, MERS, SARS, SARSCoV2)
-# triComp = Nucleotides.compositionComparison(trimers, MERS, SARS, SARSCoV2)
-# tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
+#triComp = Nucleotides.compositionComparison(trimers, MERS, SARS, SARSCoV2)
+#tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 
 Nucleotides.composition(bases, MERS)  # MERS
 # Nucleotides.composition(bases, SARS)  # SARS

@@ -86,7 +86,7 @@ def compositionComparison(polymers, *genomes):
 
     for g, c in zip(genomes, colormap):
         # Parallel iteration - g (dictionaries in genomes) & c (colours in colourmap)
-        nf = normalisedFrequencies(polymers, g['sequence'])
+        nf = normalisedFrequencies(polymers, g)
         plt.plot(polymers, nf, linewidth=2, color=c, label=g['coronavirus'])
     plt.legend()
 
@@ -100,13 +100,20 @@ def compositionComparison(polymers, *genomes):
 def normalisedFrequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
     # returns array of infinitesimals, for each polymer, to be plotted in compositionComparison()
-    genome_sequence = ''.join(genome) # concatenates char members of genome as a string object
-
+    # Stores csv - headers = polymers, nf = content
+    # filename - "nf_[polymers]_[coronavirus].csv"
+    polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
     n = len(polymers[0])  # no. nucleotide units in polymer
+
+    sequence = ''.join(genome['sequence'])  # concatenates char members of genome as a string object
     normalisedfreq = []
     for p in polymers:
-        count = genome_sequence.count(p)
-        nf = (count * n) / len(genome_sequence)
+        count = sequence.count(p)
+        nf = (count * n) / len(sequence)
         normalisedfreq.append(nf)
+
+        # Store file - list of polymers & normalised frequency scores
+
+    np.savetxt("data\\Normalised Frequency\\nf_" + polymer_type[n] + "_" + genome['coronavirus'] + ".csv", normalisedfreq, delimiter=",")
 
     return normalisedfreq
