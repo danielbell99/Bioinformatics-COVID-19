@@ -2,6 +2,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Constants - appropriate referencing (print, charts, filenames)
+bases_type = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}
+polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Tetranucleotide', 5: 'Pentanucleotide'}
+polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
 
 def basesCombinations(bases, sub_length):
     n = len(bases)  # no. Bases
@@ -26,19 +30,17 @@ def basesCombinationsRecursive(bases, string, n, str_length, combinations):
     return combinations
 
 
-def composition(bases, genome_dict):
-    dict = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}  # Print
-
-    print("\n-- " + genome_dict['coronavirus'] + " --")  # name
-    print(genome_dict['description'])
-    print(genome_dict['sequence'])
+def composition(bases, genome):
+    print("\n-- " + genome['coronavirus'] + " --")  # name
+    print(genome['description'])
+    print(genome['sequence'])
 
     for n in bases:
-        n_count = genome_dict['sequence'].count(n)
-        n_comp = round(n_count / len(genome_dict['sequence']) * 100, 2)
-        print(dict[n] + " Composition: " + str(n_comp) + "%")
+        n_count = genome['sequence'].count(n)
+        n_comp = round(n_count / len(genome['sequence']) * 100, 2)
+        print(bases_type[n] + " Composition: " + str(n_comp) + "%")
 
-    basesContent(genome_dict['coronavirus'], genome_dict['sequence'])
+    basesContent(genome['coronavirus'], genome['sequence'])
 
 def basesContent(name, sequence):
     # Nitrogenous Bases - AT/GC Ratio:
@@ -50,28 +52,31 @@ def basesContent(name, sequence):
     at = ((sequence.count("A") + sequence.count("T")) / len(sequence)) * 100  # AT Content (%)
     # ratio = (sequence.count("A") + sequence.count("T")) / (sequence.count("G") + sequence.count("C"))
 
-    # Plot onwards
+    # Plot
     plt.title(name + ' Nitrogenous Base Pairs')
     plt.ylabel('Content as Percentage (%)')
     x = ["G-C Content", "A-T Content"]
     y = [gc, at]
     plt.bar(x, y, color='blue')
+
+    # Display & Save
+    fig = plt.gcf()
     plt.show()
+    plt.draw()
+    fig.savefig("data\\Content\\content_" + name + '.png', format="png")
 
 
 def compositionComparison(polymers, *genomes):
     # Plots a chart -  Normalised polynucleotide frequences of bases composition, for n genomes of interest
-
     # polymers - holds basesCombination() output array, x axis
     # *genomes - array holds genome dictionaries, to be plotted
 
     # To display relevant labels
-    n = len(polymers[0])  # no. nucleotide units in polymer
-    polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Tetranucleotide', 5: 'Pentanucleotide'}
+    n = len(polymers[0])  # no. bases in each polymer
     n_coronavirus = "Coronaviridae" if len(genomes) > 1 else "Coronavirus"  # plural or singular
     colormap = ["red", "green", "blue", "yellow", "purple"]
 
-    # Plot onwards
+    # Plot
     plt.figure(figsize=(50, 25))
     plt.title(polynucleotide[n] + " Composition of " + n_coronavirus, fontsize=15)
 
@@ -90,22 +95,23 @@ def compositionComparison(polymers, *genomes):
         plt.plot(polymers, nf, linewidth=2, color=c, label=g['coronavirus'])
     plt.legend()
 
-    # Additions
     plt.grid(True)
+
+    # Display & Save
+    fig = plt.gcf()
     plt.show()
     plt.draw()
-
-    # plt.savefig('polymer_composition.png', format="png")
+    fig.savefig("data\\Composition\\" + polynucleotide[n] + "_" + g['coronavirus'] + '.png', format="png")
 
 def normalisedFrequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
     # returns array of infinitesimals, for each polymer, to be plotted in compositionComparison()
     # Stores csv - headers = polymers, nf = content
     # filename - "nf_[polymers]_[coronavirus].csv"
-    polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
-    n = len(polymers[0])  # no. nucleotide units in polymer
 
+    n = len(polymers[0])  # no. nucleotide units in polymer
     sequence = ''.join(genome['sequence'])  # concatenates char members of genome as a string object
+
     normalisedfreq = []
     for p in polymers:
         count = sequence.count(p)
