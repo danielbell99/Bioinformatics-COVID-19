@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Constants - appropriate referencing (print, charts, filenames)
-bases_type = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}
+base_type = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}
 polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Tetranucleotide', 5: 'Pentanucleotide'}
 polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
 
@@ -38,7 +38,7 @@ def composition(bases, genome):
     for n in bases:
         n_count = genome['sequence'].count(n)
         n_comp = round(n_count / len(genome['sequence']) * 100, 2)
-        print(bases_type[n] + " Composition: " + str(n_comp) + "%")
+        print(base_type[n] + " Composition: " + str(n_comp) + "%")
 
     basesContent(genome['coronavirus'], genome['sequence'])
 

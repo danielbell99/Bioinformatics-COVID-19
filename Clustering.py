@@ -1,18 +1,71 @@
+import os
+from os import listdir
+from os.path import isfile, join
+
+import pandas as pd
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 import seaborn as sns
 import matplotlib.pyplot as plt
-import os
+import time
 
-# NB: Comments abstractly describe future methods
+# Constants - appropriate referencing (print, charts, filenames)
+polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
+path = 'data/Normalised Frequency/'
+colormap = ["red", "green", "blue", "yellow", "purple"]
+coronaviridae_names = [] # Appended to
 
-np.random.seed(42)
+def readnNormalisedFrequencies(polymers, name1, name2, *others):
+    # Read in Normalised Frequency files (depending on: polymers & genomes of interest)
+    # Minimum of 2 Coronaviridae names required - *others is optional
+    coronaviridae_names = [name1, name2, *others]
+    n = len(polymers)
+    # "nf_" + polymer_type[n] + coronaviridae_names[name] + ".csv"
 
-# Read in Normalised Frequency files
-# Depending on: Polymers, Genomes of interest
+    # Capture filenames from data/Normalised Frequency
+    # Append each file as a column
+    nf_df = pd.DataFrame()  # DataFrame passed to PCA (dimentionality reduction algorithm)
+    for file, cv_name in zip(os.listdir(path), coronaviridae_names):
+        if os.path.isfile(os.path.join(path, file)):
+            column = pd.read_csv(os.path.join(path, file))
+            print(column)
+            nf_df = pd.concat([nf_df, column], axis=1)
 
-# Principal Component Analysis
+    print(nf_df)
 
-# t-SNE Cluster Analysis
-# Possible other methods for running t-SNE
+    # Normalised Frequencies dataframe is passed through Dimentionality Reductionn algorithms for Cluster Analysis
+    # Measuring time elapsed
+    principalComponentAnalysis(nf_df)
+    tSNE(nf_df)
+
+def seabornScatterplot(model, results):
+    # Machine Learning models output results
+    fig = plt.figure(figsize=(7, 7))
+    sns.scatterplot(results[:, 0], results[:, 1], alpha=1, s=100,
+                    palette=colormap[:len(coronaviridae_names)]).plot() #hue=coronaviridae_names,
+
+    fig.savefig("data\\Cluster Analysis\\" + model + "_Coronaviridae.png", format='png')
+
+
+def principalComponentAnalysis(df):
+    time_start = time.time()
+    pca = PCA(n_components=2)
+    pca_results = pca.fit_transform(df)
+    print('\nPCA complete. Time elapsed: {} secs'.format(time.time() - time_start))
+
+    print("\n" + str(pca_results), type(pca_results))
+
+    seabornScatterplot("PCA", pca_results)
+
+def tSNE(df):
+    np.random.seed(42) # Reproducability of results
+
+    time_start = time.time()
+    tsne = TSNE(n_components=2, perplexity=30, early_exaggeration=12)
+    tsne_results = tsne.fit_transform(df)
+    print('\nt-SNE complete. Time elapsed: {} secs'.format(time.time() - time_start))
+
+    #print("\n" + tsne_results, type(tsne_results))
+
+    seabornScatterplot("t-SNE", tsne_results)
