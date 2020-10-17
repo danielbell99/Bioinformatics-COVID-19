@@ -19,7 +19,7 @@ coronaviridae_names = [] # Appended to
 def readnNormalisedFrequencies(polymers, name1, name2, *others):
     # Read in Normalised Frequency files (depending on: polymers & genomes of interest)
     # Minimum of 2 Coronaviridae names required - *others is optional
-    coronaviridae_names = [name1, name2, *others]
+    coronaviridae_names.extend([name1, name2, *others])
     n = len(polymers)
     # "nf_" + polymer_type[n] + coronaviridae_names[name] + ".csv"
 
@@ -41,10 +41,25 @@ def readnNormalisedFrequencies(polymers, name1, name2, *others):
 
 def seabornScatterplot(model, results):
     # Machine Learning models output results
-    fig = plt.figure(figsize=(7, 7))
-    sns.scatterplot(results[:, 0], results[:, 1], alpha=1, s=100,
-                    palette=colormap[:len(coronaviridae_names)]).plot() #hue=coronaviridae_names,
+    labels = []
+    for name in coronaviridae_names:
+        labels.append(name*100)
 
+    label_vec = ["SARS-CoV"] * 100
+    label_vec = label_vec + ["bat-SL-CoV"] * 100
+    label_vec = label_vec + ["COVID-19"] * 100
+
+    fig = plt.figure(figsize=(7, 7))
+    sns.scatterplot(x=results[:, 0],
+                    y=results[:, 1],
+                    #hue=label_vec,
+                    alpha=1,
+                    s=100,
+                    palette=['red', 'green', 'blue']).plot()
+    # fig = plt.gcf()
+    # plt.scatter(x=results[:, 0], y=results[:, 1])
+    # plt.show()
+    # plt.draw()
     fig.savefig("data\\Cluster Analysis\\" + model + "_Coronaviridae.png", format='png')
 
 
