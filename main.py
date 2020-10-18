@@ -1,6 +1,7 @@
 import Coronaviridae
 import Nucleotides
 import Clustering
+import Syntheses
 
 # Nitrogenous Bases - of interest
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
@@ -29,4 +30,8 @@ SARSCoV2 = coronaviridae[2]
 #tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 
 
-Clustering.readnNormalisedFrequencies(dimers, MERS['coronavirus'], SARS['coronavirus'], SARSCoV2['coronavirus'])
+#Clustering.readnNormalisedFrequencies(dimers, MERS['coronavirus'], SARS['coronavirus'], SARSCoV2['coronavirus'])
+
+
+Syntheses.protein(SARSCoV2)
+Syntheses.tRNA(SARSCoV2)
