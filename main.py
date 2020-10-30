@@ -17,8 +17,8 @@ coronaviridae = Coronaviridae.readInGenomes()
 
 # Genome Dictionaries
 MERS = coronaviridae[0]
-SARS = coronaviridae[1]
-SARSCoV2 = coronaviridae[2]
+SARSCoV2 = coronaviridae[1]
+SARS = coronaviridae[2]
 
 
 #Nucleotides.composition(bases, MERS)  # MERS
@@ -33,5 +33,8 @@ SARSCoV2 = coronaviridae[2]
 #Clustering.readnNormalisedFrequencies(dimers, MERS['coronavirus'], SARS['coronavirus'], SARSCoV2['coronavirus'])
 
 
-Syntheses.protein(SARSCoV2)
-Syntheses.tRNA(SARSCoV2)
+Syntheses.protein(MERS)
+#Syntheses.protein(SARS)
+#Syntheses.protein(SARSCoV2)
+
+#Syntheses.tRNA(SARSCoV2)

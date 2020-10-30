@@ -1,18 +1,24 @@
 # DNA -(transcription)> mRNA -(translation)> Protein
 # dna to mrna to trna
+import collections
 import Bio
 import numpy as np
 
-def writeFile(coronavirus, synthesis, data):
-    file = open("data\\Syntheses\\" + synthesis + "_" + coronavirus, "w+")
+def writeFile(coronavirus_name, synthesis, data):
+    file = open("data\\Syntheses\\" + synthesis + "_" + coronavirus_name, "w+")
     file.write(data)
     file.close()
+
     return
 
-def transcription(coronavirus):
+
+def protein(coronavirus):
     # DNA to mRNA
+    # Start codon: AUG
+    # Stop codons: UAG, UAA, UGA (denoted by '!')
     dna = ''.join(coronavirus['sequence'])
 
+    #dna_codons = collections.defaultdict(lambda: 'Key Not found')
     dna_codons = {
         'ATA': 'I', 'ATC': 'I', 'ATT': 'I', 'ATG': 'M',
         'ACA': 'T', 'ACC': 'T', 'ACG': 'T', 'ACT': 'T',
@@ -28,30 +34,23 @@ def transcription(coronavirus):
         'GGA': 'G', 'GGC': 'G', 'GGG': 'G', 'GGT': 'G',
         'TCA': 'S', 'TCC': 'S', 'TCG': 'S', 'TCT': 'S',
         'TTC': 'F', 'TTT': 'F', 'TTA': 'L', 'TTG': 'L',
-        'TAC': 'Y', 'TAT': 'Y', 'TAA': 'stop', 'TAG': 'stop',
-        'TGC': 'C', 'TGT': 'C', 'TGA': 'stop', 'TGG': 'W',
+        'TAC': 'Y', 'TAT': 'Y', 'TAA': '!', 'TAG': '!',
+        'TGC': 'C', 'TGT': 'C', 'TGA': '!', 'TGG': 'W',
     }
     protein = ""
-    if len(dna) % 3 == 0:
-        for i in range(0, len(dna), 3):
-            codon = dna[i:i+3]
-            protein += dna_codons[codon]
-    return protein
+    if len(dna) % 3 == 2: dna = dna[:-2]  # molecular machine transcribes trinucletides only
+    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remainding, up to dinucleotide
+
+    for i in range(0, len(dna), 3):
+        codon = dna[i:i + 3]
+        protein += dna_codons.get(codon, "")
 
     print("\n-- Synthesised Protein --\n" + str(protein))
 
     writeFile(coronavirus['coronavirus'], "protein", protein)
 
-    return protein
-
-
-def protein(coronavirus):
-    transcription(coronavirus)
-
-    pass
-
-
 def tRNA(coronavirus):
-    mRNA = transcription(coronavirus)
 
+
+    #writeFile(coronavirus['coronavirus'], "tRNA", tRNA)
     pass
