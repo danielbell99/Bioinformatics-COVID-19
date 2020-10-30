@@ -16,6 +16,7 @@ def readInGenomes():
             content = genome.read()
 
         coronavirus = f.rsplit('.', 1)[0]  # removes file extensions (eg. .fasta, .fna)
+        coronavirus = coronavirus.split('.', 1)[0]  # removes gene version number of virus eg. ".1"
         description = description.strip() # removes newlines
         sequence = list(filter(lambda x: x != '\n', content))  # removes newlines
 
