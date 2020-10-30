@@ -31,7 +31,7 @@ def basesCombinationsRecursive(bases, string, n, str_length, combinations):
 
 
 def composition(bases, genome):
-    print("\n-- " + genome['coronavirus'] + " --")  # name
+    print("\n-- " + genome['name'] + " --")  # name
     print(genome['description'])
     print(genome['sequence'])
 
@@ -40,7 +40,7 @@ def composition(bases, genome):
         n_comp = round(n_count / len(genome['sequence']) * 100, 2)
         print(base_type[n] + " Composition: " + str(n_comp) + "%")
 
-    basesContent(genome['coronavirus'], genome['sequence'])
+    basesContent(genome['name'], genome['sequence'])
 
 def basesContent(name, sequence):
     # Nitrogenous Bases - AT/GC Ratio:
@@ -92,7 +92,7 @@ def compositionComparison(polymers, *genomes):
     for g, c in zip(genomes, colormap):
         # Parallel iteration - g (dictionaries in genomes) & c (colours in colourmap)
         nf = normalisedFrequencies(polymers, g)
-        plt.plot(polymers, nf, linewidth=2, color=c, label=g['coronavirus'])
+        plt.plot(polymers, nf, linewidth=2, color=c, label=g['name'])
     plt.legend()
 
     plt.grid(True)
@@ -101,7 +101,7 @@ def compositionComparison(polymers, *genomes):
     fig = plt.gcf()
     plt.show()
     plt.draw()
-    fig.savefig("data\\Composition\\" + polynucleotide[n] + "_" + g['coronavirus'] + '.png', format="png")
+    fig.savefig("data\\Composition\\" + polynucleotide[n] + "_" + g['name'] + '.png', format="png")
 
 def normalisedFrequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
@@ -120,6 +120,6 @@ def normalisedFrequencies(polymers, genome):
 
         # Store file - list of polymers & normalised frequency scores
 
-    np.savetxt("data\\Normalised Frequency\\nf_" + polymer_type[n] + "_" + genome['coronavirus'] + ".csv", normalisedfreq, delimiter=",")
+    np.savetxt("data\\Normalised Frequency\\nf_" + polymer_type[n] + "_" + genome['name'] + ".csv", normalisedfreq, delimiter=",")
 
     return normalisedfreq

@@ -15,12 +15,12 @@ def readInGenomes():
             description = genome.readline() # '>'
             content = genome.read()
 
-        coronavirus = f.rsplit('.', 1)[0]  # removes file extensions (eg. .fasta, .fna)
-        coronavirus = coronavirus.split('.', 1)[0]  # removes gene version number of virus eg. ".1"
+        name = f.rsplit('.', 1)[0]  # removes file extensions (eg. .fasta, .fna)
+        name = name.split('.', 1)[0]  # removes gene version number of virus eg. ".1"
         description = description.strip() # removes newlines
         sequence = list(filter(lambda x: x != '\n', content))  # removes newlines
 
-        coronavirius = { 'coronavirus': coronavirus, 'description': description, 'sequence': sequence }
+        coronavirius = { 'name': name, 'description': description, 'sequence': sequence }
         coronaviridae.append(coronavirius)
 
     print("Coronaviridae Genomes: " + str(len(coronaviridae)))

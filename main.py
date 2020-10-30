@@ -30,7 +30,7 @@ SARS = coronaviridae[2]
 #tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 
 
-#Clustering.readnNormalisedFrequencies(dimers, MERS['coronavirus'], SARS['coronavirus'], SARSCoV2['coronavirus'])
+#Clustering.readnNormalisedFrequencies(dimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
 Syntheses.protein(MERS)

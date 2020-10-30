@@ -47,10 +47,10 @@ def protein(coronavirus):
 
     print("\n-- Synthesised Protein --\n" + str(protein))
 
-    writeFile(coronavirus['coronavirus'], "protein", protein)
+    writeFile(coronavirus['name'], "protein", protein)
 
 def tRNA(coronavirus):
 
 
-    #writeFile(coronavirus['coronavirus'], "tRNA", tRNA)
+    #writeFile(coronavirus['name'], "tRNA", tRNA)
     pass
