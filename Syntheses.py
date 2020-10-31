@@ -1,8 +1,5 @@
 # DNA -(transcription)> mRNA -(translation)> Protein
-# dna to mrna to trna
-import collections
-import Bio
-import numpy as np
+# DNA -> mRNA -> tRNA
 
 def writeFile(coronavirus_name, synthesis, data):
     file = open("data\\Syntheses\\" + synthesis + "_" + coronavirus_name, "w+")
@@ -34,8 +31,8 @@ def protein(coronavirus):
         'GGA': 'G', 'GGC': 'G', 'GGG': 'G', 'GGT': 'G',
         'TCA': 'S', 'TCC': 'S', 'TCG': 'S', 'TCT': 'S',
         'TTC': 'F', 'TTT': 'F', 'TTA': 'L', 'TTG': 'L',
-        'TAC': 'Y', 'TAT': 'Y', 'TAA': '!', 'TAG': '!',
-        'TGC': 'C', 'TGT': 'C', 'TGA': '!', 'TGG': 'W',
+        'TAC': 'Y', 'TAT': 'Y', 'TAA': '_', 'TAG': '_',
+        'TGC': 'C', 'TGT': 'C', 'TGA': '_', 'TGG': 'W',
     }
     protein = ""
     if len(dna) % 3 == 2: dna = dna[:-2]  # molecular machine transcribes trinucletides only
@@ -45,7 +42,7 @@ def protein(coronavirus):
         codon = dna[i:i + 3]
         protein += dna_codons.get(codon, "")
 
-    print("\n-- Synthesised Protein --\n" + str(protein))
+    print("\n--" + coronavirus['name'] + " | Synthesised Protein --\n" + str(protein))
 
     writeFile(coronavirus['name'], "protein", protein)
 
