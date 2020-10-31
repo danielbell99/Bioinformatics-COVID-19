@@ -2,6 +2,7 @@ import Coronaviridae
 import Nucleotides
 import Clustering
 import Syntheses
+import SequenceAlignment
 
 # Nitrogenous Bases - of interest
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
@@ -33,8 +34,12 @@ SARS = coronaviridae[2]
 #Clustering.readnNormalisedFrequencies(dimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
-Syntheses.protein(MERS)
+#Syntheses.protein(MERS)
 #Syntheses.protein(SARS)
 #Syntheses.protein(SARSCoV2)
 
 #Syntheses.tRNA(SARSCoV2)
+
+
+SequenceAlignment.proteinSequenceAlignment(MERS, SARS)
+print("END OF MAIN")
