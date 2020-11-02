@@ -1,3 +1,4 @@
+from math import log
 from os import listdir
 from os.path import isfile, join
 from Bio import pairwise2
@@ -10,6 +11,13 @@ def removePrefix(text, prefix):
         return text[len(prefix):]
     return text
 
+
+def gap_function(x, y):
+    if y == 0:  # No gap
+        return 0
+    elif y == 1:  # Penalty for gap
+        return -2
+    return -((2 + (y/4)) + (log(y)/2))  # Base case
 
 def proteinSequenceAlignment(*genomes):
     # *genomes - array holds genome dictionaries, to be plotted
@@ -30,12 +38,17 @@ def proteinSequenceAlignment(*genomes):
                 protein_sequences.append(ps)
 
     # Define n sequences to be aligned
-    seq1 = protein_sequences[0]['sequence']  # concatenates char members of genome as a string object
-    seq2 = protein_sequences[1]['sequence']
+    # concatenates char members of genome as a string object
+    seq1 = protein_sequences[0]['sequence']  # Target seq
+    seq2 = protein_sequences[1]['sequence']  # Query seq
 
     # Print Global Alignments of our n sequences
     # Match Score - matched protein chars found; otherwise - Mismatch Score
-    alignments = pairwise2.align.globalms(seq1, seq2, 2, -1, -0.5, -0.1)
+    # 2, identical characters
+    # -1, non-identical character
+    # -0.5, when there's a new/ separate gap in the sequence
+    # -0.1, if when there's a next gap, right after an existing gap
+    alignments = pairwise2.align.globalmc(seq1, seq2, 2, -1, gap_function, gap_function, penalize_end_gaps = False)
 
     for a in alignments:
         print(format_alignment(*a))  # standardised format for output
