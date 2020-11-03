@@ -1,8 +1,9 @@
 # https://en.wikipedia.org/wiki/Tandem_repeat
 import matplotlib.pyplot as plt
 import numpy as np
+import StandardFunctions
 
-# Constants - appropriate referencing (print, charts, filenames)
+# Constants - appropriate referencing (print, charts, filenames
 base_type = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}
 polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Tetranucleotide', 5: 'Pentanucleotide'}
 polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
@@ -101,7 +102,10 @@ def compositionComparison(polymers, *genomes):
     fig = plt.gcf()
     plt.show()
     plt.draw()
-    fig.savefig("data\\Composition\\" + polynucleotide[n] + "_" + g['name'] + '.png', format="png")
+
+    output_name = StandardFunctions.output_name(genomes)  # Output filename
+
+    fig.savefig("data\\Composition\\" + polynucleotide[n] + output_name + '.png', format="png")
 
 def normalisedFrequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage

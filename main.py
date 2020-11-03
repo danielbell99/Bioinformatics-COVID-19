@@ -9,8 +9,8 @@ bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 # Polymer Bases Combinations
 dimers = Nucleotides.basesCombinations(bases, 2)  # dinucleotide
-#trimers = Nucleotides.basesCombinations(bases, 3)  # trinucleotide
-#tetramers = Nucleotides.basesCombinations(bases, 4)  # tetranucledotide
+trimers = Nucleotides.basesCombinations(bases, 3)  # trinucleotide
+tetramers = Nucleotides.basesCombinations(bases, 4)  # tetranucledotide
 
 
 # Genomes
@@ -42,4 +42,8 @@ SARS = coronaviridae[2]
 
 
 SequenceAlignment.proteinSequenceAlignment(MERS, SARS)
+#SequenceAlignment.proteinSequenceAlignment(MERS, SARSCoV2)
+#SequenceAlignment.proteinSequenceAlignment(SARS, SARSCoV2)
+
+
 print("END OF MAIN")

@@ -14,3 +14,19 @@ DLSE!LGYLTSPRSLAL!F!RT!IKALLFSVLLHLSGGIVALICLLI!AVDICSTLGIILIEYYFSVRASCLLYVSVTIY
                                                                                                                                                                                            |. |.| | |.|.                                                                                                                                                                                              
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------L!-ICS-L-NEL!NLCGCHSAACLVHSRSIINN!LLSLTGHE!LVYLLQAAYGFVRVAADHQHI!VLSGCDRKVRWRALSLVSTRKHTSNSVCLFYRFATCSYVALETPWRRSYQRHVNILKMALVA!!KLKKAFCLNLNSPMCSSNVRMLELHLMVMLWLSW!QNSKAFSTVVVVRHLVSLSLMWAKYQWLTARFFFVRTVI
   Score=2
+LSE!LGYLTSPRSLAL!F!RT!IKALLFSVLLHLSGGIVALICLLI!AVDICSTLGIILIE-----YYFSVRASCLLYV-SVTI---------------------YGFVRCVA-----IRGTS-C--------LSWLV!S--------------------
+                                                 .|||     |.|     ...|  |.||  | |..|                     ||||| ||     |...| |        || || |                    
+-------------------------------------------------!ICS-----LNEL!NLCGCHS--AACL--VHSRSIINN!LLSLTGHE!LVYLLQAAYGFVR-VAADHQHI!VLSGCDRKVRWRALS-LV-STRKHTSNSVCLFYRFATCSY
+  Score=1.33071
+LSE!LGYLTSPRSLAL!F!RT!IKALLFSVLLHLSGGIVALICLLI!AVDICSTLGIILIEY-----YFSVRASCLLYV-SVTI---------------------YGFVRCVA-----IRGTS-C--------LSWLV!S--------------------
+                                                 .|||     |.|.     ..|  |.||  | |..|                     ||||| ||     |...| |        || || |                    
+-------------------------------------------------!ICS-----LNEL!NLCGCHS--AACL--VHSRSIINN!LLSLTGHE!LVYLLQAAYGFVR-VAADHQHI!VLSGCDRKVRWRALS-LV-STRKHTSNSVCLFYRFATCSY
+  Score=1.33071
+LSE!LGYLTSPRSLAL!F!RT!IKALLFSVLLHLSGGIVALICLLI!AVDICSTLGIILIEYY-----FSVRASCLLYV-SVTI---------------------YGFVRCVA-----IRGTS-C--------LSWLV!S--------------------
+                                                 .|||     |.|..     .|  |.||  | |..|                     ||||| ||     |...| |        || || |                    
+-------------------------------------------------!ICS-----LNEL!NLCGCHS--AACL--VHSRSIINN!LLSLTGHE!LVYLLQAAYGFVR-VAADHQHI!VLSGCDRKVRWRALS-LV-STRKHTSNSVCLFYRFATCSY
+  Score=1.33071
+LSE!LGYLTSPRSLAL!F!RT!IKALLFSVLLHLSGGIVALICLLI!AVDICSTLGIILIEYYF-----SVRASCLLYV-SVTI---------------------YGFVRCVA-----IRGTS-C--------LSWLV!S--------------------
+                                                 .|||     |.|...     |  |.||  | |..|                     ||||| ||     |...| |        || || |                    
+-------------------------------------------------!ICS-----LNEL!NLCGCHS--AACL--VHSRSIINN!LLSLTGHE!LVYLLQAAYGFVR-VAADHQHI!VLSGCDRKVRWRALS-LV-STRKHTSNSVCLFYRFATCSY
+  Score=1.33071

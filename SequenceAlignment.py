@@ -4,14 +4,7 @@ from os import listdir
 from os.path import isfile, join
 from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
-
-# Not in use
-def removePrefix(text, prefix):
-    # removes prefix of filenames in data/Syntheses (eg. "protein_VIRUS" -> "VIRUS")
-    if text.startswith(prefix):
-        return text[len(prefix):]
-    return text
-
+import StandardFunctions
 
 def gap_function(x, y):
     if y == 0:  # No gap
@@ -49,19 +42,15 @@ def proteinSequenceAlignment(*genomes):
     # -1, non-identical character
     # -0.5, when there's a new/ separate gap in the sequence
     # -0.1, if when there's a next gap, right after an existing gap
-    alignments = pairwise2.align.globalmc(seq1, seq2, 2, -1, gap_function, gap_function, penalize_end_gaps = False)
+    alignments = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 2, -1, gap_function, gap_function, penalize_end_gaps = False)
 
-    # Output filename
-    output_name = "align"
-    for i in range(len(genomes)):
-        output_name += "_" + genomes[i]['name']
-    print(output_name)
+    output_name = StandardFunctions.output_name(genomes)  # Output filename
 
     # Save Sequence Alignment
-    path_filename = os.path.join("data\\Sequence Alignment", output_name + ".txt")  # Defines path and filename
+    path_filename = os.path.join("data\\Sequence Alignment", "align" + output_name + ".txt")  # Defines path and filename
     output = open(path_filename, "a")  # Establishes file in directory, for Appending
     for a in alignments:
-        print(output.write(format_alignment(*a)))  # Standardised format for output
+        output.write(format_alignment(*a))  # Standardised format for output
     output.close()
 
     return
