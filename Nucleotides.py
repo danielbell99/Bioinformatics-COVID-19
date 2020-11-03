@@ -1,32 +1,33 @@
 # https://en.wikipedia.org/wiki/Tandem_repeat
 import matplotlib.pyplot as plt
 import numpy as np
-import StandardFunctions
+import StandardFunctions as sf
 
 # Constants - appropriate referencing (print, charts, filenames
 base_type = {'A': 'Adenine', 'C': 'Cytosine', 'G': 'Guanine', 'T': 'Thymine'}
 polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Tetranucleotide', 5: 'Pentanucleotide'}
 polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
 
-def basesCombinations(bases, sub_length):
+
+def bases_combinations(bases, sub_length):
     n = len(bases)  # no. Bases
     combinations = []  # Appended by basesCombinationRecursive(), externally
-    basesCombinationsRecursive(bases, "", n, sub_length, combinations)
+    bases_combinations_recursive(bases, "", n, sub_length, combinations)
     return combinations
 
-def basesCombinationsRecursive(bases, string, n, str_length, combinations):
+
+def bases_combinations_recursive(bases, string, n, str_length, combinations):
     # Recursively creates all combinations of input Nucleotide Bases, each with a limit of sub_length
     # Base case (as we eventually run out of character space, each string)
     if (str_length == 0):
         combinations.append(string)
-        # print(string)  # Complete string
         return
 
     # Starting with all that begin with 'A' ...
     for i in range(n):
         # Next Base appended
         newString = string + bases[i]  # we build upon a new string
-        basesCombinationsRecursive(bases, newString, n, str_length - 1, combinations)
+        bases_combinations_recursive(bases, newString, n, str_length - 1, combinations)
 
     return combinations
 
@@ -41,9 +42,10 @@ def composition(bases, genome):
         n_comp = round(n_count / len(genome['sequence']) * 100, 2)
         print(base_type[n] + " Composition: " + str(n_comp) + "%")
 
-    basesContent(genome['name'], genome['sequence'])
+    bases_content(genome['name'], genome['sequence'])
 
-def basesContent(name, sequence):
+
+def bases_content(name, sequence):
     # Nitrogenous Bases - AT/GC Ratio:
     # Guanine & Cytosine as % of DNA (always paired together)
     # Adenine & Thymine as % of DNA (always paired together)
@@ -67,7 +69,7 @@ def basesContent(name, sequence):
     fig.savefig("data\\Content\\content_" + name + '.png', format="png")
 
 
-def compositionComparison(polymers, *genomes):
+def composition_comparison(polymers, *genomes):
     # Plots a chart -  Normalised polynucleotide frequences of bases composition, for n genomes of interest
     # polymers - holds basesCombination() output array, x axis
     # *genomes - array holds genome dictionaries, to be plotted
@@ -92,7 +94,7 @@ def compositionComparison(polymers, *genomes):
 
     for g, c in zip(genomes, colormap):
         # Parallel iteration - g (dictionaries in genomes) & c (colours in colourmap)
-        nf = normalisedFrequencies(polymers, g)
+        nf = normalised_frequencies(polymers, g)
         plt.plot(polymers, nf, linewidth=2, color=c, label=g['name'])
     plt.legend()
 
@@ -103,11 +105,11 @@ def compositionComparison(polymers, *genomes):
     plt.show()
     plt.draw()
 
-    output_name = StandardFunctions.output_name(genomes)  # Output filename
-
+    output_name = sf.output_name(genomes)  # Appended to output filename
     fig.savefig("data\\Composition\\" + polynucleotide[n] + output_name + '.png', format="png")
 
-def normalisedFrequencies(polymers, genome):
+
+def normalised_frequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
     # returns array of infinitesimals, for each polymer, to be plotted in compositionComparison()
     # Stores csv - headers = polymers, nf = content
@@ -124,6 +126,7 @@ def normalisedFrequencies(polymers, genome):
 
         # Store file - list of polymers & normalised frequency scores
 
-    np.savetxt("data\\Normalised Frequency\\nf_" + polymer_type[n] + "_" + genome['name'] + ".csv", normalisedfreq, delimiter=",")
+    np.savetxt("data\\Normalised Frequency\\nf_" + polymer_type[n] + "_" + genome['name'] + ".csv", normalisedfreq,
+               delimiter=",")
 
     return normalisedfreq

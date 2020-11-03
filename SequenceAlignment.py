@@ -4,16 +4,18 @@ from os import listdir
 from os.path import isfile, join
 from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
-import StandardFunctions
+import StandardFunctions as sf
+
 
 def gap_function(x, y):
     if y == 0:  # No gap
         return 0
     elif y == 1:  # Penalty if gap
         return -2
-    return -((2 + (y/4)) + (log(y)/2))  # Base case
+    return -((2 + (y / 4)) + (log(y) / 2))  # Base case
 
-def proteinSequenceAlignment(*genomes):
+
+def protein(*genomes):
     # *genomes - array holds genome dictionaries, to be plotted
     # Singular, Pairwise or Multiple Sequence Alignment
 
@@ -42,16 +44,17 @@ def proteinSequenceAlignment(*genomes):
     # -1, non-identical character
     # -0.5, when there's a new/ separate gap in the sequence
     # -0.1, if when there's a next gap, right after an existing gap
-    alignments = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 2, -1, gap_function, gap_function, penalize_end_gaps = False)
+    alignments = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 2, -1, gap_function, gap_function,
+                                          penalize_end_gaps=False)
 
-    output_name = StandardFunctions.output_name(genomes)  # Output filename
+    output_name = sf.output_name(genomes)  # Appended to output filename
 
     # Save Sequence Alignment
-    path_filename = os.path.join("data\\Sequence Alignment", "align" + output_name + ".txt")  # Defines path and filename
+    path_filename = os.path.join("data\\Sequence Alignment",
+                                 "align" + output_name + ".txt")  # Defines path and filename
     output = open(path_filename, "a")  # Establishes file in directory, for Appending
     for a in alignments:
         output.write(format_alignment(*a))  # Standardised format for output
     output.close()
 
     return
-

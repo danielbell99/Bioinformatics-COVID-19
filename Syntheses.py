@@ -15,7 +15,7 @@ def protein(coronavirus):
     # Stop codons: UAG, UAA, UGA (denoted by '!')
     dna = ''.join(coronavirus['sequence'])
 
-    #dna_codons = collections.defaultdict(lambda: 'Key Not found')
+    # dna_codons = collections.defaultdict(lambda: 'Key Not found')
     dna_codons = {
         'ATA': 'I', 'ATC': 'I', 'ATT': 'I', 'ATG': 'M',
         'ACA': 'T', 'ACC': 'T', 'ACG': 'T', 'ACT': 'T',
@@ -44,10 +44,9 @@ def protein(coronavirus):
 
     print("\n--" + coronavirus['name'] + " | Synthesised Protein --\n" + str(protein))
 
-    writeFile(coronavirus['name'], "protein", protein)
+    writeFile(coronavirus['name'], "protein", protein)  # Save Synthesised Protein
+
 
 def tRNA(coronavirus):
-
-
-    #writeFile(coronavirus['name'], "tRNA", tRNA)
+    # writeFile(coronavirus['name'], "tRNA", tRNA)
     pass
