@@ -101,7 +101,14 @@ def compositionComparison(polymers, *genomes):
     fig = plt.gcf()
     plt.show()
     plt.draw()
-    fig.savefig("data\\Composition\\" + polynucleotide[n] + "_" + g['name'] + '.png', format="png")
+
+    # Output Name
+    output_name = ""
+    for i in range(len(genomes)):
+        output_name += "_" + genomes[i]['name']
+    print(output_name)
+
+    fig.savefig("data\\Composition\\" + polynucleotide[n] + output_name + '.png', format="png")
 
 def normalisedFrequencies(polymers, genome):
     # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage

@@ -9,8 +9,8 @@ bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 # Polymer Bases Combinations
 dimers = Nucleotides.basesCombinations(bases, 2)  # dinucleotide
-#trimers = Nucleotides.basesCombinations(bases, 3)  # trinucleotide
-#tetramers = Nucleotides.basesCombinations(bases, 4)  # tetranucledotide
+trimers = Nucleotides.basesCombinations(bases, 3)  # trinucleotide
+tetramers = Nucleotides.basesCombinations(bases, 4)  # tetranucledotide
 
 
 # Genomes
@@ -26,9 +26,9 @@ SARS = coronaviridae[2]
 #Nucleotides.composition(bases, SARS)  # SARS
 #Nucleotides.composition(bases, SARSCoV2)  # SARSCoV2
 
-#diComp = Nucleotides.compositionComparison(dimers, MERS, SARS, SARSCoV2)
-#triComp = Nucleotides.compositionComparison(trimers, MERS, SARS, SARSCoV2)
-#tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
+diComp = Nucleotides.compositionComparison(dimers, MERS, SARS, SARSCoV2)
+triComp = Nucleotides.compositionComparison(trimers, MERS, SARS, SARSCoV2)
+tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 
 
 #Clustering.readnNormalisedFrequencies(dimers, MERS['name'], SARS['name'], SARSCoV2['name'])
@@ -41,5 +41,5 @@ SARS = coronaviridae[2]
 #Syntheses.tRNA(SARSCoV2)
 
 
-SequenceAlignment.proteinSequenceAlignment(MERS, SARS)
+#SequenceAlignment.proteinSequenceAlignment(MERS, SARS)
 print("END OF MAIN")
