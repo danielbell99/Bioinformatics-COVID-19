@@ -1,3 +1,4 @@
+import os
 from math import log
 from os import listdir
 from os.path import isfile, join
@@ -15,7 +16,7 @@ def removePrefix(text, prefix):
 def gap_function(x, y):
     if y == 0:  # No gap
         return 0
-    elif y == 1:  # Penalty for gap
+    elif y == 1:  # Penalty if gap
         return -2
     return -((2 + (y/4)) + (log(y)/2))  # Base case
 
@@ -50,8 +51,18 @@ def proteinSequenceAlignment(*genomes):
     # -0.1, if when there's a next gap, right after an existing gap
     alignments = pairwise2.align.globalmc(seq1, seq2, 2, -1, gap_function, gap_function, penalize_end_gaps = False)
 
+    # Output filename
+    output_name = "align"
+    for i in range(len(genomes)):
+        output_name += "_" + genomes[i]['name']
+    print(output_name)
+
+    # Save Sequence Alignment
+    path_filename = os.path.join("data\\Sequence Alignment", output_name + ".txt")  # Defines path and filename
+    output = open(path_filename, "a")  # Establishes file in directory, for Appending
     for a in alignments:
-        print(format_alignment(*a))  # standardised format for output
+        print(output.write(format_alignment(*a)))  # Standardised format for output
+    output.close()
 
     return
 
