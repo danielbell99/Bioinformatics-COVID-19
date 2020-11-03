@@ -26,9 +26,9 @@ SARS = coronaviridae[2]
 #Nucleotides.composition(bases, SARS)  # SARS
 #Nucleotides.composition(bases, SARSCoV2)  # SARSCoV2
 
-diComp = Nucleotides.compositionComparison(dimers, MERS, SARS, SARSCoV2)
-triComp = Nucleotides.compositionComparison(trimers, MERS, SARS, SARSCoV2)
-tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
+#diComp = Nucleotides.compositionComparison(dimers, MERS, SARS, SARSCoV2)
+#triComp = Nucleotides.compositionComparison(trimers, MERS, SARS, SARSCoV2)
+#tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 
 
 #Clustering.readnNormalisedFrequencies(dimers, MERS['name'], SARS['name'], SARSCoV2['name'])
@@ -41,5 +41,9 @@ tetraComp = Nucleotides.compositionComparison(tetramers, MERS, SARS, SARSCoV2)
 #Syntheses.tRNA(SARSCoV2)
 
 
-#SequenceAlignment.proteinSequenceAlignment(MERS, SARS)
+SequenceAlignment.proteinSequenceAlignment(MERS, SARS)
+#SequenceAlignment.proteinSequenceAlignment(MERS, SARSCoV2)
+#SequenceAlignment.proteinSequenceAlignment(SARS, SARSCoV2)
+
+
 print("END OF MAIN")
