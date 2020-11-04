@@ -1,7 +1,6 @@
 import os
 from os import listdir
 from os.path import isfile, join
-
 import pandas as pd
 import numpy as np
 from sklearn.decomposition import PCA
@@ -18,8 +17,16 @@ coronaviridae_names = []  # Appended to
 
 
 def read_normalised_frequencies(polymers, name1, name2, *others):
-    # Read in Normalised Frequency files (depending on: polymers & genomes of interest)
-    # Minimum of 2 Coronaviridae names required - *others is optional
+    """ Imports produced Normalised Frequency files (depending on: polymers & genomes of interest)
+    Compiled as a Dataframe for Cluster Analysis
+    Minimum of 2 Coronaviridae names required - *others is optional
+
+    :param polymers: combination of nucleic acids of n length each
+    :type polymers: list
+
+    :param name1, name2, *others: contains entire genome data; 'name' value used (*others is optional)
+    :type name1, name2, *others: dict
+    """
     coronaviridae_names.extend([name1, name2, *others])
     n = len(polymers)
     # "nf_" + polymer_type[n] + coronaviridae_names[name] + ".csv"
@@ -35,13 +42,21 @@ def read_normalised_frequencies(polymers, name1, name2, *others):
 
     print(nf_df)
 
-    # Normalised Frequencies dataframe is passed through Dimentionality Reductionn algorithms for Cluster Analysis
+    # Normalised Frequencies dataframe is passed through Dimentionality Reduction algorithms for Cluster Analysis
     # Measuring time elapsed
     principal_component_analysis(nf_df)
     tSNE(nf_df)
 
 
 def seaborn_scatterplot(model, results):
+    """ Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results
+
+    :param model: String literal name of model for saving figure as filename
+    :type model: str
+
+    :param results: contains entire genome data; 'name' value used (*others is optional)
+    :type results: ndarray
+    """
     # Machine Learning models output results
     labels = []
     for name in coronaviridae_names:
@@ -66,6 +81,12 @@ def seaborn_scatterplot(model, results):
 
 
 def principal_component_analysis(df):
+    """ Linear dimensionality reduction algorithm, starting solution for tSNE()
+    Time in seconds, printed
+
+    :param df: holds normalised frequency scores for fit & transformation
+    :type model: DataFrame
+    """
     time_start = time.time()
     pca = PCA(n_components=2)
     pca_results = pca.fit_transform(df)
@@ -76,12 +97,19 @@ def principal_component_analysis(df):
     seaborn_scatterplot("PCA", pca_results)
 
 
-def tSNE(df):
+def tSNE(pca_results):
+    """ t-distributed Stochastic Neighbour Embedding
+    Machine Learning algorithm for Cluster visualisation
+    Time in seconds, printed
+
+    :param pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
+    :type pca_results: ndarray
+    """
     np.random.seed(42)  # Reproducability of results
 
     time_start = time.time()
     tsne = TSNE(n_components=2, perplexity=30, early_exaggeration=12)
-    tsne_results = tsne.fit_transform(df)
+    tsne_results = tsne.fit_transform(pca_results)
     print('\nt-SNE complete. Time elapsed: {} secs'.format(time.time() - time_start))
 
     # print("\n" + tsne_results, type(tsne_results))

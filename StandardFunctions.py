@@ -11,6 +11,7 @@ def output_name(genomes):
 
 
 # Not in use
+@staticmethod
 def remove_prefix(text, prefix):
     # removes prefix of filenames in data/Syntheses (eg. "protein_VIRUS" -> "VIRUS")
     if text.startswith(prefix):

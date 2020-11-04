@@ -13,6 +13,7 @@ def bases_combinations(bases, sub_length):
     n = len(bases)  # no. Bases
     combinations = []  # Appended by basesCombinationRecursive(), externally
     bases_combinations_recursive(bases, "", n, sub_length, combinations)
+
     return combinations
 
 
@@ -26,8 +27,8 @@ def bases_combinations_recursive(bases, string, n, str_length, combinations):
     # Starting with all that begin with 'A' ...
     for i in range(n):
         # Next Base appended
-        newString = string + bases[i]  # we build upon a new string
-        bases_combinations_recursive(bases, newString, n, str_length - 1, combinations)
+        new_string = string + bases[i]  # we build upon a new string
+        bases_combinations_recursive(bases, new_string, n, str_length - 1, combinations)
 
     return combinations
 

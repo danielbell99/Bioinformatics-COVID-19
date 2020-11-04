@@ -4,6 +4,9 @@ import Clustering
 import Syntheses
 import SequenceAlignment
 
+help(Clustering.read_normalised_frequencies)
+
+
 # Nitrogenous Bases - of interest
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
