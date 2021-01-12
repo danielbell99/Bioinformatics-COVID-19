@@ -6,6 +6,11 @@ from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
 import StandardFunctions as sf
 
+import pathogenie
+#from pybioviz import plotters
+#import pybioviz
+#from bokeh.io import show
+
 
 def gap_function(x, y):
     if y == 0:  # No gap
@@ -37,6 +42,10 @@ def protein(*genomes):
     # concatenates char members of genome as a string object
     seq1 = protein_sequences[0]['sequence']  # Target seq
     seq2 = protein_sequences[1]['sequence']  # Query seq
+    
+    aln = pathogenie.tools.clustal_alignment(seqs=protein_sequences)
+    p = plotters.plot_sequence_alignment(aln)
+    show(p)
 
     # Print Global Alignments of our n sequences
     # Match Score - matched protein chars found; otherwise - Mismatch Score

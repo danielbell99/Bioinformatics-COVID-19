@@ -36,7 +36,7 @@ def protein(coronavirus):
     }
     protein = ""
     if len(dna) % 3 == 2: dna = dna[:-2]  # molecular machine transcribes trinucletides only
-    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remainding, up to dinucleotide
+    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, up to dinucleotide
 
     for i in range(0, len(dna), 3):
         codon = dna[i:i + 3]
@@ -46,7 +46,3 @@ def protein(coronavirus):
 
     writeFile(coronavirus['name'], "protein", protein)  # Save Synthesised Protein
 
-
-def tRNA(coronavirus):
-    # writeFile(coronavirus['name'], "tRNA", tRNA)
-    pass

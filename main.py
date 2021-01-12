@@ -4,7 +4,7 @@ import Clustering
 import Syntheses
 import SequenceAlignment
 
-help(Clustering.read_normalised_frequencies)
+#help(Clustering.read_normalised_frequencies)
 
 
 # Nitrogenous Bases - of interest
@@ -34,19 +34,19 @@ SARS = coronaviridae[2]
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
 
-#Clustering.read_normalised_frequencies(dimers, MERS['name'], SARS['name'], SARSCoV2['name'])
+#Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
 #Syntheses.protein(MERS)
-#Syntheses.protein(SARS)
-#Syntheses.protein(SARSCoV2)
+Syntheses.protein(SARS)
+Syntheses.protein(SARSCoV2)
 
 #Syntheses.tRNA(SARSCoV2)
 
 
-SequenceAlignment.protein(MERS, SARS)
+#SequenceAlignment.protein(MERS, SARS)
 #SequenceAlignment.protein(MERS, SARSCoV2)
-#SequenceAlignment.protein(SARS, SARSCoV2)
+SequenceAlignment.protein(SARS, SARSCoV2)
 
 
 print("END OF MAIN")
