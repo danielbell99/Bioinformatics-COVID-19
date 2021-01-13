@@ -51,6 +51,7 @@ Syntheses.protein(SARSCoV2)
 
 
 # All sequences considered in Alignment files
+print("\n**START DEBUGGING**")
 Alignment.create_file("DNA")
 Alignment.create_file("Protein")
 
