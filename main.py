@@ -13,7 +13,7 @@ bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 # Polymer Bases Combinations
 #dimers = Nucleotides.bases_combinations(bases, 2)  # dinucleotide
-#trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
+trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
 #tetramers = Nucleotides.bases_combinations(bases, 4)  # tetranucledotide
 
 
@@ -35,7 +35,7 @@ SARS = coronaviridae[2]
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
 
-#Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
+Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
 Syntheses.protein(MERS)
@@ -51,7 +51,6 @@ Syntheses.protein(SARSCoV2)
 
 
 # All sequences considered in Alignment files
-print("\n**START DEBUGGING**")
 Alignment.create_file("DNA")
 Alignment.create_file("Protein")
 
