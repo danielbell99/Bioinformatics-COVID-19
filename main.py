@@ -2,7 +2,7 @@ import Coronaviridae
 import Nucleotides
 import Clustering
 import Syntheses
-import SequenceAlignment
+import PairwiseSequencing
 import Alignment
 
 #help(Clustering.read_normalised_frequencies)
@@ -45,9 +45,9 @@ Syntheses.protein(SARSCoV2)
 #Syntheses.tRNA(SARSCoV2)
 
 
-#SequenceAlignment.protein(MERS, SARS)
-#SequenceAlignment.protein(MERS, SARSCoV2)
-#SequenceAlignment.protein(SARS, SARSCoV2)
+#PairwiseSequencing.protein(MERS, SARS)
+#PairwiseSequencing.protein(MERS, SARSCoV2)
+#PairwiseSequencing.protein(SARS, SARSCoV2)
 
 
 # All sequences considered in Alignment files
