@@ -5,11 +5,8 @@ from os.path import isfile, join
 from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
 import StandardFunctions as sf
-
 import pathogenie
 #from pybioviz import plotters
-#import pybioviz
-#from bokeh.io import show
 
 
 def gap_function(x, y):
@@ -28,7 +25,7 @@ def protein(*genomes):
     filenames = []
     [filenames.append(g) for g in listdir('data/Syntheses/') if isfile(join('data/Syntheses/', g))]
 
-    # Captures protein sequences of interest only, for Sequence Alignment
+    # Captures protein sequences of interest only, for Pairwise Sequencing
     protein_sequences = []  # Virus name, complete protein sequence
     for i in range(len(genomes)):
         if ("protein_" + genomes[i]['name']) in filenames:
@@ -58,8 +55,8 @@ def protein(*genomes):
 
     output_name = sf.output_name(genomes)  # Appended to output filename
 
-    # Save Sequence Alignment
-    path_filename = os.path.join("data\\Sequence Alignment",
+    # Save Pairwise Sequencing
+    path_filename = os.path.join("data\\Pairwise Sequencing",
                                  "align" + output_name + ".txt")  # Defines path and filename
     output = open(path_filename, "a")  # Establishes file in directory, for Appending
     for a in alignments:

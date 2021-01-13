@@ -2,7 +2,8 @@ import Coronaviridae
 import Nucleotides
 import Clustering
 import Syntheses
-import SequenceAlignment
+import PairwiseSequencing
+import Alignment
 
 #help(Clustering.read_normalised_frequencies)
 
@@ -11,9 +12,9 @@ import SequenceAlignment
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 # Polymer Bases Combinations
-dimers = Nucleotides.bases_combinations(bases, 2)  # dinucleotide
-trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
-tetramers = Nucleotides.bases_combinations(bases, 4)  # tetranucledotide
+#dimers = Nucleotides.bases_combinations(bases, 2)  # dinucleotide
+#trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
+#tetramers = Nucleotides.bases_combinations(bases, 4)  # tetranucledotide
 
 
 # Genomes
@@ -37,16 +38,22 @@ SARS = coronaviridae[2]
 #Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
-#Syntheses.protein(MERS)
+Syntheses.protein(MERS)
 Syntheses.protein(SARS)
 Syntheses.protein(SARSCoV2)
 
 #Syntheses.tRNA(SARSCoV2)
 
 
-#SequenceAlignment.protein(MERS, SARS)
-#SequenceAlignment.protein(MERS, SARSCoV2)
-SequenceAlignment.protein(SARS, SARSCoV2)
+#PairwiseSequencing.protein(MERS, SARS)
+#PairwiseSequencing.protein(MERS, SARSCoV2)
+#PairwiseSequencing.protein(SARS, SARSCoV2)
+
+
+# All sequences considered in Alignment files
+print("\n**START DEBUGGING**")
+Alignment.create_file("DNA")
+Alignment.create_file("Protein")
 
 
 print("END OF MAIN")
