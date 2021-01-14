@@ -1,4 +1,4 @@
-""" Methods used across all Classes
+""" Methods used across Application
 """
 
 

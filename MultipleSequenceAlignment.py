@@ -89,9 +89,9 @@ def view_alignment(aln, bio_type):
 
 def run(bio_type):
     if bio_type.upper() == "DNA":
-        file = 'dna_MERS-MT387202.1_SARS-CoV-2-MT873892_SARS-CoV-JQ316196.aln'
+        file = 'dna.aln'
     elif bio_type.upper() == "PROTEIN":
-        file = 'protein_MERS-MT387202_SARS-CoV-2-MT873892_SARS-CoV-JQ316196.aln'
+        file = 'protein.aln'
     else:
         print("Warning in Alignment.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
         return  # Exception Handling

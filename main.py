@@ -4,7 +4,7 @@ import Clustering
 import Syntheses
 import PairwiseSequencing
 import Alignment
-import MultipleSequenceAlignment
+#import MultipleSequenceAlignment
 
 #help(Clustering.read_normalised_frequencies)
 
@@ -43,24 +43,21 @@ SARS = coronaviridae[2]
 #Syntheses.protein(SARS)
 #Syntheses.protein(SARSCoV2)
 
-#Syntheses.tRNA(SARSCoV2)
-
 
 #PairwiseSequencing.protein(MERS, SARS)
 #PairwiseSequencing.protein(MERS, SARSCoV2)
 #PairwiseSequencing.protein(SARS, SARSCoV2)
 
 
-# All sequences considered in Alignment files
-#Alignment.create_file("DNA")
-#Alignment.create_file("Protein")
+# All sequences considered in Alignment files (.aln)
+Alignment.create_file("DNA")
+Alignment.create_file("Protein")
 
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
 Test run Jupyter Notebook version
 #MultipleSequenceAlignment.run("DNA")
 #MultipleSequenceAlignment.run("Protein")
 """
-MultipleSequenceAlignment.run("DNA")
-MultipleSequenceAlignment.run("Protein")
+
 
 print("END OF MAIN")
