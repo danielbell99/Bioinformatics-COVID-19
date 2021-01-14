@@ -4,6 +4,7 @@ import Clustering
 import Syntheses
 import PairwiseSequencing
 import Alignment
+import MultipleSequenceAlignment
 
 #help(Clustering.read_normalised_frequencies)
 
@@ -12,8 +13,8 @@ import Alignment
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 # Polymer Bases Combinations
-#dimers = Nucleotides.bases_combinations(bases, 2)  # dinucleotide
-trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
+dimers = Nucleotides.bases_combinations(bases, 2)  # dinucleotide
+#trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
 #tetramers = Nucleotides.bases_combinations(bases, 4)  # tetranucledotide
 
 
@@ -35,12 +36,12 @@ SARS = coronaviridae[2]
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
 
-Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
+#Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
-Syntheses.protein(MERS)
-Syntheses.protein(SARS)
-Syntheses.protein(SARSCoV2)
+#Syntheses.protein(MERS)
+#Syntheses.protein(SARS)
+#Syntheses.protein(SARSCoV2)
 
 #Syntheses.tRNA(SARSCoV2)
 
@@ -51,8 +52,15 @@ Syntheses.protein(SARSCoV2)
 
 
 # All sequences considered in Alignment files
-Alignment.create_file("DNA")
-Alignment.create_file("Protein")
+#Alignment.create_file("DNA")
+#Alignment.create_file("Protein")
 
+""" Bokeh does not support outputs w/ PyCharm (Google for evidence)
+Test run Jupyter Notebook version
+#MultipleSequenceAlignment.run("DNA")
+#MultipleSequenceAlignment.run("Protein")
+"""
+MultipleSequenceAlignment.run("DNA")
+MultipleSequenceAlignment.run("Protein")
 
 print("END OF MAIN")
