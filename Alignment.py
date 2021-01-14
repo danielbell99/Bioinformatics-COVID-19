@@ -1,7 +1,5 @@
 from os import listdir
 from os.path import isfile, join
-import fileinput
-
 import StandardFunctions as sf
 
 
@@ -20,20 +18,6 @@ def sequence_lengths(sequence_filenames, bio_type, dir):
     print(seq_lengths)
 
     return seq_lengths
-
-
-def alignment_filename(sequence_filenames, bio_type, dir):
-    # Name of Alignment file (.aln)
-    str_names = ""
-    for s in sequence_filenames:
-        # Coronavirus name
-        name = sf.output_name_filename(s)
-        str_names += "_" + name
-
-    str_alignment_filename = bio_type.lower() + str_names + ".aln"  # Establish filename
-    print(str_alignment_filename)
-
-    return str_alignment_filename
 
 
 def establish_alignment_file(str_alignment_filename, sequence_filenames, seq_lengths, bio_type, dir):
@@ -91,10 +75,12 @@ def create_file(bio_type):
     # Determine no. colours to generate no. characters (case-insensitive)
     sequence_filenames = []
     if bio_type.upper() == "DNA":
+        str_alignment_filename = "dna.aln"  # filename
         dir = "src/"
         [sequence_filenames.append(s) for s in listdir(dir) if isfile(join(dir, s))]
         print("DNA of: " + str(sequence_filenames))
     elif bio_type.upper() == "PROTEIN":
+        str_alignment_filename = "protein.aln"  # filename
         dir = "data/Syntheses/"
         [sequence_filenames.append(s) for s in listdir(dir) if isfile(join(dir, s))]
         print("Synthesised Proteins of: " + str(sequence_filenames))
@@ -104,9 +90,6 @@ def create_file(bio_type):
 
     # All sequences must be of the same length
     seq_lengths = sequence_lengths(sequence_filenames, bio_type, dir)
-    # Establish .aln filename under convention
-    str_alignment_filename = alignment_filename(sequence_filenames, bio_type, dir)
-
     establish_alignment_file(str_alignment_filename, sequence_filenames, seq_lengths, bio_type, dir)
 
     return
