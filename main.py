@@ -4,7 +4,7 @@ import Clustering
 import Syntheses
 import PairwiseSequencing
 import Alignment
-#import MultipleSequenceAlignment
+import MultipleSequenceAlignment
 
 #help(Clustering.read_normalised_frequencies)
 
@@ -12,12 +12,8 @@ import Alignment
 # Nitrogenous Bases - of interest
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
-# Polymer Bases Combinations
-dimers = Nucleotides.bases_combinations(bases, 2)  # dinucleotide
-#trimers = Nucleotides.bases_combinations(bases, 3)  # trinucleotide
-#tetramers = Nucleotides.bases_combinations(bases, 4)  # tetranucledotide
 
-
+""" Import Genomes """
 # Genomes
 coronaviridae = Coronaviridae.read_genomes()
 
@@ -25,20 +21,32 @@ coronaviridae = Coronaviridae.read_genomes()
 MERS = coronaviridae[0]
 SARSCoV2 = coronaviridae[1]
 SARS = coronaviridae[2]
+# Create a variable here for a new genome sequence, following the above format e.g.
+# NewStrain = coronaviridae[3]
 
 
-#Nucleotides.composition(bases, MERS)  # MERS
-#Nucleotides.composition(bases, SARS)  # SARS
-#Nucleotides.composition(bases, SARSCoV2)  # SARSCoV2
+""" Nucleotide Composition """
+# AT/GC Content
+Nucleotides.base_content(bases, MERS)  # MERS
+#Nucleotides.base_content(bases, SARS)  # SARS
+#Nucleotides.base_content(bases, SARSCoV2)  # SARSCoV2
 
-#diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
+# Polymer Bases Combinations
+dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
+#trimers = Nucleotides.base_combinations(bases, 3)  # trinucleotide
+#tetramers = Nucleotides.base_combinations(bases, 4)  # tetranucledotide
+
+diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 #triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
 
+
+""" Cluster Analysis """
 #Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
+""" Protein Syntheses """
 #Syntheses.protein(MERS)
 #Syntheses.protein(SARS)
 #Syntheses.protein(SARSCoV2)
@@ -49,10 +57,22 @@ SARS = coronaviridae[2]
 #PairwiseSequencing.protein(SARS, SARSCoV2)
 
 
-# All sequences considered in Alignment files (.aln)
-Alignment.create_file("DNA")
-Alignment.create_file("Protein")
+""" Pairwise Sequencing """
+#PairwiseSequencing.protein("DNA", MERS, SARS)
+#PairwiseSequencing.protein("DNA", MERS, SARSCoV2)
+#PairwiseSequencing.protein("DNA", SARS, SARSCoV2)
 
+#PairwiseSequencing.protein("Protein", MERS, SARS)
+#PairwiseSequencing.protein("Protein", MERS, SARSCoV2)
+#PairwiseSequencing.protein("Protein", SARS, SARSCoV2)
+
+
+""" Alignment Files """
+# All sequences considered in Alignment files (.aln)
+#Alignment.create_file("DNA")
+#Alignment.create_file("Protein")
+
+""" Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
 Test run Jupyter Notebook version
 #MultipleSequenceAlignment.run("DNA")

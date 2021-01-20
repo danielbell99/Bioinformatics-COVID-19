@@ -21,11 +21,8 @@ def read_normalised_frequencies(polymers, name1, name2, *others):
     Compiled as a Dataframe for Cluster Analysis
     Minimum of 2 Coronaviridae names required - *others is optional
 
-    :param polymers: combination of nucleic acids of n length each
-    :type polymers: list
-
-    :param name1, name2, *others: contains entire genome data; 'name' value used (*others is optional)
-    :type name1, name2, *others: dict
+    :param list polymers: combination of nucleic acids of n length each
+    :param dict (name1, name2, *others): contains entire genome data; 'name' value used (*others is optional)
     """
     coronaviridae_names.extend([name1, name2, *others])
     n = len(polymers)
@@ -51,11 +48,8 @@ def read_normalised_frequencies(polymers, name1, name2, *others):
 def seaborn_scatterplot(model, results):
     """ Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results
 
-    :param model: String literal name of model for saving figure as filename
-    :type model: str
-
-    :param results: contains entire genome data; 'name' value used (*others is optional)
-    :type results: ndarray
+    :param str model: String literal name of model for saving figure as filename
+    :param ndarray results: contains entire genome data; 'name' value used (*others is optional)
     """
     # Machine Learning models output results
     labels = []
@@ -84,8 +78,7 @@ def principal_component_analysis(df):
     """ Linear dimensionality reduction algorithm, starting solution for tSNE()
     Time in seconds, printed
 
-    :param df: holds normalised frequency scores for fit & transformation
-    :type model: DataFrame
+    :param DataFrame df: holds normalised frequency scores for fit & transformation
     """
     time_start = time.time()
     pca = PCA(n_components=2)
@@ -102,8 +95,7 @@ def tSNE(pca_results):
     Machine Learning algorithm for Cluster visualisation
     Time in seconds, printed
 
-    :param pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
-    :type pca_results: ndarray
+    :param ndarray pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
     """
     np.random.seed(42)  # Reproducability of results
 

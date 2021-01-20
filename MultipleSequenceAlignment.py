@@ -1,13 +1,10 @@
 import numpy as np
 import randomcolor
-
 from Bio import AlignIO
-
 from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, Range1d
 from bokeh.models.glyphs import Text, Rect
 from bokeh.layouts import gridplot
-
 import panel as pn
 pn.extension()
 
@@ -16,9 +13,14 @@ protein = ['I', 'M', 'T', 'N', 'K', 'S', 'R', 'L', 'P', 'H', 'Q', 'R', 'V', 'A',
            'W', '_']
 
 
-def map_colors(seqs, bio_type):
-    # Sets distinct color for each 'bio_type''s sequence character
-    text = [char for s in list(seqs) for char in s]  # protein characters in our sequences
+def map_colors(sequences, bio_type):
+    """Wrap-around function for calling upon all other methods for user
+
+    :param list sequences: holds Bio.Seq() for each sequence contents from files (w/out description header in .fasta/.fna)
+    :param str bio_type: "dna" or "protein"
+    """
+    # Sets a distinct colour for each 'bio_type''s unique character in 'sequences'
+    text = [char for s in list(sequences) for char in s]  # characters in our sequences
 
     rand_color = randomcolor.RandomColor()
 
@@ -30,7 +32,7 @@ def map_colors(seqs, bio_type):
         colors = rand_color.generate(count=len(protein))
         color_map = dict(zip(protein, colors))
     else:
-        return
+        return  # run() handles exception
 
     color_set = [color_map[i] for i in text]
 
@@ -38,24 +40,32 @@ def map_colors(seqs, bio_type):
 
 
 def view_alignment(aln, bio_type):
-    """Multiple Sequence Alignment Viewer"""
+    """Multiple Sequence Alignment Viewer
+    Global Viewer - overall of coloured sequences' characters
+    Aligned Sequences Viewer - interactive view for analysis, coloured coded characters & ability to scroll
 
-    seqs = [rec.seq for rec in (aln)]
+    :param AlignIO aln: Alignment file (.aln) that contains either all DNA or Protein sequences ('data/Alignments/')
+    :param str bio_type: "dna" or "protein"
+    """
+    sequences = [rec.seq for rec in (aln)]
+    colors = map_colors(sequences, bio_type)
+    text = [char for s in list(sequences) for char in s]
     y_range = [rec.id for rec in aln]
-    text = [char for s in list(seqs) for char in s]
-    colors = map_colors(seqs, bio_type)
 
-    length = len(seqs[0])  # longest sequence
-    num_seqs = len(seqs)
+    length = len(sequences[0])  # longest sequence is always first in 'sequences' (Alignment.py)
+    num_seqs = len(sequences)
 
     # ColumnDataSource
-    x = np.arange(1, (length + 1))  # [0, 1, 2, ... len(seqs[0]) + 1]
-    y = np.arange(0, num_seqs, 1)
-    xx, yy = np.meshgrid(x, y)
-    gx = xx.ravel()
-    gy = yy.flatten()
+    x = np.arange(1, (length + 1))  # evenly spaced values (so as each character box is the same length and height)
+    y = np.arange(0, num_seqs, 1)  # [0, 1, 2, ... len(sequences[0]) + 1]
+    xx, yy = np.meshgrid(x, y)  # returns coordinate matrices of 'x' & 'y' arrays for indexing
+
+    gx = xx.ravel()  # a 1-D array (faster as no memory is copied)
+    gy = yy.flatten()  # derives a flattened copy of 'yy' array (so as to not modify the returned array)
     recty = (gy + 0.5)
 
+    # source - crucial part that gathers the sequences' 'text' w/ their assigned 'colors'
+    # into their x/y positions on output
     source = ColumnDataSource(dict(x=gx, y=gy, recty=recty, text=text, colors=colors))
     plot_height = (num_seqs * 25)
     x_range = Range1d(0, (length + 1), bounds='auto')
@@ -66,14 +76,14 @@ def view_alignment(aln, bio_type):
     asv_x_range = (0, asv_length)
     tools = "xpan, reset, save"
 
-    # Global Sequence View
+    # -- Global Viewer --
     glb = figure(title=None, plot_width=1000, plot_height=50, x_range=x_range, y_range=y_range, tools=tools,
                  min_border=0, toolbar_location="below")
     rects = Rect(x="x", y="recty", width=1, height=1, fill_color="colors", line_color=None)
-    glb.add_glyph(source, rects)
+    glb.add_glyph(source, rects)  # colours
     glb.yaxis.visible = False
 
-    # Aligned Sequences Viewer
+    # -- Aligned Sequences Viewer --
     # migrate horizontally across sequences
     asv = figure(plot_width=1000, plot_height=plot_height, x_range=asv_x_range, y_range=y_range, tools=tools,
                  min_border=0, toolbar_location="below")
@@ -84,10 +94,17 @@ def view_alignment(aln, bio_type):
     asv.grid.visible = False
 
     msa = gridplot([[glb], [asv]])
+
     return msa
 
 
 def run(bio_type):
+    """Wrap-around function for calling upon all other methods for user
+
+    :param str bio_type: "dna" or "protein"
+    """
+    # Handles whether DNA or Protein
+    # All method calls are made here
     if bio_type.upper() == "DNA":
         file = 'dna.aln'
     elif bio_type.upper() == "PROTEIN":

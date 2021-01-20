@@ -1,4 +1,3 @@
-# https://en.wikipedia.org/wiki/Tandem_repeat
 import matplotlib.pyplot as plt
 import numpy as np
 import StandardFunctions as sf
@@ -9,48 +8,78 @@ polynucleotide = {1: "Nucleotide", 2: 'Dinucleotide', 3: 'Trinucleotide', 4: 'Te
 polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
 
 
-def bases_combinations(bases, sub_length):
-    n = len(bases)  # no. Bases
-    combinations = []  # Appended by basesCombinationRecursive(), externally
-    bases_combinations_recursive(bases, "", n, sub_length, combinations)
+def base_combinations(bases, polymer_length):
+    """ Memory Efficient - calls upon recursive method for
 
-    return combinations
+    :param list bases: chemicals in DNA, each represented as a char
+    :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
 
-
-def bases_combinations_recursive(bases, string, n, str_length, combinations):
-    # Recursively creates all combinations of input Nucleotide Bases, each with a limit of sub_length
-    # Base case (as we eventually run out of character space, each string)
-    if (str_length == 0):
-        combinations.append(string)
+    :return list combinations: all possible polymers, each of a given 'polymer_length'
+    """
+    if (polymer_length <= 1 or not(isinstance(polymer_length, int))):  # checks whole number above 1
+        print("Warning in Nucleotides.py: must pass a positive whole number >= 2")
         return
 
-    # Starting with all that begin with 'A' ...
-    for i in range(n):
-        # Next Base appended
-        new_string = string + bases[i]  # we build upon a new string
-        bases_combinations_recursive(bases, new_string, n, str_length - 1, combinations)
+    combinations = []  # Appended by basesCombinationRecursive(), externally
+    base_combinations_recursive(bases, "", polymer_length, combinations)
 
     return combinations
 
 
-def composition(bases, genome):
+def base_combinations_recursive(bases, polymer, polymer_length, combinations):
+    """ Generates all possible polymers possible, each of a 'polymer_length'
+    Each recursion, we append a complete 'polymer' to 'combinations'
+    We pass 'combinations' back to 'base_combinations()' and drop the Stack
+    Stack does not need to be unravelled, once threshold is met, per iteration.
+
+    :param list bases: chemicals in DNA, each represented as a char
+    :param str polymer: an instance of a base combination passed to next recursion and appended to 'combinations'; initially blank ("")
+    :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
+    :param list combinations: all possible polymers, each of a given 'polymer_length'
+
+    :return list combinations
+    """
+    # Base case - run out of character space for each 'polymer'
+    if (polymer_length == 0):
+        combinations.append(polymer)
+        # print(polymer)  # Complete polymer instance
+        return  # continue back to previous recursion's active for loop iteration
+
+    # Starting with all that begin with 'A' ...
+    for i in range(len(bases)):
+        # Next Base appended
+        new_polymer = polymer + bases[i]  # we build upon a new instance
+        base_combinations_recursive(bases, new_polymer, (polymer_length - 1), combinations)
+
+    return combinations
+
+
+def base_content(base_combinations, genome):
+    """ Calculates the composition of each polymer, from 'base_combination', in a given genome as a %
+
+    :param list base_combinations: holds 'base_combinations()' output array, x axis
+    :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (Coronaviridae.py - .fasta/.fna file)
+    """
     print("\n-- " + genome['name'] + " --")  # name
     print(genome['description'])
     print(genome['sequence'])
 
-    for n in bases:
+    for n in base_combinations:
         n_count = genome['sequence'].count(n)
         n_comp = round(n_count / len(genome['sequence']) * 100, 2)
         print(base_type[n] + " Composition: " + str(n_comp) + "%")
 
-    bases_content(genome['name'], genome['sequence'])
+    bases_content_plot(genome['name'], genome['sequence'])
 
 
-def bases_content(name, sequence):
-    # Nitrogenous Bases - AT/GC Ratio:
-    # Guanine & Cytosine as % of DNA (always paired together)
-    # Adenine & Thymine as % of DNA (always paired together)
+def bases_content_plot(name, sequence):
+    """ Nitrogenous Bases - AT/GC Ratio:
+    Guanine & Cytosine as % of DNA (always paired together)
+    Adenine & Thymine as % of DNA (always paired together)
 
+    :param str name: official viral name
+    :param list sequence: genome broken down as individual monomer bases
+    """
     # Data
     gc = ((sequence.count("G") + sequence.count("C")) / len(sequence)) * 100  # GC Content (%)
     at = ((sequence.count("A") + sequence.count("T")) / len(sequence)) * 100  # AT Content (%)
@@ -70,13 +99,14 @@ def bases_content(name, sequence):
     fig.savefig("data\\Content\\content_" + name + '.png', format="png")
 
 
-def composition_comparison(polymers, *genomes):
-    # Plots a chart -  Normalised polynucleotide frequences of bases composition, for n genomes of interest
-    # polymers - holds basesCombination() output array, x axis
-    # *genomes - array holds genome dictionaries, to be plotted
+def composition_comparison(base_combinations, *genomes):
+    """ Plots a chart - Normalised polynucleotide frequences of bases composition, for n genomes of interest
 
+    :param list base_combinations: holds 'base_combinations()' output array, x axis
+    :param ndarray *genomes: dictionaries of genomes, to be plotted (* - at least one or more genome)
+    """
     # To display relevant labels
-    n = len(polymers[0])  # no. bases in each polymer
+    n = len(base_combinations[0])  # no. bases in each polymer
     n_coronavirus = "Coronaviridae" if len(genomes) > 1 else "Coronavirus"  # plural or singular
     colormap = ["red", "green", "blue", "yellow", "purple"]
 
@@ -95,8 +125,8 @@ def composition_comparison(polymers, *genomes):
 
     for g, c in zip(genomes, colormap):
         # Parallel iteration - g (dictionaries in genomes) & c (colours in colourmap)
-        nf = normalised_frequencies(polymers, g)
-        plt.plot(polymers, nf, linewidth=2, color=c, label=g['name'])
+        nf = normalised_frequencies(base_combinations, g)
+        plt.plot(base_combinations, nf, linewidth=2, color=c, label=g['name'])
     plt.legend()
 
     plt.grid(True)
@@ -110,23 +140,25 @@ def composition_comparison(polymers, *genomes):
     fig.savefig("data\\Composition\\" + polynucleotide[n] + output_name + '.png', format="png")
 
 
-def normalised_frequencies(polymers, genome):
-    # Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
-    # returns array of infinitesimals, for each polymer, to be plotted in compositionComparison()
-    # Stores csv - headers = polymers, nf = content
-    # filename - "nf_[polymers]_[coronavirus].csv"
+def normalised_frequencies(base_combinations, genome):
+    """ Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
+    Stores csv - headers = polymers, nf = content (filename "nf_[polymers]_[coronavirus].csv")
 
-    n = len(polymers[0])  # no. nucleotide units in polymer
+    :param list base_combinations: holds 'base_combinations()' output array, x axis
+    :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (Coronaviridae.py - .fasta/.fna file)
+
+    :return ndarray normalisedfreq: infinitesimals, for each polymer, to be plotted in 'composition_comparison()'
+    """
+    n = len(base_combinations[0])  # no. nucleotide units in polymer
     sequence = ''.join(genome['sequence'])  # concatenates char members of genome as a string object
 
     normalisedfreq = []
-    for p in polymers:
+    for p in base_combinations:
         count = sequence.count(p)
         nf = (count * n) / len(sequence)
         normalisedfreq.append(nf)
 
         # Store file - list of polymers & normalised frequency scores
-
     np.savetxt("data\\Normalised Frequency\\nf_" + polymer_type[n] + "_" + genome['name'] + ".csv", normalisedfreq,
                delimiter=",")
 

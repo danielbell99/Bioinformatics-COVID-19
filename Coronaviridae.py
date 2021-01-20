@@ -7,8 +7,7 @@ from os.path import isfile, join
 def read_genomes():
     """ Imports Coronaviridae datasets from src
 
-    :return: Stores complete genome datasets, each as dict
-    :rtype: list
+    :return list: Stores complete genome datasets, each as dict
     """
     # Capture filenames from src
     filenames = []
