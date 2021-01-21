@@ -14,12 +14,12 @@ protein = ['I', 'M', 'T', 'N', 'K', 'S', 'R', 'L', 'P', 'H', 'Q', 'R', 'V', 'A',
 
 
 def map_colors(sequences, bio_type):
-    """Wrap-around function for calling upon all other methods for user
+    """ Sets a distinct colour for 'bio_type''s each unique chars in 'sequences'
 
     :param list sequences: holds Bio.Seq() for each sequence contents from files (w/out description header in .fasta/.fna)
     :param str bio_type: "dna" or "protein"
+    :return list color_set: hexadecimal values as str, for all character in all sequences
     """
-    # Sets a distinct colour for each 'bio_type''s unique character in 'sequences'
     text = [char for s in list(sequences) for char in s]  # characters in our sequences
 
     rand_color = randomcolor.RandomColor()
@@ -46,6 +46,7 @@ def view_alignment(aln, bio_type):
 
     :param AlignIO aln: Alignment file (.aln) that contains either all DNA or Protein sequences ('data/Alignments/')
     :param str bio_type: "dna" or "protein"
+    :return bokeh.models.layouts.Column msa: the Multiple Sequence Alignment interactice visualisations
     """
     sequences = [rec.seq for rec in (aln)]
     colors = map_colors(sequences, bio_type)
@@ -99,21 +100,22 @@ def view_alignment(aln, bio_type):
 
 
 def run(bio_type):
-    """Wrap-around function for calling upon all other methods for user
+    """Wrap-around function conditions 'bio_type' to create an .aln file of 'bio_type' sequences
+    Establishes: 'filename'
 
     :param str bio_type: "dna" or "protein"
     """
     # Handles whether DNA or Protein
     # All method calls are made here
     if bio_type.upper() == "DNA":
-        file = 'dna.aln'
+        filename = 'dna.aln'
     elif bio_type.upper() == "PROTEIN":
-        file = 'protein.aln'
+        filename = 'protein.aln'
     else:
         print("Warning in Alignment.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
         return  # Exception Handling
 
-    aln = AlignIO.read("data/Alignments/" + file, 'fasta')
+    aln = AlignIO.read("data/Alignments/" + filename, 'fasta')
     msa = view_alignment(aln, bio_type)
     pn.pane.Bokeh(msa)
 

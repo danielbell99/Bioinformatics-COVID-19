@@ -13,7 +13,6 @@ def base_combinations(bases, polymer_length):
 
     :param list bases: chemicals in DNA, each represented as a char
     :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
-
     :return list combinations: all possible polymers, each of a given 'polymer_length'
     """
     if (polymer_length <= 1 or not(isinstance(polymer_length, int))):  # checks whole number above 1
@@ -36,7 +35,6 @@ def base_combinations_recursive(bases, polymer, polymer_length, combinations):
     :param str polymer: an instance of a base combination passed to next recursion and appended to 'combinations'; initially blank ("")
     :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
     :param list combinations: all possible polymers, each of a given 'polymer_length'
-
     :return list combinations
     """
     # Base case - run out of character space for each 'polymer'
@@ -103,7 +101,7 @@ def composition_comparison(base_combinations, *genomes):
     """ Plots a chart - Normalised polynucleotide frequences of bases composition, for n genomes of interest
 
     :param list base_combinations: holds 'base_combinations()' output array, x axis
-    :param ndarray *genomes: dictionaries of genomes, to be plotted (* - at least one or more genome)
+    :param ndarray genomes: array holds genome dictionaries, to be plotted ('*' >=1 genomes)
     """
     # To display relevant labels
     n = len(base_combinations[0])  # no. bases in each polymer
@@ -141,12 +139,11 @@ def composition_comparison(base_combinations, *genomes):
 
 
 def normalised_frequencies(base_combinations, genome):
-    """ Calculates no. appearances a polymer subsequence appears in complete genome sequence, as a percentage
+    """ Calculates no. appearances each polymer, as a subsequence, appears in a given genome, as a %
     Stores csv - headers = polymers, nf = content (filename "nf_[polymers]_[coronavirus].csv")
 
     :param list base_combinations: holds 'base_combinations()' output array, x axis
     :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (Coronaviridae.py - .fasta/.fna file)
-
     :return ndarray normalisedfreq: infinitesimals, for each polymer, to be plotted in 'composition_comparison()'
     """
     n = len(base_combinations[0])  # no. nucleotide units in polymer

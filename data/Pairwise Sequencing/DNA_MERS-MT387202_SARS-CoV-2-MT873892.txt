@@ -1,0 +1,120 @@
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     ||      | |||..||| |     |.||   |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
+-----AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
+AAATAA--AAGCCCTGTTGTTTAGCGTATTG
+     || |      |||..||| |     |.||   |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
+TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
+  Score=227.319
