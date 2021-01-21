@@ -1,5 +1,19 @@
-""" Methods used across Application
-"""
+from os import listdir
+from os.path import isfile, join
+""" Methods used across Application """
+
+
+def capture_filenames(bio_type):
+
+    filenames = []
+    if bio_type.lower() == "dna":
+        [filenames.append(d) for d in listdir('src/') if isfile(join('src/', d))]
+    elif bio_type.lower() == "protein":
+        [filenames.append(p) for p in listdir('data/Syntheses/') if isfile(join('data/Syntheses/', p))]
+    else:
+        return  # invoker handles exception
+
+    return filenames
 
 
 def output_name(genomes):
@@ -24,7 +38,8 @@ def output_name_filename(sequence_filename):
     return name
 
 
-def ignore_firstline(dir_filename):
+def remove_firstline(dir_filename):
+    # e.g. DNA datasets have a description line on top, followed by a line break
     file = open(dir_filename, 'r')
     content = file.readlines()[1:]
     content = ''.join(content)

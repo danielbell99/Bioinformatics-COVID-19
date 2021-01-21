@@ -53,8 +53,7 @@ def seaborn_scatterplot(model, results):
     """
     # Machine Learning models output results
     labels = []
-    for name in coronaviridae_names:
-        labels.append(name * 100)
+    [labels.append(name * 100) for name in coronaviridae_names]
 
     label_vec = ["SARS-CoV"] * 100
     label_vec = label_vec + ["bat-SL-CoV"] * 100

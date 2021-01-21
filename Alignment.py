@@ -9,12 +9,13 @@ def sequence_lengths(sequence_filenames, bio_type, dir):
     :param list sequence_filenames: list of str; names of files to load in
     :param str bio_type: "dna" or "protein"
     :param str dir: folder directory (used for on loading in dna or protein sequences)
+    :return list seq_lengths: stores ints, lengths of sequences (in order of 'sequence_filenames')
     """
     seq_lengths = []  # in order of 'sequence_filenames'
     for s in sequence_filenames:
         if bio_type.upper() == "DNA":  # ignore top line
             seq = sf.ignore_firstline(dir + s)
-            seq = seq.strip()  # sometimes there is a space at the end of a DNA sequence
+            seq = seq.strip()  # removes any spacing surrounding sequence
             print("SEQUENCE: " + str(len(seq)) + "\n" + str(seq))
         else:  # i.e. - bio_type.upper() == "PROTEIN":
             with open(dir + s, "r") as f:
@@ -26,15 +27,14 @@ def sequence_lengths(sequence_filenames, bio_type, dir):
 
 
 def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, dir):
-    """ Wrap-around function conditions bio_type for creating an .aln file
+    """ Ensures sequences are of equal length, for MSA
+    Done by appending '_'s to short sequences, no. which calculated by the longest sequence
 
     :param list sequence_filenames: list of str; names of files to load in
     :param list seq_lengths: list of int; order is synonymous w/ 'sequence_filenames'
     :param str bio_type: "dna" or "protein"
     :param str dir: "dna" or "protein"
     """
-    # Sequences must all be of equal length for MSA
-    # Append '_'s to each sequence, no. which calculated by the longest sequence
     file = open("data/Alignments/" + bio_type.lower() + ".aln", "w")
 
     n = -1  # sequence number (tb 0-indexed)
@@ -44,8 +44,8 @@ def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, dir):
             name = sf.output_name_filename(s)  # Coronavirus name
 
             # Content
-            if bio_type.upper() == "DNA":  # ignore top line
-                content = sf.ignore_firstline(dir + s)
+            if bio_type.upper() == "DNA":  # ignore top/ description line
+                content = sf.remove_firstline(dir + s)
                 content = content.strip()  # sometimes there is a space at the end of a DNA sequence
 
                 # print("MAX VALUE IN SEQUENCE: " + str(max(seq_lengths)))
@@ -76,7 +76,9 @@ def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, dir):
 
 
 def create_file(bio_type):
-    """ Wrap-around function conditions bio_type for creating an .aln file
+    """ Wrap-around function conditions 'bio_type' to create an .aln file of 'bio_type' sequences
+    Invokes: 'sequence_lengths()' & 'establish_alignment_file()'
+    Establishes: 'dir' & 'sequence_filenames', based on 'bio_type' sequences
 
     :param str bio_type: "dna" or "protein"
     """

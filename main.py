@@ -6,9 +6,6 @@ import PairwiseSequencing
 import Alignment
 import MultipleSequenceAlignment
 
-#help(Clustering.read_normalised_frequencies)
-
-
 # Nitrogenous Bases - of interest
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
@@ -27,19 +24,18 @@ SARS = coronaviridae[2]
 
 """ Nucleotide Composition """
 # AT/GC Content
-Nucleotides.base_content(bases, MERS)  # MERS
+#Nucleotides.base_content(bases, MERS)  # MERS
 #Nucleotides.base_content(bases, SARS)  # SARS
 #Nucleotides.base_content(bases, SARSCoV2)  # SARSCoV2
 
 # Polymer Bases Combinations
-dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
+#dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
 #trimers = Nucleotides.base_combinations(bases, 3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(bases, 4)  # tetranucledotide
 
-diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
+#diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 #triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
-
 
 
 """ Cluster Analysis """
@@ -52,19 +48,14 @@ diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 #Syntheses.protein(SARSCoV2)
 
 
-#PairwiseSequencing.protein(MERS, SARS)
-#PairwiseSequencing.protein(MERS, SARSCoV2)
-#PairwiseSequencing.protein(SARS, SARSCoV2)
-
-
 """ Pairwise Sequencing """
-#PairwiseSequencing.protein("DNA", MERS, SARS)
-#PairwiseSequencing.protein("DNA", MERS, SARSCoV2)
-#PairwiseSequencing.protein("DNA", SARS, SARSCoV2)
+#PairwiseSequencing.run("DNA", MERS, SARS)
+#PairwiseSequencing.run("DNA", MERS, SARSCoV2)
+#PairwiseSequencing.run("DNA", SARS, SARSCoV2)
 
-#PairwiseSequencing.protein("Protein", MERS, SARS)
-#PairwiseSequencing.protein("Protein", MERS, SARSCoV2)
-#PairwiseSequencing.protein("Protein", SARS, SARSCoV2)
+#PairwiseSequencing.run("Protein", MERS, SARS)
+#PairwiseSequencing.run("Protein", MERS, SARSCoV2)
+#PairwiseSequencing.run("Protein", SARS, SARSCoV2)
 
 
 """ Alignment Files """
