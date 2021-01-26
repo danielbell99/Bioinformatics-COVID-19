@@ -6,15 +6,16 @@ from bokeh.models import ColumnDataSource, Range1d
 from bokeh.models.glyphs import Text, Rect
 from bokeh.layouts import gridplot
 import panel as pn
-pn.extension()
+pn.extension()  # Displays instances of objects from 'panel' library in Jupyter Notebooks
 
-dna = ['A', 'C', 'G', 'T', '_']  # Adenine, Cytosine, Guanine, Thymine
-protein = ['I', 'M', 'T', 'N', 'K', 'S', 'R', 'L', 'P', 'H', 'Q', 'R', 'V', 'A', 'D', 'E', 'G', 'S', 'F', 'L', 'Y', 'C',
+# Constants - appropriate referencing (e.g. iteration, print, file name, visual)
+DNA = ['A', 'C', 'G', 'T', '_']  # Adenine, Cytosine, Guanine, Thymine
+PROTEIN = ['I', 'M', 'T', 'N', 'K', 'S', 'R', 'L', 'P', 'H', 'Q', 'R', 'V', 'A', 'D', 'E', 'G', 'S', 'F', 'L', 'Y', 'C',
            'W', '_']
 
 
 def map_colors(sequences, bio_type):
-    """ Sets a distinct colour for 'bio_type''s each unique chars in 'sequences'
+    """Sets a distinct colour for 'bio_type''s each unique chars in 'sequences'.
 
     :param list sequences: holds Bio.Seq() for each sequence contents from files (w/out description header in .fasta/.fna)
     :param str bio_type: "dna" or "protein"
@@ -26,11 +27,11 @@ def map_colors(sequences, bio_type):
 
     # Determine no. colours to generate no. characters (case-insensitive)
     if bio_type.lower() == "dna":
-        colors = rand_color.generate(count=len(dna))
-        color_map = dict(zip(dna, colors))
+        colors = rand_color.generate(count=len(DNA))
+        color_map = dict(zip(DNA, colors))
     elif bio_type.lower() == "protein":
-        colors = rand_color.generate(count=len(protein))
-        color_map = dict(zip(protein, colors))
+        colors = rand_color.generate(count=len(PROTEIN))
+        color_map = dict(zip(PROTEIN, colors))
     else:
         return  # run() handles exception
 
@@ -40,13 +41,13 @@ def map_colors(sequences, bio_type):
 
 
 def view_alignment(aln, bio_type):
-    """Multiple Sequence Alignment Viewer
-    Global Viewer - overall of coloured sequences' characters
-    Aligned Sequences Viewer - interactive view for analysis, coloured coded characters & ability to scroll
+    """Multiple Sequence Alignment Viewer.
+    Global Viewer - overall of coloured sequences' characters.
+    Aligned Sequences Viewer - interactive view for analysis, coloured coded characters & ability to scroll.
 
     :param AlignIO aln: Alignment file (.aln) that contains either all DNA or Protein sequences ('data/Alignments/')
     :param str bio_type: "dna" or "protein"
-    :return bokeh.models.layouts.Column msa: the Multiple Sequence Alignment interactice visualisations
+    :return bokeh.models.layouts.Column msa: the Multiple Sequence Alignment interactive visualisations
     """
     sequences = [rec.seq for rec in (aln)]
     colors = map_colors(sequences, bio_type)
@@ -70,27 +71,27 @@ def view_alignment(aln, bio_type):
     source = ColumnDataSource(dict(x=gx, y=gy, recty=recty, text=text, colors=colors))
     plot_height = (num_seqs * 25)
     x_range = Range1d(0, (length + 1), bounds='auto')
-    if (length > 100):
+    if length > 100:
         asv_length = 100
     else:
         asv_length = length
     asv_x_range = (0, asv_length)
-    tools = "xpan, reset, save"
+    tools = 'xpan, reset, save'
 
     # -- Global Viewer --
     glb = figure(title=None, plot_width=1000, plot_height=50, x_range=x_range, y_range=y_range, tools=tools,
-                 min_border=0, toolbar_location="below")
-    rects = Rect(x="x", y="recty", width=1, height=1, fill_color="colors", line_color=None)
+                 min_border=0, toolbar_location='below')
+    rects = Rect(x='x', y='recty', width=1, height=1, fill_color='colors', line_color=None)
     glb.add_glyph(source, rects)  # colours
     glb.yaxis.visible = False
 
     # -- Aligned Sequences Viewer --
     # migrate horizontally across sequences
     asv = figure(plot_width=1000, plot_height=plot_height, x_range=asv_x_range, y_range=y_range, tools=tools,
-                 min_border=0, toolbar_location="below")
-    glyph = Text(x="x", y="y", text="text", text_align="center", text_color="black", text_font_size="9pt")
-    rects = Rect(x="x", y="recty", width=1, height=1, fill_color="colors", line_color="white", fill_alpha=0.5)
-    asv.add_glyph(source, glyph)  # protein characters
+                 min_border=0, toolbar_location='below')
+    glyph = Text(x='x', y='y', text='text', text_align="center", text_color='black', text_font_size='9pt')
+    rects = Rect(x='x', y='recty', width=1, height=1, fill_color='colors', line_color='white', fill_alpha=0.5)
+    asv.add_glyph(source, glyph)  # sequence characters
     asv.add_glyph(source, rects)  # colours
     asv.grid.visible = False
 
@@ -100,13 +101,10 @@ def view_alignment(aln, bio_type):
 
 
 def run(bio_type):
-    """Wrap-around function conditions 'bio_type' to create an .aln file of 'bio_type' sequences
-    Establishes: 'filename'
+    """Procedures for MSA are called here.
 
     :param str bio_type: "dna" or "protein"
     """
-    # Handles whether DNA or Protein
-    # All method calls are made here
     if bio_type.upper() == "DNA":
         filename = 'dna.aln'
     elif bio_type.upper() == "PROTEIN":
@@ -115,7 +113,7 @@ def run(bio_type):
         print("Warning in Alignment.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
         return  # Exception Handling
 
-    aln = AlignIO.read("data/Alignments/" + filename, 'fasta')
+    aln = AlignIO.read('data/Alignments/' + filename, 'fasta')
     msa = view_alignment(aln, bio_type)
     pn.pane.Bokeh(msa)
 

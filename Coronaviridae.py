@@ -3,15 +3,15 @@ from os.path import isfile, join
 
 
 def read_genomes():
-    """ Imports Coronaviridae datasets from src
+    """Imports Coronaviridae datasets from 'src/' folder.
 
     :return list: Stores complete genome datasets, each as dict
     """
-    # Capture filenames from src
+    # Capture filenames from 'src/'
     filenames = []
     [filenames.append(g) for g in listdir('src/') if isfile(join('src/', g))]
 
-    coronaviridae = []  # Virus name, description, sequence
+    coronaviridae = []  # 'name', 'description', 'sequence'
 
     for f in filenames:
         with open('src/' + f) as genome:
@@ -19,7 +19,7 @@ def read_genomes():
             content = genome.read()
 
         name = f.rsplit('.', 1)[0]  # removes file extensions (eg. .fasta, .fna)
-        name = name.split('.', 1)[0]  # removes gene version number of virus eg. ".1"
+        name = name.split('.', 1)[0]  # removes gene version number of virus (eg. ".1")
         description = description.strip()  # removes newlines
         sequence = list(filter(lambda x: x != '\n', content))  # removes newlines
 

@@ -6,16 +6,16 @@ import StandardFunctions as sf
 
 
 def save(bio_type, output_name, sequencing):
-    """ Stores matches and their scores w/ appropriate file naming convention
+    """Stores matches and their scores w/ appropriate file naming convention.
 
     :param str bio_type: "dna" or "protein"
     :param str output_name: segment of filename that lists virus names (e.g. "_MERS-MT387202_SARS-CoV-JQ316196")
     :param list sequencing: stores all possible matches and scores them
     """
     # Save Pairwise Sequencing
-    path_filename = os.path.join("data\\Pairwise Sequencing",
-                                 bio_type + output_name + ".txt")  # Defines path and filename
-    output = open(path_filename, "w")
+    path_filename = os.path.join('data\\Pairwise Sequencing',
+                                 bio_type + output_name + '.txt')  # Defines path and filename
+    output = open(path_filename, 'w')
     for a in sequencing:
         output.write(format_alignment(*a))  # Standardised format for output
     output.close()
@@ -24,7 +24,7 @@ def save(bio_type, output_name, sequencing):
 
 
 def gap_function(x, y):
-    """ Deducts points for gaps when matching up sequencing, using a logarithmic scale
+    """Deducts points for gaps when matching up sequencing, using a logarithmic scale.
 
     :param int x: index to start of gap
     :param int y: length of gap instance
@@ -38,22 +38,21 @@ def gap_function(x, y):
 
 
 def run(bio_type, *genomes):
-    """ Performes Pairwise Sequencing task
-    Matches subsequences of similarity that may indicate evolutionary, functional and structural relationships
-    Higher the score, higher the relationship
+    """Performes Pairwise Sequencing task.
+    Matches subsequences of similarity that may indicate evolutionary, functional and structural relationships.
+    Higher the score, higher the relationship.
 
     :param bio_type: "dna" or "protein"
     :param ndarray genomes: array holds genome dictionaries, to be plotted ('*' >=1 genomes)
     """
     if bio_type.lower() == "dna":
         prefix = ""  # none
-        dir = 'src/'
+        directory = 'src/'
     elif bio_type.lower() == "protein":
         prefix = "protein_"
-        dir = 'data/Syntheses/'
+        directory = 'data/Syntheses/'
     else:
-        print(
-            "Warning in PairwiseSequencing.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
+        print("Warning in PairwiseSequencing.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
         return  # Exception Handling
 
     # Capture all filenames of 'bio_type'
@@ -65,9 +64,9 @@ def run(bio_type, *genomes):
     for f in range(len(filenames)):
         for g in range(len(genomes)):
             if set(genomes[g]['name']).issubset(filenames[f]):
-                with open(dir + filenames[f]) as s:
+                with open(directory + filenames[f]) as s:
                     # DNA, remove top/ description line
-                    seq = ''.join([sf.remove_firstline(dir + filenames[f]) if bio_type.lower() == "dna" else s.read()])  # else, protein
+                    seq = ''.join([sf.remove_firstline(directory + filenames[f]) if bio_type.lower() == "dna" else s.read()])  # else, protein
                     seq = seq.strip()  # removes any spacing surrounding sequence
                     # Store seqeunces of interest
                     seq_dict = {'name': genomes[g]['name'], 'sequence': seq}

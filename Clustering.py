@@ -9,44 +9,45 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import time
 
-# Constants - appropriate referencing (print, charts, filenames)
-polymer_type = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}
-path = 'data/Normalised Frequency/'
-colormap = ["red", "green", "blue", "yellow", "purple"]
+# Constants - appropriate referencing (e.g. iteration, print, file name, visual)
+POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}  # lower-case for file names
+PATH = 'data/Normalised Frequency/'
+COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
+
+
 coronaviridae_names = []  # Appended to
 
 
 def read_normalised_frequencies(polymers, name1, name2, *others):
-    """ Imports produced Normalised Frequency files (depending on: polymers & genomes of interest)
-    Compiled as a Dataframe for Cluster Analysis
-    Minimum of 2 Coronaviridae names required - *others is optional
+    """Imports produced Normalised Frequency files (depending on: polymers & genomes of interest).
+    Normalised Frequencies are passed through Dimentionality Reduction algorithms for Cluster Analysis.
+    Measuring time elapsed.
+    Minimum of 2 Coronaviridae names required - '*others' is optional.
 
     :param list polymers: combination of nucleic acids of n length each
     :param dict (name1, name2, *others): contains entire genome data; 'name' value used (*others is optional)
     """
     coronaviridae_names.extend([name1, name2, *others])
     n = len(polymers)
-    # "nf_" + polymer_type[n] + coronaviridae_names[name] + ".csv"
+    # "nf_" + POLYMER[n] + coronaviridae_names[name] + ".csv"
 
     # Capture filenames from data/Normalised Frequency
     # Append each file as a column
     nf_df = pd.DataFrame()  # DataFrame passed to PCA (dimentionality reduction algorithm)
-    for file, cv_name in zip(os.listdir(path), coronaviridae_names):
-        if os.path.isfile(os.path.join(path, file)):
-            column = pd.read_csv(os.path.join(path, file))
+    for file, cv_name in zip(os.listdir(PATH), coronaviridae_names):
+        if os.path.isfile(os.path.join(PATH, file)):
+            column = pd.read_csv(os.path.join(PATH, file))
             print(column)
             nf_df = pd.concat([nf_df, column], axis=1)
 
     print(nf_df)
 
-    # Normalised Frequencies dataframe is passed through Dimentionality Reduction algorithms for Cluster Analysis
-    # Measuring time elapsed
     principal_component_analysis(nf_df)
     tSNE(nf_df)
 
 
 def seaborn_scatterplot(model, results):
-    """ Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results
+    """Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results.
 
     :param str model: String literal name of model for saving figure as filename
     :param ndarray results: contains entire genome data; 'name' value used (*others is optional)
@@ -70,19 +71,19 @@ def seaborn_scatterplot(model, results):
     # plt.scatter(x=results[:, 0], y=results[:, 1])
     # plt.show()
     # plt.draw()
-    fig.savefig("data\\Cluster Analysis\\" + model + "_Coronaviridae.png", format='png')
+    fig.savefig('data\\Cluster Analysis\\' + model + '_Coronaviridae.png', format='png')
 
 
 def principal_component_analysis(df):
-    """ Linear dimensionality reduction algorithm, starting solution for tSNE()
-    Time in seconds, printed
+    """Linear dimensionality reduction algorithm. Machine Learning algorithm for Cluster visualisation.
+    Time in seconds, printed.
 
     :param DataFrame df: holds normalised frequency scores for fit & transformation
     """
     time_start = time.time()
     pca = PCA(n_components=2)
     pca_results = pca.fit_transform(df)
-    print('\nPCA complete. Time elapsed: {} secs'.format(time.time() - time_start))
+    print("\nPCA complete. Time elapsed: {} secs".format(time.time() - time_start))
 
     print("\n" + str(pca_results), type(pca_results))
 
@@ -90,9 +91,8 @@ def principal_component_analysis(df):
 
 
 def tSNE(pca_results):
-    """ t-distributed Stochastic Neighbour Embedding
-    Machine Learning algorithm for Cluster visualisation
-    Time in seconds, printed
+    """t-distributed Stochastic Neighbour Embedding. Machine Learning algorithm for Cluster visualisation.
+    Time in seconds, printed.
 
     :param ndarray pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
     """
@@ -101,7 +101,7 @@ def tSNE(pca_results):
     time_start = time.time()
     tsne = TSNE(n_components=2, perplexity=30, early_exaggeration=12)
     tsne_results = tsne.fit_transform(pca_results)
-    print('\nt-SNE complete. Time elapsed: {} secs'.format(time.time() - time_start))
+    print("\nt-SNE complete. Time elapsed: {} secs".format(time.time() - time_start))
 
     # print("\n" + tsne_results, type(tsne_results))
 

@@ -6,7 +6,7 @@ import PairwiseSequencing
 import Alignment
 import MultipleSequenceAlignment
 
-# Nitrogenous Bases - of interest
+# Nitrogenous Bases - of interest (dynamic for specified analyses)
 bases = ['A', 'C', 'G', 'T']  # Adenine, Cytosine, Guanine, Thymine
 
 
@@ -24,49 +24,49 @@ SARS = coronaviridae[2]
 
 """ Nucleotide Composition """
 # AT/GC Content
-#Nucleotides.base_content(bases, MERS)  # MERS
+Nucleotides.base_content(bases, MERS)  # MERS
 #Nucleotides.base_content(bases, SARS)  # SARS
 #Nucleotides.base_content(bases, SARSCoV2)  # SARSCoV2
 
 # Polymer Bases Combinations
-#dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
-#trimers = Nucleotides.base_combinations(bases, 3)  # trinucleotide
+dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
+trimers = Nucleotides.base_combinations(bases, 3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(bases, 4)  # tetranucledotide
 
-#diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
+diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 #triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
 
 """ Cluster Analysis """
-#Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
+Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
 
 
 """ Protein Syntheses """
-#Syntheses.protein(MERS)
+Syntheses.protein(MERS)
 #Syntheses.protein(SARS)
 #Syntheses.protein(SARSCoV2)
 
 
 """ Pairwise Sequencing """
-#PairwiseSequencing.run("DNA", MERS, SARS)
+PairwiseSequencing.run("DNA", MERS, SARS)
 #PairwiseSequencing.run("DNA", MERS, SARSCoV2)
 #PairwiseSequencing.run("DNA", SARS, SARSCoV2)
 
-#PairwiseSequencing.run("Protein", MERS, SARS)
+PairwiseSequencing.run("Protein", MERS, SARS)
 #PairwiseSequencing.run("Protein", MERS, SARSCoV2)
 #PairwiseSequencing.run("Protein", SARS, SARSCoV2)
 
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
-#Alignment.create_file("DNA")
+Alignment.create_file("DNA")
 #Alignment.create_file("Protein")
 
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
 Test run Jupyter Notebook version
-#MultipleSequenceAlignment.run("DNA")
+MultipleSequenceAlignment.run("DNA")
 #MultipleSequenceAlignment.run("Protein")
 """
 

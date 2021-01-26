@@ -1,19 +1,19 @@
 def write_file(coronavirus_name, protein):
-    """ Stores synthesised protein w/ appropriate file naming convention
+    """Stores synthesised protein w/ appropriate file naming convention.
 
     :param str coronavirus_name: name of virus that we've synthesised
     :param protein: actual synthesised data from 'protein()'
     """
-    file = open("data\\Syntheses\\" + "protein_" + coronavirus_name, "w")
+    file = open('data\\Syntheses\\' + 'protein_' + coronavirus_name, 'w')
     file.write(protein)
     file.close()
-    print("\n-- Sucessfully Synthesised Protein: " + coronavirus_name + " --\n" + str(protein))
+    print("\n-- Successfully Synthesised Protein: " + coronavirus_name + " --\n" + str(protein))
 
     return
 
 
 def protein(coronavirus):
-    """ DNA -(transcription)> mRNA -(translation)> Protein
+    """DNA -(transcription)> mRNA -(translation)> Protein.
     Start codon: AUG (not needed for 'dna_codons' dict)
     Stop codons: UAG, UAA, UGA (denoted by '_')
 
@@ -42,6 +42,6 @@ def protein(coronavirus):
 
     for i in range(0, len(dna), 3):  # increments of 3, i.e. one codon per iter
         codon = dna[i:i + 3]  # a trinucleotide that corresponds to a protein
-        protein += dna_codons.get(codon, "")  # appends as str
+        protein += dna_codons.get(codon, '')  # appends as str
 
     write_file(coronavirus['name'], protein)  # Save Synthesised Protein
