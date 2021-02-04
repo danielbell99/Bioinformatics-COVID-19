@@ -59,14 +59,11 @@ def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, director
 
             else:  # i.e. - bio_type.upper() == "PROTEIN":
                 content = sequence.read()
-                blanks_list = ['_'] * (
-                        (max(seq_lengths) - seq_lengths[n]) + 4)  # Additional 4 '_'s, for replacing "_END" postfix
+                blanks_list = ['_'] * (max(seq_lengths) - seq_lengths[n])
                 blanks = ''.join(blanks_list)
-
-                content = content.replace("_END", blanks)
+                content += blanks
 
             file.write(">" + name + "\n" + content + "\n")  # save
-
     file.close()
 
     aln = open('data/Alignments/' + bio_type.lower() + '.aln', 'r')

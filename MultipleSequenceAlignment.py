@@ -11,7 +11,7 @@ pn.extension()  # Displays instances of objects from 'panel' library in Jupyter 
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
 DNA = ['A', 'C', 'G', 'T', '_']  # Adenine, Cytosine, Guanine, Thymine
 PROTEIN = ['I', 'M', 'T', 'N', 'K', 'S', 'R', 'L', 'P', 'H', 'Q', 'R', 'V', 'A', 'D', 'E', 'G', 'S', 'F', 'L', 'Y', 'C',
-           'W', '_']
+           'W', '*', '_']
 
 
 def map_colors(sequences, bio_type):
