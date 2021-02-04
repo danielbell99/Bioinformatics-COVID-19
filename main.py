@@ -44,8 +44,8 @@ Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARS
 
 """ Protein Syntheses """
 Syntheses.protein(MERS)
-#Syntheses.protein(SARS)
-#Syntheses.protein(SARSCoV2)
+Syntheses.protein(SARS)
+Syntheses.protein(SARSCoV2)
 
 
 """ Pairwise Sequencing """
@@ -61,7 +61,7 @@ PairwiseSequencing.run("Protein", MERS, SARS)
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
 Alignment.create_file("DNA")
-#Alignment.create_file("Protein")
+Alignment.create_file("Protein")
 
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
