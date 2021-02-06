@@ -34,7 +34,7 @@ trimers = Nucleotides.base_combinations(bases, 3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(bases, 4)  # tetranucledotide
 
 diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
-#triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
+triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
 
@@ -66,7 +66,7 @@ Alignment.create_file("Protein")
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
 Test run Jupyter Notebook version
-MultipleSequenceAlignment.run("DNA")
+#MultipleSequenceAlignment.run("DNA")
 #MultipleSequenceAlignment.run("Protein")
 """
 

@@ -28,7 +28,7 @@ def sequence_lengths(sequence_filenames, bio_type, directory):
 
 def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, directory):
     """Ensures sequences are of equal length, for MSA.
-    Done by appending '_'s to short sequences, no. which calculated by the longest sequence.
+    Done by appending '-'s to short sequences, no. which calculated by the longest sequence.
 
     :param list sequence_filenames: list of str; names of files to load in
     :param list seq_lengths: list of int; order is synonymous w/ 'sequence_filenames'
@@ -51,7 +51,7 @@ def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, director
                 # print("MAX VALUE IN SEQUENCE: " + str(max(seq_lengths)))
                 # print("THIS VALUE IN SEQUENCE: " + str(seq_lengths[n]))
                 # print("difference: " + str((max(seq_lengths) - seq_lengths[n])))
-                blanks_list = ['_'] * ((max(seq_lengths) - seq_lengths[n]) - (2 + (2 * n)))
+                blanks_list = ['-'] * ((max(seq_lengths) - seq_lengths[n]) - (2 + (2 * n)))
                 blanks = ''.join(blanks_list)
 
                 content = content + blanks
@@ -59,7 +59,7 @@ def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, director
 
             else:  # i.e. - bio_type.upper() == "PROTEIN":
                 content = sequence.read()
-                blanks_list = ['_'] * (max(seq_lengths) - seq_lengths[n])
+                blanks_list = ['-'] * (max(seq_lengths) - seq_lengths[n])
                 blanks = ''.join(blanks_list)
                 content += blanks
 

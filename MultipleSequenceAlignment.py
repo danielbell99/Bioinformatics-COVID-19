@@ -9,9 +9,9 @@ import panel as pn
 pn.extension()  # Displays instances of objects from 'panel' library in Jupyter Notebooks
 
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
-DNA = ['A', 'C', 'G', 'T', '_']  # Adenine, Cytosine, Guanine, Thymine
+DNA = ['A', 'C', 'G', 'T', '-']  # Adenine, Cytosine, Guanine, Thymine
 PROTEIN = ['I', 'M', 'T', 'N', 'K', 'S', 'R', 'L', 'P', 'H', 'Q', 'R', 'V', 'A', 'D', 'E', 'G', 'S', 'F', 'L', 'Y', 'C',
-           'W', '*', '_']
+           'W', '*', '-']
 
 
 def map_colors(sequences, bio_type):
@@ -21,7 +21,7 @@ def map_colors(sequences, bio_type):
     :param str bio_type: "dna" or "protein"
     :return list color_set: hexadecimal values as str, for all character in all sequences
     """
-    text = [char for s in list(sequences) for char in s]  # characters in our sequences
+    chars = [char for s in list(sequences) for char in s]  # characters in our sequences
 
     rand_color = randomcolor.RandomColor()
 
@@ -35,7 +35,7 @@ def map_colors(sequences, bio_type):
     else:
         return  # run() handles exception
 
-    color_set = [color_map[i] for i in text]
+    color_set = [color_map[i] for i in chars]
 
     return color_set
 
@@ -51,7 +51,7 @@ def view_alignment(aln, bio_type):
     """
     sequences = [rec.seq for rec in (aln)]
     colors = map_colors(sequences, bio_type)
-    text = [char for s in list(sequences) for char in s]
+    chars = [char for s in list(sequences) for char in s]
     y_range = [rec.id for rec in aln]
 
     length = len(sequences[0])  # longest sequence is always first in 'sequences' (Alignment.py)
@@ -66,9 +66,9 @@ def view_alignment(aln, bio_type):
     gy = yy.flatten()  # derives a flattened copy of 'yy' array (so as to not modify the returned array)
     recty = (gy + 0.5)
 
-    # source - crucial part that gathers the sequences' 'text' w/ their assigned 'colors'
+    # source - crucial part that gathers the sequences' 'chars' w/ their assigned 'colors'
     # into their x/y positions on output
-    source = ColumnDataSource(dict(x=gx, y=gy, recty=recty, text=text, colors=colors))
+    source = ColumnDataSource(dict(x=gx, y=gy, recty=recty, text=chars, colors=colors))
     plot_height = (num_seqs * 25)
     x_range = Range1d(0, (length + 1), bounds='auto')
     if length > 100:
@@ -76,10 +76,9 @@ def view_alignment(aln, bio_type):
     else:
         asv_length = length
     asv_x_range = (0, asv_length)
-    tools = 'xpan, reset, save'
 
     # -- Global Viewer --
-    glb = figure(title=None, plot_width=1000, plot_height=50, x_range=x_range, y_range=y_range, tools=tools,
+    glb = figure(plot_width=1000, plot_height=50, x_range=x_range, y_range=y_range,
                  min_border=0, toolbar_location='below')
     rects = Rect(x='x', y='recty', width=1, height=1, fill_color='colors', line_color=None)
     glb.add_glyph(source, rects)  # colours
@@ -87,9 +86,9 @@ def view_alignment(aln, bio_type):
 
     # -- Aligned Sequences Viewer --
     # migrate horizontally across sequences
-    asv = figure(plot_width=1000, plot_height=plot_height, x_range=asv_x_range, y_range=y_range, tools=tools,
+    asv = figure(plot_width=1000, plot_height=plot_height, x_range=asv_x_range, y_range=y_range,
                  min_border=0, toolbar_location='below')
-    glyph = Text(x='x', y='y', text='text', text_align="center", text_color='black', text_font_size='9pt')
+    glyph = Text(x='x', y='y', text_font_size='9pt', text_align='center', text_color='black')
     rects = Rect(x='x', y='recty', width=1, height=1, fill_color='colors', line_color='white', fill_alpha=0.5)
     asv.add_glyph(source, glyph)  # sequence characters
     asv.add_glyph(source, rects)  # colours
