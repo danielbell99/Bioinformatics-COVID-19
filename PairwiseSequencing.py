@@ -33,8 +33,9 @@ def gap_function(x, y):
     if y == 0:  # Asks if there's a gap
         return 0
     elif y == 1:  # Gap
-        return -2
-    return -((log(y) / 2) + (2 + (y / 4)))  # Penalty
+        return -1
+    # Consecutive gaps
+    return -((log(y) / 2) + (2 + (y / 4)))  # y = 1 ; return -2.25
 
 
 def run(bio_type, *genomes):
@@ -68,7 +69,7 @@ def run(bio_type, *genomes):
                     # DNA, remove top/ description line
                     seq = ''.join([sf.remove_firstline(directory + filenames[f]) if bio_type.lower() == "dna" else s.read()])  # else, protein
                     seq = seq.strip()  # removes any spacing surrounding sequence
-                    # Store seqeunces of interest
+                    # Store sequences of interest
                     seq_dict = {'name': genomes[g]['name'], 'sequence': seq}
                     sequences.append(seq_dict)
 
@@ -78,11 +79,11 @@ def run(bio_type, *genomes):
 
     # Print Global Sequencing of our pair
     # Match Score - matched sequence chars found; otherwise - Mismatch Score
-    # 5 pts, for identical characters
+    # 2 pts, for identical characters
     # -1 pts, for non-identical character
-    # -0.5 pts, when there's a new/ separate gap in the sequence
-    # -0.1 pts, if when there's a next gap, right after an existing gap
-    sequencing = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 5, -1, gap_function, gap_function,
+    # -1 pts, when there's a new/ separate gap in the sequence
+    # -2.25 pts, if when there's a next gap, right after an existing gap
+    sequencing = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 2, -1, gap_function, gap_function,
                                           penalize_end_gaps=False)
 
     output_name = sf.output_name(genomes)  # Appended to 'path_filename', in 'save()'

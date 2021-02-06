@@ -3,4 +3,4 @@ CACGCAGTATAATTAATAACTAATTACTG
                                                |||||||||||||||||||||| ||||||||||||||||.||||||.|||||                                                
 TATTAGGTTTTTACCTACCCAGGAAAAGCCAACCAACCTCGATCTCTTGTAGATCTGTTCTCTAAACGA
 ACTTTAAAATCTGTGTAGCTGTCGCTCGG------------------------------------------------
-  Score=241
+  Score=95

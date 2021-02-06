@@ -1,120 +1,1728 @@
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT------T-TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     ||      | |||..||| |     |.||   |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
------AT-T------TAAGTGAA-T-----AGCT---TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATTTTAACGAACTT
-AAATAA--AAGCCCTGTTGTTTAGCGTATTG
-     || |      |||..||| |     |.||   |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | |.|.|||     ||  |||||  ||          ||| |    ||
-TGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
-CAC---GCAGTATAA-----TT--AATAACTAA----------TTA-C----TG
-  Score=227.319
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||| | ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AAC-T-AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. |||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .|||| .||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAA-TAACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-A-T-T--TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||   | | | |  ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CAC---GCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-ATT-TTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| ||. ||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .|||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  |||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  ||| ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CAC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  || ||..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--AC-TCGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||  |.||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||  .||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT--GTCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | ||||| . ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCT-G-TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.  ||||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTG--TCACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.|  |||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGT--CACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   |||. | | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041
+----------------------A-TTTAAGTGAAT-AGCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT--ACTTTG-AT-TTTAACGAACTT
+AAATAAAAGCCCTGTTGTTTAGCGTATTG
+                      | |||||   ||| .| | |||||.||  ||| |..|| |.|.|| |  ||||.|  ||...| || .||||. ||||  ||.||      |||               
+TGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGCTGTC--ACT-CGGCTGCATGCT-TAGTGCACT
+CACGCAGTATAATTAAT-AACT--AATTA------CTG---------------
+  Score=69.6041

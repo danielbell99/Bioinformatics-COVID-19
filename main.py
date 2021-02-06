@@ -29,11 +29,11 @@ Nucleotides.base_content(bases, MERS)  # MERS
 #Nucleotides.base_content(bases, SARSCoV2)  # SARSCoV2
 
 # Polymer Bases Combinations
-dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
+#dimers = Nucleotides.base_combinations(bases, 2)  # dinucleotide
 trimers = Nucleotides.base_combinations(bases, 3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(bases, 4)  # tetranucledotide
 
-diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
+#diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
 #tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 
