@@ -35,7 +35,7 @@ def gap_function(x, y):
     elif y == 1:  # Gap
         return -1
     # Consecutive gaps
-    return -((log(y) / 2) + (2 + (y / 4)))  # y = 1 ; return -2.25
+    return round(-((log(y) / 2) + (2 + (y / 4))), 2)  # y = 1 ; return -2.25
 
 
 def run(bio_type, *genomes):
