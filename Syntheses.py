@@ -15,7 +15,7 @@ def write_file(coronavirus_name, protein):
 def protein(coronavirus):
     """DNA -(transcription)> mRNA -(translation)> Protein.
     Start codon: AUG (not needed for 'dna_codons' dict)
-    Stop codons: UAG, UAA, UGA (denoted by '_')
+    Stop codons: TAA, TAG, TGA (denoted by '*')
 
     :param coronavirus:
     """
