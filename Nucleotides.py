@@ -3,37 +3,36 @@ import numpy as np
 import StandardFunctions as sf
 
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
-BASE = {"A": "Adenine", "C": "Cytosine", "G": "Guanine", "T": "Thymine"}
+BASE = ['A', 'C', 'G', 'T']  # Nitrogenous Bases
+BASE_NAME = {"A": "Adenine", "C": "Cytosine", "G": "Guanine", "T": "Thymine"}
 POLYNUCLEOTIDE = {1: "Nucleotide", 2: "Dinucleotide", 3: "Trinucleotide", 4: "Tetranucleotide", 5: "Pentanucleotide"}
 POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}  # lower-case for file names
 COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
 
 
-def base_combinations(bases, polymer_length):
-    """Memory Efficient by calling upon recursive method.
+def base_combinations(polymer_length):
+    """Accumulator method for invoking recursive method (memory efficiency).
     Exception Handling: ensures at least dimers are passed.
 
-    :param list bases: chemicals in DNA, each represented as a char
     :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
     :return list combinations: all possible polymers, each of a given 'polymer_length'
     """
-    if polymer_length <= 1 or not (isinstance(polymer_length, int)):  # checks whole number above 1
+    if polymer_length <= 1 or not (isinstance(polymer_length, int)):  # checks whole number is above 1
         print("Warning in Nucleotides.py: must pass a positive whole number >= 2")
         return
 
-    combinations = []  # Appended by basesCombinationRecursive(), externally
-    base_combinations_recursive(bases, "", polymer_length, combinations)
+    combinations = []  # Appended to by bases_combination_recursive(), externally
+    base_combinations_recursive("", polymer_length, combinations)
 
     return combinations
 
 
-def base_combinations_recursive(bases, polymer, polymer_length, combinations):
+def base_combinations_recursive(polymer, polymer_length, combinations):
     """Generates all possible polymers possible, each of a 'polymer_length'.
     Each recursion, we append a complete 'polymer' to 'combinations'.
     We pass 'combinations' back to 'base_combinations()' and drop the Stack.
     Stack does not need to be unravelled, once threshold is met, per iteration.
 
-    :param list bases: chemicals in DNA, each represented as a char
     :param str polymer: an instance of a base combination passed to next recursion and appended to 'combinations'; initially blank ("")
     :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
     :param list combinations: all possible polymers, each of a given 'polymer_length'
@@ -46,28 +45,27 @@ def base_combinations_recursive(bases, polymer, polymer_length, combinations):
         return  # continue back to previous recursion's active for loop iteration
 
     # Starting with all that begin with 'A' ...
-    for i in range(len(bases)):
+    for i in range(len(BASE)):
         # Next Base appended
-        new_polymer = polymer + bases[i]  # we build upon a new instance
-        base_combinations_recursive(bases, new_polymer, (polymer_length - 1), combinations)
+        new_polymer = polymer + BASE[i]  # we build upon a new instance
+        base_combinations_recursive(new_polymer, (polymer_length - 1), combinations)
 
     return combinations
 
 
-def base_content(base_combinations, genome):
+def base_content(genome):
     """Calculates the composition of each polymer, from 'base_combination', in a given genome as a %.
 
-    :param list base_combinations: holds 'base_combinations()' output array, x axis
     :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (Coronaviridae.py - .fasta/.fna file)
     """
     print("\n-- " + genome['name'] + " --")  # name
     print(genome['description'])
     print(genome['sequence'])
 
-    for n in base_combinations:
+    for n in BASE:
         n_count = genome['sequence'].count(n)
         n_comp = round(n_count / len(genome['sequence']) * 100, 2)
-        print(BASE[n] + " Composition: " + str(n_comp) + "%")
+        print(BASE_NAME[n] + " Composition: " + str(n_comp) + "%")
 
     bases_content_plot(genome['name'], genome['sequence'])
 
@@ -86,7 +84,7 @@ def bases_content_plot(name, sequence):
     # ratio = (sequence.count("A") + sequence.count("T")) / (sequence.count("G") + sequence.count("C"))
 
     # Plot
-    plt.title(name + "Nitrogenous Base Pairs")
+    plt.title(name + " Nitrogenous Base Pairs")
     plt.ylabel("Content as Percentage (%)")
     x = ["G-C Content", "A-T Content"]
     y = [gc, at]
