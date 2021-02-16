@@ -64,6 +64,22 @@ def remove_firstline(directory_filename):
     return content
 
 
+def directory(bio_type):
+    """Determines parent directory, based on 'bio_type'.
+
+    :param str bio_type: "dna" or "protein"
+    :return: str directory: 'src/' or 'data/Syntheses/'
+    """
+    if bio_type.lower() == "dna":
+        directory = 'src/'
+    elif bio_type.lower() == "protein":
+        directory = 'data/Syntheses/'
+    else:
+        return  # invoker handles exception
+
+    return directory
+
+
 # Not in use
 @staticmethod
 def remove_prefix(text, prefix):
