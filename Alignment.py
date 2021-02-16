@@ -3,6 +3,62 @@ from os.path import isfile, join
 import StandardFunctions as sf
 
 
+def dna_alignment(sequence_filenames, seq_lengths, directory):
+    """Ensures sequences are of equal length, for MSA.
+    Done by appending '-'s to short sequences, no. which calculated by the longest sequence.
+
+    :param list sequence_filenames: list of str; names of files to load in
+    :param list seq_lengths: list of int; order is synonymous w/ 'sequence_filenames'
+    :param str directory: folder directory (used for on loading in dna or protein sequences)
+    """
+    file = open('data/Alignments/dna.aln', 'w')
+
+    for idx, val in enumerate(zip(seq_lengths, sequence_filenames)):
+        with open(directory + val[1], 'r') as sequence:
+            name = sf.output_name_filename(val[1])  # Coronavirus name
+            # Content
+            content = sf.remove_firstline(directory + val[1])  # ignore top/ description line
+            content = content.strip()  # sometimes there is a space at the end of a DNA sequence
+            # print("MAX VALUE IN SEQUENCE: " + str(max(seq_lengths)))
+            # print("THIS VALUE IN SEQUENCE: " + str(seq_lengths[i]))
+            # print("difference: " + str((max(seq_lengths) - seq_lengths[i])))
+            blanks_list = ['-'] * int((max(seq_lengths) - val[0]) - (2 + (2 * idx)))
+            blanks = ''.join(blanks_list)
+            content = content + blanks
+            content = str.join('', content.splitlines())
+
+            file.write(">" + name + "\n" + content + "\n")  # save
+    file.close()
+
+    aln = open('data/Alignments/dna.aln', 'r')
+    print(aln.read())
+
+
+def protein_alignment(sequence_filenames, seq_lengths, directory):
+    """Same as 'dna_alignment()' but for protein
+
+    :param list sequence_filenames: list of str; names of files to load in
+    :param list seq_lengths: list of int; order is synonymous w/ 'sequence_filenames'
+    :param str directory: folder directory (used for on loading in dna or protein sequences)
+    """
+    file = open('data/Alignments/protein.aln', 'w')
+
+    for i, s in zip(seq_lengths, sequence_filenames):
+        with open(directory + s, 'r') as sequence:
+            name = sf.output_name_filename(s)  # Coronavirus name
+            # Content
+            content = sequence.read()
+            blanks_list = ['-'] * (max(seq_lengths) - i)
+            blanks = ''.join(blanks_list)
+            content += blanks
+
+            file.write(">" + name + "\n" + content + "\n")  # save
+    file.close()
+
+    aln = open('data/Alignments/protein.aln', 'r')
+    print(aln.read())
+
+
 def sequence_lengths(sequence_filenames, bio_type, directory):
     """Captures lengths of all sequences.
 
@@ -26,52 +82,6 @@ def sequence_lengths(sequence_filenames, bio_type, directory):
     return seq_lengths
 
 
-def establish_alignment_file(sequence_filenames, seq_lengths, bio_type, directory):
-    """Ensures sequences are of equal length, for MSA.
-    Done by appending '-'s to short sequences, no. which calculated by the longest sequence.
-
-    :param list sequence_filenames: list of str; names of files to load in
-    :param list seq_lengths: list of int; order is synonymous w/ 'sequence_filenames'
-    :param str bio_type: "dna" or "protein"
-    :param str directory: folder directory (used for on loading in dna or protein sequences)
-    """
-    file = open('data/Alignments/' + bio_type.lower() + '.aln', 'w')
-
-    n = -1  # sequence number (tb 0-indexed)
-    for s in sequence_filenames:
-        n += 1
-        with open(directory + s, 'r') as sequence:
-            name = sf.output_name_filename(s)  # Coronavirus name
-
-            # Content
-            if bio_type.upper() == "DNA":  # ignore top/ description line
-                content = sf.remove_firstline(directory + s)
-                content = content.strip()  # sometimes there is a space at the end of a DNA sequence
-
-                # print("MAX VALUE IN SEQUENCE: " + str(max(seq_lengths)))
-                # print("THIS VALUE IN SEQUENCE: " + str(seq_lengths[n]))
-                # print("difference: " + str((max(seq_lengths) - seq_lengths[n])))
-                blanks_list = ['-'] * ((max(seq_lengths) - seq_lengths[n]) - (2 + (2 * n)))
-                blanks = ''.join(blanks_list)
-
-                content = content + blanks
-                content = str.join('', content.splitlines())
-
-            else:  # i.e. - bio_type.upper() == "PROTEIN":
-                content = sequence.read()
-                blanks_list = ['-'] * (max(seq_lengths) - seq_lengths[n])
-                blanks = ''.join(blanks_list)
-                content += blanks
-
-            file.write(">" + name + "\n" + content + "\n")  # save
-    file.close()
-
-    aln = open('data/Alignments/' + bio_type.lower() + '.aln', 'r')
-    print(aln.read())
-
-    return
-
-
 def create_file(bio_type):
     """Wrap-around function conditions 'bio_type' to create an .aln file of 'bio_type' sequences.
     Invokes: 'sequence_lengths()' & 'establish_alignment_file()'.
@@ -81,21 +91,18 @@ def create_file(bio_type):
     """
     # Capture either all DNA or all Protein file names
     # Determine which files to load in (case-insensitive)
-    sequence_filenames = []
-    if bio_type.upper() == "DNA":
-        directory = 'src/'
-        [sequence_filenames.append(s) for s in listdir(directory) if isfile(join(directory, s))]
-        print("DNA of: " + str(sequence_filenames))
-    elif bio_type.upper() == "PROTEIN":
-        directory = 'data/Syntheses/'
-        [sequence_filenames.append(s) for s in listdir(directory) if isfile(join(directory, s))]
-        print("Synthesised Proteins of: " + str(sequence_filenames))
-    else:
-        print("Warning in Alignment.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
+    if bio_type.lower() != "dna" and bio_type.lower() != "protein":
+        print("Warning in Alignment.py: biotype \"" + bio_type + "\" not recongnised. Enter \"DNA\" or \"Protein\"")
         return  # Exception Handling
+
+    directory = sf.directory(bio_type)
+    sequence_filenames = [s for s in listdir(directory) if isfile(join(directory, s))]
+    print("Alignment of " + bio_type + " Sequences: " + str(sequence_filenames))
 
     # All sequences must be of the same length
     seq_lengths = sequence_lengths(sequence_filenames, bio_type, directory)
-    establish_alignment_file(sequence_filenames, seq_lengths, bio_type, directory)
+    # establish_alignment_file(sequence_filenames, seq_lengths, bio_type, directory)
+    dna_alignment(sequence_filenames, seq_lengths, directory) if bio_type.lower() == "dna" else protein_alignment(
+        sequence_filenames, seq_lengths, directory)
 
     return
