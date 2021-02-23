@@ -15,9 +15,9 @@ def dna_alignment(sequence_filenames, seq_lengths, directory):
 
     for idx, val in enumerate(zip(seq_lengths, sequence_filenames)):
         with open(directory + val[1], 'r') as sequence:
-            name = sf.output_name_filename(val[1])  # Coronavirus name
+            name = sf.output_filename(val[1])  # Coronavirus name
             # Content
-            content = sf.remove_firstline(directory + val[1])  # ignore top/ description line
+            content = sf.ignore_firstline(directory + val[1])  # ignore top/ description line
             content = content.strip()  # sometimes there is a space at the end of a DNA sequence
             # print("MAX VALUE IN SEQUENCE: " + str(max(seq_lengths)))
             # print("THIS VALUE IN SEQUENCE: " + str(seq_lengths[i]))
@@ -45,7 +45,7 @@ def protein_alignment(sequence_filenames, seq_lengths, directory):
 
     for i, s in zip(seq_lengths, sequence_filenames):
         with open(directory + s, 'r') as sequence:
-            name = sf.output_name_filename(s)  # Coronavirus name
+            name = sf.output_filename(s)  # Coronavirus name
             # Content
             content = sequence.read()
             blanks_list = ['-'] * (max(seq_lengths) - i)
@@ -70,7 +70,7 @@ def sequence_lengths(sequence_filenames, bio_type, directory):
     seq_lengths = []  # in order of 'sequence_filenames'
     for s in sequence_filenames:
         if bio_type.upper() == "DNA":  # ignore top line
-            seq = sf.remove_firstline(directory + s)
+            seq = sf.ignore_firstline(directory + s)
             seq = seq.strip()  # removes any spacing surrounding sequence
             print("SEQUENCE: " + str(len(seq)) + "\n" + str(seq))
         else:  # i.e. - bio_type.upper() == "PROTEIN":

@@ -1,9 +1,11 @@
 import os
+from os import listdir
+from os.path import isfile, join
 import random
 import copy
 import unittest
 # from hypothesis import given, strategies as st
-import threading
+from os import listdir
 from threading import Thread
 import Nucleotides
 import Syntheses
@@ -89,7 +91,7 @@ class TestNucleotides(unittest.TestCase):
         # Nucleotides.composition_comparison(base_combinations, *genomes, test_genome)
         return
 
-    def runall(self):
+    def run_test_cases(self):
         Thread(target=self.generate_sequence).start()
         Thread(target=self.test_base_combinations_dimers).start()
         Thread(target=self.test_base_content).start()
@@ -97,14 +99,13 @@ class TestNucleotides(unittest.TestCase):
 
 
 class TestSyntheses(unittest.TestCase):
-    """ Syntheses.py """
+    """ Syntheses.py | protein() """
 
     def protein_sequence(self, name):
         file = open('data/Syntheses/' + 'protein_' + name, 'r')
         return file.read()
 
     def test_translation(self):
-        print("5555555555555555555")
         # Conversion
         test_genome = copy.deepcopy(GENOME)
         Syntheses.protein(test_genome)
@@ -113,7 +114,6 @@ class TestSyntheses(unittest.TestCase):
         self.assertEqual(self.protein, PREDICTED_OUTPUT, 'FAILED: Incorrect translation')
 
     def test_mononucleotide(self):
-        print("6666666666666666")
         # Non-trinculeotide composition (1 extra character)
         test_genome = copy.deepcopy(GENOME)
         test_genome['sequence'] += ['G']
@@ -123,55 +123,49 @@ class TestSyntheses(unittest.TestCase):
         self.assertEqual(self.protein, PREDICTED_OUTPUT, 'FAILED: 1 additional DNA character not discarded')
 
     def test_dinucleotide(self):
-        print("777777777777777777")
-        # Non-trinculeotide composition (2 extra characters or 1 less)
+        # Non-trinculeotide composition (2 extra characters)
         test_genome = copy.deepcopy(GENOME)
         test_genome['sequence'] += ['G', 'T']
-        print("#2", test_genome)
         Syntheses.protein(test_genome)
         ts = TestSyntheses()
         self.protein = ts.protein_sequence(test_genome['name'])
         self.assertEqual(self.protein, PREDICTED_OUTPUT, 'FAILED: 2 additional DNA characters not discarded')
 
     def test_non_dna_alphabet(self):
-        print("888888888888888888")
         # Non-DNA alphabet character
         test_genome = copy.deepcopy(GENOME)
         test_genome['name'] = 'test_not_created_non_dna'
         test_genome['sequence'] += ['!']
         Syntheses.protein(test_genome)
         self.flag = file_exists('data/Syntheses/', 'protein_' + test_genome['name'])
-        self.assertEqual(self.flag, 0, 'FAILED: Protein Syntheses was not cancelled (non-DNA char)')
+        self.assertFalse(self.flag, 'FAILED: Protein Syntheses was not cancelled (non-DNA char)')
 
     def test_word(self):
-        print("9999999999999999999999")
         # Element longer than 1 character
         test_genome = copy.deepcopy(GENOME)
         test_genome['name'] = 'test_not_created_word'
         test_genome['sequence'] += ['WORD']
         Syntheses.protein(test_genome)
         self.flag = file_exists('data/Syntheses/', 'protein_' + test_genome['name'])
-        self.assertEqual(self.flag, 0, 'FAILED: Protein Syntheses was not cancelled (word)')
+        self.assertFalse(self.flag, 'FAILED: Protein Syntheses was not cancelled (word)')
 
     def test_insufficient(self):
-        print("AAAAAAAAAAAAAAAAAAAA")
         test_genome = copy.deepcopy(GENOME)
         test_genome['name'] = 'test_not_created_insufficient'
         test_genome['sequence'] = test_genome['sequence'][:2]  # first 2 characters ['A', 'G']
         Syntheses.protein(test_genome)
         self.flag = file_exists('data/Syntheses/', 'protein_' + test_genome['name'])
-        self.assertEqual(self.flag, 0, 'FAILED: Protein Syntheses was not cancelled (insufficient)')
+        self.assertFalse(self.flag, 'FAILED: Protein Syntheses was not cancelled (insufficient)')
 
     def test_empty(self):
-        print("BBBBBBBBBBBBBBBBBBBBBBBB")
         test_genome = copy.deepcopy(GENOME)
         test_genome['name'] = 'test_not_created_empty'
         test_genome['sequence'] = []
         Syntheses.protein(test_genome)
         self.flag = file_exists('data/Syntheses/', 'protein_' + test_genome['name'])
-        self.assertEqual(self.flag, 0, 'FAILED: Protein Syntheses was not cancelled (empty)')
+        self.assertFalse(self.flag, 'FAILED: Protein Syntheses was not cancelled (empty)')
 
-    def runall(self):
+    def run_test_cases(self):
         Thread(target=self.test_translation).start()
         Thread(target=self.test_mononucleotide()).start()
         Thread(target=self.test_dinucleotide()).start()
@@ -185,24 +179,95 @@ class TestSyntheses(unittest.TestCase):
 class TestStandardFunctions(unittest.TestCase):
     """ StandardFunctions.py """
 
-    def runall(self):
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
-        Thread(target=self.method).start()
+    def test_capture_filenames(self):
+        predicted_dna_filenames = [d for d in listdir('src/') if isfile(join('src/', d))]
+        predicted_protein_filenames = [p for p in listdir('data/Syntheses/') if isfile(join('data/Syntheses/', p))]
+        self.dna_filenames = sf.capture_filenames("DNA")
+        self.protein_filenames = sf.capture_filenames("Protein")
+        self.assertFalse(sf.capture_filenames("foo"))  # no return
+        self.assertNotEqual(self.dna_filenames, self.protein_filenames,
+                            "FAILED: Same directory and files as each other")
+        self.assertEquals(frozenset(predicted_dna_filenames), frozenset(self.dna_filenames),
+                          "FAILED: wrong filenames (DNA)")  # frozenset() - alphabetical asc. order in dictionary
+        self.assertEquals(frozenset(predicted_protein_filenames), frozenset(self.protein_filenames),
+                          "FAILED: wrong filenames (Protein)")
+
+    def test_output_name(self):
+        test_genome_x = copy.deepcopy(GENOME)
+        test_genome_x['name'] = 'foo'
+        test_genome_y = copy.deepcopy(GENOME)
+        test_genome_y['name'] = 'bar'
+        test_genomes = (test_genome_x, test_genome_y)  # mimics tuples created by *args
+        self.name = sf.output_name(test_genomes)
+        self.assertEquals(self.name, "_foo_bar", "FAILED: incorrect output name returned")
+
+    def test_output_filename(self):
+        predicted_dna_filenames = [d for d in listdir('src/') if isfile(join('src/', d))]
+        predicted_dna_filenames = [d.replace('.fasta', '') for d in predicted_dna_filenames]  # removes file extensions
+        predicted_dna_filenames = [d.replace('.fna', '') for d in predicted_dna_filenames]
+        predicted_protein_filenames = [p for p in listdir('data/Syntheses/') if isfile(join('data/Syntheses/', p))]
+        predicted_protein_filenames = [d.replace('protein_', '') for d in predicted_protein_filenames]  # removes prefix
+        file = open('data/Alignments/test.aln', 'w')
+        # Capture all filenames
+        bio_types = ["DNA", "Protein"]
+        directories = ['src/', 'data/Syntheses/']
+        output_filenames = []  # 2 lists - 'self.dna_filenames' & 'self.protein_filenames'
+        for b, d, in zip(bio_types, directories):
+            filenames = [f for f in listdir(d) if isfile(join(d, f))]
+            output_filenames_bio_type = []
+            for f in filenames:
+                with open(d + f, 'r') as file:
+                    name = sf.output_filename(f)  # Coronavirus name
+                output_filenames_bio_type.append(name)
+            output_filenames.append(output_filenames_bio_type)  # append 'bio_type' list of 'filenames'
+        file.close()
+        os.remove('data/Alignments/test.aln')
+        self.dna_filenames = output_filenames[0]
+        self.protein_filenames = output_filenames[1]
+        self.assertFalse(sf.capture_filenames("foo"))  # no return
+        self.assertEquals(frozenset(self.dna_filenames), frozenset(predicted_dna_filenames),
+                          "FAILED: wrong filenames (DNA)")  # frozenset() - alphabetical asc. order in dictionary
+        self.assertEquals(self.protein_filenames, predicted_protein_filenames,
+                          "FAILED: wrong filenames (Protein)")
+
+    def test_ignore_firstline(self):
+        test = open('test.fasta', 'w')
+        test.write("first line" + "\n")
+        test.write("second line" + "\n")
+        test.close()
+        self.content = sf.ignore_firstline('test.fasta')
+        os.remove('test.fasta')
+        self.assertNotEqual(self.content, "first linesecond line", "FAILED: first line not ignored")
+
+    def test_directory(self):
+        self.dir_dna = sf.directory("DNA")
+        self.dir_protein = sf.directory("Protein")
+        self.assertFalse(sf.directory("foo"))  # no return
+        self.assertTrue(self.dir_dna, 'src/')
+        self.assertTrue(self.dir_protein, 'data/Syntheses/')
+        self.assertNotEqual(self.dir_dna, self.dir_protein, "FAILED: 'bio_type' directories shouldn't equal each other")
+
+    def test_remove_prefix(self):
+        self.name = sf.remove_prefix("foo_bar", "foo_")
+        self.assertFalse(sf.remove_prefix("foo_", "foo_"))  # no return
+        self.assertEqual(self.name, "bar", "FAILED: prefix not removed correctly")
+
+    def run_test_cases(self):
+        Thread(target=self.test_capture_filenames).start()
+        Thread(target=self.test_output_name).start()
+        Thread(target=self.test_output_filename).start()
+        Thread(target=self.test_ignore_firstline).start()
+        Thread(target=self.test_directory).start()
+        Thread(target=self.test_remove_prefix).start()
 
 
 def run():
     """ Instantiates Test Classes, run all methods """
     # tn = TestNucleotides()
-    # tn.runall()
+    # tn.run_test_cases()
 
-    ts = TestSyntheses()
-    ts.runall()
+    # ts = TestSyntheses()
+    # ts.run_test_cases()
 
-    # tsf = TestStandardFunctions()
-    # tsf.runall()
+    tsf = TestStandardFunctions()
+    tsf.run_test_cases()

@@ -65,7 +65,7 @@ def run(bio_type, *genomes):
             if set(genomes[g]['name']).issubset(filenames[f]):
                 with open(directory + filenames[f]) as s:
                     # DNA, remove top/ description line
-                    seq = ''.join([sf.remove_firstline(directory + filenames[f]) if bio_type.lower() == "dna" else s.read()])  # else, protein
+                    seq = ''.join([sf.ignore_firstline(directory + filenames[f]) if bio_type.lower() == "dna" else s.read()])  # else, protein
                     seq = seq.strip()  # removes any spacing surrounding sequence
                     # Store sequences of interest
                     seq_dict = {'name': genomes[g]['name'], 'sequence': seq}
@@ -83,6 +83,5 @@ def run(bio_type, *genomes):
     # -2.25 pts, if when there's a next gap, right after an existing gap
     sequencing = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 2, -1, gap_function, gap_function,
                                           penalize_end_gaps=False)
-
     output_name = sf.output_name(genomes)  # Appended to 'path_filename', in 'save()'
     save(bio_type, output_name, sequencing)
