@@ -19,7 +19,7 @@ def base_combinations(polymer_length):
     """
     if polymer_length <= 1 or not (isinstance(polymer_length, int)):  # checks whole number is above 1
         print("Warning in Nucleotides.py: must pass a positive whole number >= 2")
-        return
+        return  # Excepton Handling
 
     combinations = []  # Appended to by bases_combination_recursive(), externally
     base_combinations_recursive("", polymer_length, combinations)

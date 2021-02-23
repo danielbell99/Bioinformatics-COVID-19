@@ -20,8 +20,6 @@ def save(bio_type, output_name, sequencing):
         output.write(format_alignment(*a))  # Standardised format for output
     output.close()
 
-    return
-
 
 def gap_function(x, y):
     """Deducts points for gaps when matching up sequencing, using a logarithmic scale.
@@ -88,5 +86,3 @@ def run(bio_type, *genomes):
 
     output_name = sf.output_name(genomes)  # Appended to 'path_filename', in 'save()'
     save(bio_type, output_name, sequencing)
-
-    return
