@@ -1,3 +1,5 @@
+DNA_ALPHABET = ['A', 'C', 'G', 'T']
+
 def write_file(coronavirus_name, protein):
     """Stores synthesised protein w/ appropriate file naming convention.
 
@@ -19,7 +21,21 @@ def protein(coronavirus):
 
     :param coronavirus:
     """
+    # Insufficient
+    if len(coronavirus['sequence']) < 3:
+        print("Protein Syntheses CANCELLED:")
+        print("Insufficient Polynucleotides. Synthesisation requires 3 or more.")
+        return
+    # Non-DNA Alphabet Character
+    for idx, val in enumerate(coronavirus['sequence']):
+        if val not in DNA_ALPHABET:
+            print("Protein Syntheses CANCELLED:")
+            print("non-DNA character '" + val + "' at position [" + str(idx) + "]")
+            return
+
     dna = ''.join(coronavirus['sequence'])
+    if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes trinucletides
+    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, up to a dinucleotide
 
     dna_codons = {
         'AAA': 'K', 'AAC': 'N', 'AAG': 'K', 'AAT': 'N', 'ACA': 'T',
@@ -36,14 +52,13 @@ def protein(coronavirus):
         'TCT': 'S', 'TGA': '*', 'TGC': 'C', 'TGG': 'W', 'TGT': 'C',
         'TTA': 'L', 'TTC': 'F', 'TTG': 'L', 'TTT': 'F'
     }
-    protein = ""
-    if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes trinucletides
-    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, up to dinucleotide inclusive
 
+    protein = ""
     for i in range(0, len(dna), 3):  # increments of 3, i.e. one codon per iter
         codon = dna[i:i + 3]  # a trinucleotide that corresponds to a protein
         protein += dna_codons.get(codon, '')  # appends as str
 
-    protein = protein[:-3]  # removes characters "END"
+    if protein[-3:] == "END":  # removes word "END"
+        protein = protein[:-3]
 
     write_file(coronavirus['name'], protein)  # Save Synthesised Protein

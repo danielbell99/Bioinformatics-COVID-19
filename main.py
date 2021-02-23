@@ -5,16 +5,17 @@ import Syntheses
 import PairwiseSequencing
 import Alignment
 import MultipleSequenceAlignment
+import Testing
 
 
 """ Import Genomes """
 # Genomes
-coronaviridae = Coronaviridae.read_genomes()
+#coronaviridae = Coronaviridae.read_genomes()
 
 # Genome Dictionaries
-MERS = coronaviridae[0]
-SARSCoV2 = coronaviridae[1]
-SARS = coronaviridae[2]
+#MERS = coronaviridae[0]
+#SARSCoV2 = coronaviridae[1]
+#SARS = coronaviridae[2]
 # Create a variable here for a new genome sequence, following the above format e.g.
 # NewStrain = coronaviridae[3]
 
@@ -57,8 +58,8 @@ SARS = coronaviridae[2]
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
-Alignment.create_file("DNA")
-Alignment.create_file("Protein")
+#Alignment.create_file("DNA")
+#Alignment.create_file("Protein")
 
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
@@ -67,5 +68,12 @@ Test run Jupyter Notebook version
 #MultipleSequenceAlignment.run("Protein")
 """
 
+
+""" Testing """
+#Testing.TestNucleotides.generate_sequence("DNA")
+
+Testing.run()
+#p = Testing.TestSyntheses()
+#p.test_translation()
 
 print("END OF MAIN")

@@ -101,8 +101,5 @@ def create_file(bio_type):
 
     # All sequences must be of the same length
     seq_lengths = sequence_lengths(sequence_filenames, bio_type, directory)
-    # establish_alignment_file(sequence_filenames, seq_lengths, bio_type, directory)
     dna_alignment(sequence_filenames, seq_lengths, directory) if bio_type.lower() == "dna" else protein_alignment(
         sequence_filenames, seq_lengths, directory)
-
-    return
