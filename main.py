@@ -70,10 +70,7 @@ Test run Jupyter Notebook version
 
 
 """ Testing """
-#Testing.TestNucleotides.generate_sequence("DNA")
-
 Testing.run()
-#p = Testing.TestSyntheses()
-#p.test_translation()
+
 
 print("END OF MAIN")

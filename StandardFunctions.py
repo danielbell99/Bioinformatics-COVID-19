@@ -10,11 +10,10 @@ def capture_filenames(bio_type):
     :param str bio_type: "dna" or "protein"
     :return: list filenames: all file names of 'bio_type'
     """
-    filenames = []
     if bio_type.lower() == "dna":
-        [filenames.append(d) for d in listdir('src/') if isfile(join('src/', d))]
+        filenames = [d for d in listdir('src/') if isfile(join('src/', d))]
     elif bio_type.lower() == "protein":
-        [filenames.append(p) for p in listdir('data/Syntheses/') if isfile(join('data/Syntheses/', p))]
+        filenames = [p for p in listdir('data/Syntheses/') if isfile(join('data/Syntheses/', p))]
     else:
         return  # invoker handles exception
 
@@ -27,13 +26,14 @@ def output_name(genomes):
     :param dict genomes: contains many entire genome data; 'name' value used
     :return str output: names of genomes of interest
     """
+    print("genomes SF", genomes)
     output = ""
     for i in range(len(genomes)):
         output += '_' + genomes[i]['name']  # separated by '_'
     return output
 
 
-def output_name_filename(sequence_filename):
+def output_filename(sequence_filename):
     """Concatenates coronavirus names for Alignment file (.aln) setup, for DNA or Protein.
     One at a time - for loops may have different constructs.
 
@@ -50,7 +50,7 @@ def output_name_filename(sequence_filename):
     return name
 
 
-def remove_firstline(directory_filename):
+def ignore_firstline(directory_filename):
     """e.g. DNA datasets have a description line on top, followed by a line break.
 
     :param str directory_filename: absolute file path
@@ -81,7 +81,7 @@ def directory(bio_type):
 
 
 # Not in use
-@staticmethod
+# @staticmethod
 def remove_prefix(text, prefix):
     """Removes prefix of filenames in data/Syntheses (eg. "protein_<VIRUS>" -> "<VIRUS>").
 
