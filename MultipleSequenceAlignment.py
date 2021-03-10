@@ -40,42 +40,35 @@ def map_colors(sequences, bio_type):
     return color_set
 
 
-def view_alignment(aln, bio_type):
+def visualisation(alignment, bio_type):
     """Multiple Sequence Alignment Viewer.
     Global Viewer - overall of coloured sequences' characters.
     Aligned Sequences Viewer - interactive view for analysis, coloured coded characters & ability to scroll.
 
-    :param AlignIO aln: Alignment file (.aln) that contains either all DNA or Protein sequences ('data/Alignments/')
+    :param AlignIO alignment: Alignment file (.aln) that contains either all DNA or Protein sequences ('data/Alignments/')
     :param str bio_type: "dna" or "protein"
     :return bokeh.models.layouts.Column msa: the Multiple Sequence Alignment interactive visualisations
     """
-    sequences = [rec.seq for rec in (aln)]
+    sequences = [rec.seq for rec in (alignment)]
     colors = map_colors(sequences, bio_type)
     chars = [char for s in list(sequences) for char in s]
-    y_range = [rec.id for rec in aln]
+    y_range = [rec.id for rec in alignment]
 
-    length = len(sequences[0])  # longest sequence is always first in 'sequences' (Alignment.py)
     num_seqs = len(sequences)
+    length = len(sequences[0])  # longest sequence is always first in 'sequences' (Alignment.py)
 
     # ColumnDataSource
     x = np.arange(1, (length + 1))  # evenly spaced values (so as each character box is the same length and height)
     y = np.arange(0, num_seqs, 1)  # [0, 1, 2, ... len(sequences[0]) + 1]
-    xx, yy = np.meshgrid(x, y)  # returns coordinate matrices of 'x' & 'y' arrays for indexing
-
-    gx = xx.ravel()  # a 1-D array (faster as no memory is copied)
-    gy = yy.flatten()  # derives a flattened copy of 'yy' array (so as to not modify the returned array)
-    recty = (gy + 0.5)
-
+    x, y = np.meshgrid(x, y)  # returns coordinate matrices of 'x' & 'y' arrays for indexing
+    x = x.ravel()  # a 1-D array (faster as no memory is copied)
+    y = y.flatten()  # derives a flattened copy of 'yy' array (so as to not modify the returned array)
+    recty = (y + 0.5)  # balance color box with char
     # source - crucial part that gathers the sequences' 'chars' w/ their assigned 'colors'
     # into their x/y positions on output
-    source = ColumnDataSource(dict(x=gx, y=gy, recty=recty, text=chars, colors=colors))
-    plot_height = (num_seqs * 25)
+    source = ColumnDataSource(dict(x=x, y=y, recty=recty, text=chars, colors=colors))
+
     x_range = Range1d(0, (length + 1), bounds='auto')
-    if length > 100:
-        asv_length = 100
-    else:
-        asv_length = length
-    asv_x_range = (0, asv_length)
 
     # -- Global Viewer --
     glb = figure(plot_width=1000, plot_height=50, x_range=x_range, y_range=y_range,
@@ -84,9 +77,13 @@ def view_alignment(aln, bio_type):
     glb.add_glyph(source, rects)  # colours
     glb.yaxis.visible = False
 
+    asv_plot_height = (num_seqs * 25)
+    asv_length = 100 if length > 100 else length
+    asv_x_range = (0, asv_length)
+
     # -- Aligned Sequences Viewer --
     # migrate horizontally across sequences
-    asv = figure(plot_width=1000, plot_height=plot_height, x_range=asv_x_range, y_range=y_range,
+    asv = figure(plot_width=1000, plot_height=asv_plot_height, x_range=asv_x_range, y_range=y_range,
                  min_border=0, toolbar_location='below')
     glyph = Text(x='x', y='y', text_font_size='9pt', text_align='center', text_color='black')
     rects = Rect(x='x', y='recty', width=1, height=1, fill_color='colors', line_color='white', fill_alpha=0.5)
@@ -112,8 +109,8 @@ def run(bio_type):
         print("Warning in Alignment.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
         return  # Exception Handling
 
-    aln = AlignIO.read('data/Alignments/' + filename, 'fasta')
-    msa = view_alignment(aln, bio_type)
+    alignment = AlignIO.read('data/Alignments/' + filename, 'fasta')
+    msa = visualisation(alignment, bio_type)
     pn.pane.Bokeh(msa)
 
     return

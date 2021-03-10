@@ -4,8 +4,7 @@ from os.path import isfile, join
 import random
 import copy
 import unittest
-# from hypothesis import given, strategies as st
-from os import listdir
+#from hypothesis import given, strategies as st
 from threading import Thread
 import Nucleotides
 import Syntheses
@@ -20,9 +19,7 @@ PREDICTED_OUTPUT = 'SPV*'
 
 
 def file_exists(directory, filename):
-    # test_genome['name']
     try:
-        # self.protein = ts.protein_sequence(test_genome['name'])
         os.remove(directory + filename)
         flag = 1  # True - file did exist
     except FileNotFoundError:
@@ -47,7 +44,7 @@ class TestNucleotides(unittest.TestCase):
             items = PROTEIN
             denominator = 1  # average protein sequence length
         else:
-            print("Warning in Testing.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
+            print("Warning in test.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
             return  # Exception Handling
 
         # Capture all filenames of 'bio_type'
@@ -70,18 +67,18 @@ class TestNucleotides(unittest.TestCase):
 
     def test_base_combinations_dimers(self):
         print("22222222222222222222")
-        self.base_combinations = Nucleotides.bases_combinations(2)  # dimers
+        self.base_combinations = Nucleotides.base_combinations(2)  # dimers
         predicted_output = ['AA', 'AC', 'AG', 'AT', 'CA', 'CC', 'CG', 'CT', 'GA', 'GC', 'GG', 'GT', 'TA', 'TC', 'TG',
                             'TT']
-        self.assertEqual(self.base_combinations, predicted_output,
-                         'FAILED: Wrong Dimers generated, either ordering or different no. elements')
+        self.assertEqual(frozenset(self.base_combinations), frozenset(predicted_output),
+                         'FAILED: Incorrect elemented generated for dimers list')  # frozenset() - alphabetical asc. order of lists
 
     def test_base_content(self, base_combinations):
         # Nucleotides.bases_content_plot("Test", )
         print("33333333333333333333333333")
         return
 
-    # @given(st.floats(), st.floats())
+    #@given(st.floats(), st.floats())
     def test_normalised_frequencies(self, base_combinations, *genomes):
         """
         Coronaviridae tend to have majority AT content over GC.
@@ -92,10 +89,10 @@ class TestNucleotides(unittest.TestCase):
         return
 
     def run_test_cases(self):
-        Thread(target=self.generate_sequence).start()
+        #Thread(target=self.generate_sequence).start()
         Thread(target=self.test_base_combinations_dimers).start()
-        Thread(target=self.test_base_content).start()
-        Thread(target=self.test_normalised_frequencies).start()
+        #Thread(target=self.test_base_content).start()
+        #Thread(target=self.test_normalised_frequencies).start()
 
 
 class TestSyntheses(unittest.TestCase):
@@ -263,11 +260,11 @@ class TestStandardFunctions(unittest.TestCase):
 
 def run():
     """ Instantiates Test Classes, run all methods """
-    # tn = TestNucleotides()
-    # tn.run_test_cases()
+    tn = TestNucleotides()
+    tn.run_test_cases()
 
     # ts = TestSyntheses()
     # ts.run_test_cases()
 
-    tsf = TestStandardFunctions()
-    tsf.run_test_cases()
+    # tsf = TestStandardFunctions()
+    # tsf.run_test_cases()

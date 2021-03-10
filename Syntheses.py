@@ -29,13 +29,25 @@ def protein(coronavirus):
     # Non-DNA Alphabet Character
     for idx, val in enumerate(coronavirus['sequence']):
         if val not in DNA_ALPHABET:
-            print("Protein Syntheses CANCELLED:")
+            print("Protein Syntheses Halted:")
             print("non-DNA character '" + val + "' at position [" + str(idx) + "]")
-            return
+            # User Decision
+            print("Do you want to continue synthesisation by skipping character" + val + " or cancel?")
+            decided = False
+            while(decided == False):
+                decision = input("('cancel' / 'continue')")
+                if decision == 'cancel':
+                    print("Synthesisation cancelled")  # feedback
+                    return
+                elif decision == 'continue':
+                    decided = True
+                    print("Continuing synthesisation")  # feedback
+                else:
+                    print("input was a typo...")  # while loop prevents crashing if there's a bad input
 
     dna = ''.join(coronavirus['sequence'])
-    if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes trinucletides
-    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, up to a dinucleotide
+    if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
+    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, a mono or di-nucleotide
 
     dna_codons = {
         'AAA': 'K', 'AAC': 'N', 'AAG': 'K', 'AAT': 'N', 'ACA': 'T',
