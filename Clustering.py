@@ -9,76 +9,68 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import time
 
+
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
 POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}  # lower-case for file names
 PATH = 'data/Normalised Frequency/'
 COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
 
 
-coronaviridae_names = []  # Appended to
-
-
-def read_normalised_frequencies(polymers, name1, name2, *others):
+def read_normalised_frequencies(polymers, *genomes):
     """Imports produced Normalised Frequency files (depending on: polymers & genomes of interest).
     Normalised Frequencies are passed through Dimentionality Reduction algorithms for Cluster Analysis.
     Measuring time elapsed.
     Minimum of 2 Coronaviridae names required - '*others' is optional.
 
     :param list polymers: combination of nucleic acids of n length each
-    :param dict (name1, name2, *others): contains entire genome data; 'name' value used (*others is optional)
+    :param dict *genomes: holds genome dictionaries, to be plotted ('*' >=1 genomes)
     """
-    coronaviridae_names.extend([name1, name2, *others])
-    n = len(polymers)
-    # "nf_" + POLYMER[n] + coronaviridae_names[name] + ".csv"
+    coronaviridae_names = [g['name'] for g in genomes]  # capture genome names
+    polymer_name = POLYMER[len(polymers[0])]  # e.g. "dimers" if 2
 
     # Capture filenames from data/Normalised Frequency
     # Append each file as a column
-    nf_df = pd.DataFrame()  # DataFrame passed to PCA (dimentionality reduction algorithm)
-    for file, cv_name in zip(os.listdir(PATH), coronaviridae_names):
-        if os.path.isfile(os.path.join(PATH, file)):
-            column = pd.read_csv(os.path.join(PATH, file))
-            print(column)
+    nf_df = pd.DataFrame()  # DataFrame passed to PCA (dimensionality reduction algorithm)
+    for file, cv_name in zip(os.listdir(PATH + polymer_name + '/'), coronaviridae_names):
+        file_dir = PATH + polymer_name + '/' + 'nf_' + polymer_name + '_' + cv_name + '.csv'
+        print(file_dir)
+        if os.path.isfile(os.path.join(file_dir)):
+            column = pd.read_csv(os.path.join(file_dir), header=None)
             nf_df = pd.concat([nf_df, column], axis=1)
-
+    #nf_df = nf_df.T  # transpose - rows = viruses, cols = normalised freqs.
     print(nf_df)
 
-    principal_component_analysis(nf_df)
-    tSNE(nf_df)
+    principal_component_analysis(nf_df, coronaviridae_names, polymer_name)
+    #tSNE(nf_df, coronaviridae_names, polymer_name)
 
 
-def seaborn_scatterplot(model, results):
+def seaborn_scatterplot(model, results, coronaviridae_names, polymer_name):
     """Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results.
 
     :param str model: String literal name of model for saving figure as filename
     :param ndarray results: contains entire genome data; 'name' value used (*others is optional)
+    :param list coronaviridae_names: names extracted from included genomes['name']
+    :param int polymer_name: len(polymers[0]) used to get polymer name from POLYMER dict
     """
     # Machine Learning models output results
-    labels = []
-    [labels.append(name * 100) for name in coronaviridae_names]
+    str_names = '_'.join(coronaviridae_names)
 
-    label_vec = ["SARS-CoV"] * 100
-    label_vec = label_vec + ["bat-SL-CoV"] * 100
-    label_vec = label_vec + ["COVID-19"] * 100
+    sns.scatterplot(x=results[:, 0], y=results[:, 1], alpha=1, s=100, palette=['red', 'green', 'blue']).plot()
+    fig = plt.gcf()
+    plt.scatter(x=results[:, 0], y=results[:, 1])
+    plt.draw()
+    plt.show()
 
-    fig = plt.figure(figsize=(7, 7))
-    sns.scatterplot(x=results[:, 0],
-                    y=results[:, 1],
-                    # hue=label_vec,
-                    alpha=1,
-                    s=100,
-                    palette=['red', 'green', 'blue']).plot()
-    # fig = plt.gcf()
-    # plt.scatter(x=results[:, 0], y=results[:, 1])
-    # plt.show()
-    # plt.draw()
-    fig.savefig('data\\Cluster Analysis\\' + model + '_Coronaviridae.png', format='png')
+    fig.savefig("data\\Cluster Analysis\\" + model + "_" + polymer_name + "_" + str_names + ".png", format='png')
 
 
-def principal_component_analysis(df):
+def principal_component_analysis(df, coronaviridae_names, polymer_name):
     """Linear dimensionality reduction algorithm. Machine Learning algorithm for Cluster visualisation.
     Time in seconds, printed.
 
     :param DataFrame df: holds normalised frequency scores for fit & transformation
+    :param list coronaviridae_names: names extracted from included genomes['name']
+    :param int polymer_name: len(polymers[0]) used to get polymer name from POLYMER dict
     """
     time_start = time.time()
     pca = PCA(n_components=2)
@@ -87,14 +79,16 @@ def principal_component_analysis(df):
 
     print("\n" + str(pca_results), type(pca_results))
 
-    seaborn_scatterplot("PCA", pca_results)
+    seaborn_scatterplot("PCA", pca_results, coronaviridae_names, polymer_name)
 
 
-def tSNE(pca_results):
+def tSNE(pca_results, coronaviridae_names, polymer_name):
     """t-distributed Stochastic Neighbour Embedding. Machine Learning algorithm for Cluster visualisation.
     Time in seconds, printed.
 
     :param ndarray pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
+    :param list coronaviridae_names: names extracted from included genomes['name']
+    :param int polymer_name: len(polymers[0]) used to get polymer name from POLYMER dict
     """
     np.random.seed(42)  # Reproducability of results
 
@@ -105,4 +99,4 @@ def tSNE(pca_results):
 
     # print("\n" + tsne_results, type(tsne_results))
 
-    seaborn_scatterplot("t-SNE", tsne_results)
+    seaborn_scatterplot("t-SNE", tsne_results, coronaviridae_names, polymer_name)

@@ -15,3 +15,5 @@ bio;
 randomcolor;
 bokeh;
 hypothesis;
+attr;
+attrs;
