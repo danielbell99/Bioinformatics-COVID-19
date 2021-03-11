@@ -5,17 +5,17 @@ import Syntheses
 import PairwiseSequencing
 import Alignment
 import MultipleSequenceAlignment
-import Testing
+import test
 
 
 """ Import Genomes """
 # Genomes
-#coronaviridae = Coronaviridae.read_genomes()
+coronaviridae = Coronaviridae.read_genomes()
 
 # Genome Dictionaries
-#MERS = coronaviridae[0]
-#SARSCoV2 = coronaviridae[1]
-#SARS = coronaviridae[2]
+MERS = coronaviridae[0]
+SARSCoV2 = coronaviridae[1]
+SARS = coronaviridae[2]
 # Create a variable here for a new genome sequence, following the above format e.g.
 # NewStrain = coronaviridae[3]
 
@@ -27,7 +27,7 @@ import Testing
 #Nucleotides.base_content(SARSCoV2)  # SARSCoV2
 
 # Polymer Bases Combinations
-#dimers = Nucleotides.base_combinations(2)  # dinucleotide
+dimers = Nucleotides.base_combinations(2)  # dinucleotide
 #trimers = Nucleotides.base_combinations(3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
 
@@ -37,7 +37,9 @@ import Testing
 
 
 """ Cluster Analysis """
-#Clustering.read_normalised_frequencies(trimers, MERS['name'], SARS['name'], SARSCoV2['name'])
+Clustering.read_normalised_frequencies(dimers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(trimers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(tetramers, MERS, SARS, SARSCoV2)
 
 
 """ Protein Syntheses """
@@ -70,7 +72,7 @@ Test run Jupyter Notebook version
 
 
 """ Testing """
-Testing.run()
+#test.run()
 
 
 print("END OF MAIN")

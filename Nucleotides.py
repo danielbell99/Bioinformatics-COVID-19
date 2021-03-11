@@ -92,8 +92,8 @@ def bases_content_plot(name, sequence):
 
     # Display & Save
     fig = plt.gcf()
-    plt.show()
     plt.draw()
+    plt.show()
     fig.savefig('data\\Content\\content_' + name + '.png', format='png')
 
 
@@ -130,8 +130,8 @@ def composition_comparison(base_combinations, *genomes):
 
     # Display & Save
     fig = plt.gcf()
-    plt.show()
     plt.draw()
+    plt.show()
 
     output_name = sf.output_name(genomes)  # Appended to output filename
     fig.savefig('data\\Composition\\' + POLYNUCLEOTIDE[n] + output_name + '.png', format='png')
@@ -155,7 +155,7 @@ def normalised_frequencies(base_combinations, genome):
         normalised_freq.append(nf)
 
     # Store file - list of polymers & normalised frequency scores
-    np.savetxt('data\\Normalised Frequency\\nf_' + POLYMER[n] + '_' + genome['name'] + '.csv', normalised_freq,
+    np.savetxt('data\\Normalised Frequency\\' + POLYMER[n] + '\\nf_' + POLYMER[n] + '_' + genome['name'] + '.csv', normalised_freq,
                delimiter=',')
 
     return normalised_freq
