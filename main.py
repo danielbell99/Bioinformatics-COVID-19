@@ -28,8 +28,8 @@ SARS = coronaviridae[2]
 
 # Polymer Bases Combinations
 dimers = Nucleotides.base_combinations(2)  # dinucleotide
-#trimers = Nucleotides.base_combinations(3)  # trinucleotide
-#tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
+trimers = Nucleotides.base_combinations(3)  # trinucleotide
+tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
 
 #diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 #triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
@@ -38,8 +38,8 @@ dimers = Nucleotides.base_combinations(2)  # dinucleotide
 
 """ Cluster Analysis """
 Clustering.read_normalised_frequencies(dimers, MERS, SARS, SARSCoV2)
-#Clustering.read_normalised_frequencies(trimers, MERS, SARS, SARSCoV2)
-#Clustering.read_normalised_frequencies(tetramers, MERS, SARS, SARSCoV2)
+Clustering.read_normalised_frequencies(trimers, MERS, SARS, SARSCoV2)
+Clustering.read_normalised_frequencies(tetramers, MERS, SARS, SARSCoV2)
 
 
 """ Protein Syntheses """

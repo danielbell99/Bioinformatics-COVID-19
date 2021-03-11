@@ -40,11 +40,11 @@ def read_normalised_frequencies(polymers, *genomes):
     #nf_df = nf_df.T  # transpose - rows = viruses, cols = normalised freqs.
     print(nf_df)
 
-    principal_component_analysis(nf_df, coronaviridae_names, polymer_name)
-    #tSNE(nf_df, coronaviridae_names, polymer_name)
+    principal_component_analysis(nf_df, polymers, coronaviridae_names, polymer_name)
+    tSNE(nf_df, polymers, coronaviridae_names, polymer_name)
 
 
-def seaborn_scatterplot(model, results, coronaviridae_names, polymer_name):
+def seaborn_scatterplot(model, results, polymers, coronaviridae_names, polymer_name):
     """Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results.
 
     :param str model: String literal name of model for saving figure as filename
@@ -55,7 +55,13 @@ def seaborn_scatterplot(model, results, coronaviridae_names, polymer_name):
     # Machine Learning models output results
     str_names = '_'.join(coronaviridae_names)
 
-    sns.scatterplot(x=results[:, 0], y=results[:, 1], alpha=1, s=100, palette=['red', 'green', 'blue']).plot()
+    #df = pd.DataFrame(data=results)
+    #df = pd.concat([df, polymers], axis=1)
+    #results = df.to_numpy()
+    #print("HELLO")
+    #print(results)
+
+    sns.scatterplot(x=results[:, 0], y=results[:, 1], alpha=1, s=100).plot()
     fig = plt.gcf()
     plt.scatter(x=results[:, 0], y=results[:, 1])
     plt.draw()
@@ -64,7 +70,7 @@ def seaborn_scatterplot(model, results, coronaviridae_names, polymer_name):
     fig.savefig("data\\Cluster Analysis\\" + model + "_" + polymer_name + "_" + str_names + ".png", format='png')
 
 
-def principal_component_analysis(df, coronaviridae_names, polymer_name):
+def principal_component_analysis(df, polymers, coronaviridae_names, polymer_name):
     """Linear dimensionality reduction algorithm. Machine Learning algorithm for Cluster visualisation.
     Time in seconds, printed.
 
@@ -79,10 +85,10 @@ def principal_component_analysis(df, coronaviridae_names, polymer_name):
 
     print("\n" + str(pca_results), type(pca_results))
 
-    seaborn_scatterplot("PCA", pca_results, coronaviridae_names, polymer_name)
+    seaborn_scatterplot("PCA", pca_results, polymers, coronaviridae_names, polymer_name)
 
 
-def tSNE(pca_results, coronaviridae_names, polymer_name):
+def tSNE(pca_results, polymers, coronaviridae_names, polymer_name):
     """t-distributed Stochastic Neighbour Embedding. Machine Learning algorithm for Cluster visualisation.
     Time in seconds, printed.
 
@@ -99,4 +105,4 @@ def tSNE(pca_results, coronaviridae_names, polymer_name):
 
     # print("\n" + tsne_results, type(tsne_results))
 
-    seaborn_scatterplot("t-SNE", tsne_results, coronaviridae_names, polymer_name)
+    seaborn_scatterplot("t-SNE", tsne_results, polymers, coronaviridae_names, polymer_name)
