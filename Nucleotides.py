@@ -5,8 +5,10 @@ import StandardFunctions as sf
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
 BASE = ['A', 'C', 'G', 'T']  # Nitrogenous Bases
 BASE_NAME = {"A": "Adenine", "C": "Cytosine", "G": "Guanine", "T": "Thymine"}
-POLYNUCLEOTIDE = {1: "Nucleotide", 2: "Dinucleotide", 3: "Trinucleotide", 4: "Tetranucleotide", 5: "Pentanucleotide"}
-POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}  # lower-case for file names
+POLYNUCLEOTIDE = {1: "Nucleotide", 2: "Dinucleotide", 3: "Trinucleotide", 4: "Tetranucleotide", 5: "Pentanucleotide",
+                  6: "Hexanuceotide"}
+POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers",
+           6: "hexamers"}  # lower-case for file names
 COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
 
 
@@ -104,22 +106,27 @@ def composition_comparison(base_combinations, *genomes):
     :param ndarray genomes: array holds genome dictionaries, to be plotted ('*' >=1 genomes)
     """
     # To display relevant labels
-    n = len(base_combinations[0])  # no. bases in each polymer
+    polymer_num = len(base_combinations[0])  # no. bases in each polymer
     n_coronavirus = "Coronaviridae" if len(genomes) > 1 else "Coronavirus"  # plural or singular
 
     # Plot
-    plt.figure(figsize=(50, 25))
-    plt.title(POLYNUCLEOTIDE[n] + " Composition of " + n_coronavirus, fontsize=15)
+    x_width = 50 + min(512, (4**polymer_num))
+    print("x_width", x_width)
+    plt.figure(figsize=(x_width, 25))
+    plt.title(POLYNUCLEOTIDE[polymer_num] + " Composition of " + n_coronavirus, fontsize=15)
 
     # X axis
-    plt.xlabel(POLYNUCLEOTIDE[n], fontsize=10)
+    plt.xlabel(POLYNUCLEOTIDE[polymer_num], fontsize=10)
     plt.xticks(rotation=45)
 
     # Y axis
-    plt.ylabel("Normalised " + POLYNUCLEOTIDE[n] + " Frequency", fontsize=10)
-    plt.yticks(np.arange(0, 0.25, 0.01))
-    plt.ylim(0, 0.25)
+    tick = (0.001 * polymer_num if polymer_num > 2 else 0.01)
+    stop = 0.25 if polymer_num == 2 else (0.2 / polymer_num**2)
+    plt.ylabel("Normalised " + POLYNUCLEOTIDE[polymer_num] + " Frequency", fontsize=10)
+    plt.yticks(np.arange(0, stop, tick))
+    plt.ylim(0, stop)
 
+    #[i for i in range(0, len(base_combinations), 2)]
     for g, c in zip(genomes, COLOUR_MAP):
         # Parallel iteration - g (dictionaries in 'genomes') & c (colours in 'COLOUR_MAP')
         nf = normalised_frequencies(base_combinations, g)
@@ -134,7 +141,7 @@ def composition_comparison(base_combinations, *genomes):
     plt.show()
 
     output_name = sf.output_name(genomes)  # Appended to output filename
-    fig.savefig('data\\Composition\\' + POLYNUCLEOTIDE[n] + output_name + '.png', format='png')
+    fig.savefig('data\\Composition\\' + POLYNUCLEOTIDE[polymer_num] + output_name + '.png', format='png')
 
 
 def normalised_frequencies(base_combinations, genome):
@@ -155,7 +162,7 @@ def normalised_frequencies(base_combinations, genome):
         normalised_freq.append(nf)
 
     # Store file - list of polymers & normalised frequency scores
-    np.savetxt('data\\Normalised Frequency\\' + POLYMER[n] + '\\nf_' + POLYMER[n] + '_' + genome['name'] + '.csv', normalised_freq,
-               delimiter=',')
+    np.savetxt('data\\Normalised Frequency\\' + POLYMER[n] + '\\nf_' + POLYMER[n] + '_' + genome['name'] + '.csv',
+               normalised_freq, delimiter=',')
 
     return normalised_freq

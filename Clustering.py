@@ -1,17 +1,15 @@
 import os
-from os import listdir
-from os.path import isfile, join
 import pandas as pd
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
+import time
 import seaborn as sns
 import matplotlib.pyplot as plt
-import time
-
 
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
-POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers"}  # lower-case for file names
+POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers",
+           6: "hexamers"}  # lower-case for file names
 PATH = 'data/Normalised Frequency/'
 COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
 
@@ -37,7 +35,7 @@ def read_normalised_frequencies(polymers, *genomes):
         if os.path.isfile(os.path.join(file_dir)):
             column = pd.read_csv(os.path.join(file_dir), header=None)
             nf_df = pd.concat([nf_df, column], axis=1)
-    #nf_df = nf_df.T  # transpose - rows = viruses, cols = normalised freqs.
+    # nf_df = nf_df.T  # transpose - rows = viruses, cols = normalised freqs.
     print(nf_df)
 
     principal_component_analysis(nf_df, polymers, coronaviridae_names, polymer_name)
@@ -45,25 +43,26 @@ def read_normalised_frequencies(polymers, *genomes):
 
 
 def seaborn_scatterplot(model, results, polymers, coronaviridae_names, polymer_name):
-    """Standardised method for using Seaborn's Scatterplot to visualise Machine Learning results.
+    """Standardised method for using Seaborn's Scatterplot to visualise Unsupervised ML results.
 
     :param str model: String literal name of model for saving figure as filename
     :param ndarray results: contains entire genome data; 'name' value used (*others is optional)
+    :param list polymers: combination of nucleic acids of n length each
     :param list coronaviridae_names: names extracted from included genomes['name']
     :param int polymer_name: len(polymers[0]) used to get polymer name from POLYMER dict
     """
-    # Machine Learning models output results
     str_names = '_'.join(coronaviridae_names)
 
-    #df = pd.DataFrame(data=results)
-    #df = pd.concat([df, polymers], axis=1)
-    #results = df.to_numpy()
-    #print("HELLO")
-    #print(results)
+    # df = pd.DataFrame(data=results)
+    # df = pd.concat([df, polymers], axis=1)
+    # results = df.to_numpy()
+    # print("HELLO")
+    # print(results)
 
     sns.scatterplot(x=results[:, 0], y=results[:, 1], alpha=1, s=100).plot()
     fig = plt.gcf()
-    plt.scatter(x=results[:, 0], y=results[:, 1])
+    plt.title(model + ' ' + polymer_name[0].upper() + polymer_name[1:] + ' ' + str_names.replace('_', ' '), fontsize=9)
+    plt.scatter(x=results[:, 0], y=results[:, 1], cmap=plt.cm.get_cmap('nipy_spectral', len(polymers[0])))
     plt.draw()
     plt.show()
 
@@ -75,13 +74,14 @@ def principal_component_analysis(df, polymers, coronaviridae_names, polymer_name
     Time in seconds, printed.
 
     :param DataFrame df: holds normalised frequency scores for fit & transformation
+    :param list polymers: combination of nucleic acids of n length each
     :param list coronaviridae_names: names extracted from included genomes['name']
     :param int polymer_name: len(polymers[0]) used to get polymer name from POLYMER dict
     """
     time_start = time.time()
     pca = PCA(n_components=2)
     pca_results = pca.fit_transform(df)
-    print("\nPCA complete. Time elapsed: {} secs".format(time.time() - time_start))
+    print("\nPCA complete. Time elapsed: {0:.2f}secs".format(time.time() - time_start))
 
     print("\n" + str(pca_results), type(pca_results))
 
@@ -93,6 +93,7 @@ def tSNE(pca_results, polymers, coronaviridae_names, polymer_name):
     Time in seconds, printed.
 
     :param ndarray pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
+    :param list polymers: combination of nucleic acids of n length each
     :param list coronaviridae_names: names extracted from included genomes['name']
     :param int polymer_name: len(polymers[0]) used to get polymer name from POLYMER dict
     """
@@ -101,8 +102,8 @@ def tSNE(pca_results, polymers, coronaviridae_names, polymer_name):
     time_start = time.time()
     tsne = TSNE(n_components=2, perplexity=30, early_exaggeration=12)
     tsne_results = tsne.fit_transform(pca_results)
-    print("\nt-SNE complete. Time elapsed: {} secs".format(time.time() - time_start))
+    print("\nt-SNE complete. Time elapsed: {0:.2f}secs".format(time.time() - time_start))
 
-    # print("\n" + tsne_results, type(tsne_results))
+    print("\n" + str(tsne_results), type(tsne_results))
 
     seaborn_scatterplot("t-SNE", tsne_results, polymers, coronaviridae_names, polymer_name)
