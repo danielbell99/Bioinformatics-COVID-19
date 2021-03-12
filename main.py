@@ -28,18 +28,24 @@ SARS = coronaviridae[2]
 
 # Polymer Bases Combinations
 dimers = Nucleotides.base_combinations(2)  # dinucleotide
-trimers = Nucleotides.base_combinations(3)  # trinucleotide
-tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
+#trimers = Nucleotides.base_combinations(3)  # trinucleotide
+#tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
+#pentamers = Nucleotides.base_combinations(5)  # pentanucledotide
+#hexamers = Nucleotides.base_combinations(6)  # hexanucledotide
 
-#diComp = Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
-#triComp = Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
-#tetraComp = Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
+#Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
+#Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
+#Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
+#Nucleotides.composition_comparison(pentamers, MERS, SARS, SARSCoV2)
+#Nucleotides.composition_comparison(hexamers, MERS, SARS, SARSCoV2)
 
 
 """ Cluster Analysis """
-Clustering.read_normalised_frequencies(dimers, MERS, SARS, SARSCoV2)
-Clustering.read_normalised_frequencies(trimers, MERS, SARS, SARSCoV2)
-Clustering.read_normalised_frequencies(tetramers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(dimers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(trimers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(tetramers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(pentamers, MERS, SARS, SARSCoV2)
+#Clustering.read_normalised_frequencies(hexamers, MERS, SARS, SARSCoV2)
 
 
 """ Protein Syntheses """
