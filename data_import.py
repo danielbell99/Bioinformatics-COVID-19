@@ -3,7 +3,7 @@ from os.path import isfile, join
 
 
 def read_genomes():
-    """Imports Coronaviridae datasets from 'src/' folder.
+    """Imports Genome datasets from 'src/' folder.
 
     :return list: Stores complete genome datasets, each as dict
     """
@@ -11,7 +11,7 @@ def read_genomes():
     filenames = []
     [filenames.append(g) for g in listdir('src/') if isfile(join('src/', g))]
 
-    coronaviridae = []  # 'name', 'description', 'sequence'
+    genomes = []  # 'name', 'description', 'sequence'
 
     for f in filenames:
         with open('src/' + f) as genome:
@@ -23,9 +23,9 @@ def read_genomes():
         description = description.strip()  # removes newlines
         sequence = list(filter(lambda x: x != '\n', content))  # removes newlines
 
-        coronavirius = {'name': name, 'description': description, 'sequence': sequence}
-        coronaviridae.append(coronavirius)
+        g = {'name': name, 'description': description, 'sequence': sequence}
+        genomes.append(g)
 
-    print("Coronaviridae Genomes: " + str(len(coronaviridae)))
+    print("Genomes: " + str(len(genomes)))
 
-    return coronaviridae
+    return genomes

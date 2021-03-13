@@ -1,4 +1,4 @@
-import Coronaviridae
+import data_import
 import Nucleotides
 import Clustering
 import Syntheses
@@ -10,14 +10,14 @@ import test
 
 """ Import Genomes """
 # Genomes
-coronaviridae = Coronaviridae.read_genomes()
+genomes = data_import.read_genomes()
 
 # Genome Dictionaries
-MERS = coronaviridae[0]
-SARSCoV2 = coronaviridae[1]
-SARS = coronaviridae[2]
+MERS = genomes[0]
+SARSCoV2 = genomes[1]
+SARS = genomes[2]
 # Create a variable here for a new genome sequence, following the above format e.g.
-# NewStrain = coronaviridae[3]
+# NewStrain = genomes[3]
 
 
 """ Nucleotide Composition """
@@ -27,13 +27,13 @@ SARS = coronaviridae[2]
 #Nucleotides.base_content(SARSCoV2)  # SARSCoV2
 
 # Polymer Bases Combinations
-#dimers = Nucleotides.base_combinations(2)  # dinucleotide
+dimers = Nucleotides.base_combinations(2)  # dinucleotide
 #trimers = Nucleotides.base_combinations(3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
 #pentamers = Nucleotides.base_combinations(5)  # pentanucledotide
 #hexamers = Nucleotides.base_combinations(6)  # hexanucledotide
 
-#Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
+Nucleotides.composition_comparison(dimers, MERS, SARS, SARSCoV2)
 #Nucleotides.composition_comparison(trimers, MERS, SARS, SARSCoV2)
 #Nucleotides.composition_comparison(tetramers, MERS, SARS, SARSCoV2)
 #Nucleotides.composition_comparison(pentamers, MERS, SARS, SARSCoV2)
@@ -41,7 +41,7 @@ SARS = coronaviridae[2]
 
 
 """ Cluster Analysis """
-#Clustering.read_normalised_frequencies(dimers, MERS, SARS, SARSCoV2)
+Clustering.read_normalised_frequencies(dimers, MERS, SARS, SARSCoV2)
 #Clustering.read_normalised_frequencies(trimers, MERS, SARS, SARSCoV2)
 #Clustering.read_normalised_frequencies(tetramers, MERS, SARS, SARSCoV2)
 #Clustering.read_normalised_frequencies(pentamers, MERS, SARS, SARSCoV2)
@@ -49,13 +49,13 @@ SARS = coronaviridae[2]
 
 
 """ Protein Syntheses """
-#Syntheses.protein(MERS)
+Syntheses.protein(MERS)
 #Syntheses.protein(SARS)
 #Syntheses.protein(SARSCoV2)
 
 
 """ Pairwise Sequencing """
-#PairwiseSequencing.run("DNA", MERS, SARS)
+PairwiseSequencing.run("DNA", MERS, SARS)
 #PairwiseSequencing.run("DNA", MERS, SARSCoV2)
 #PairwiseSequencing.run("DNA", SARS, SARSCoV2)
 
@@ -66,7 +66,7 @@ SARS = coronaviridae[2]
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
-#Alignment.create_file("DNA")
+Alignment.create_file("DNA")
 #Alignment.create_file("Protein")
 
 """ Multiple Sequence Alignment """
