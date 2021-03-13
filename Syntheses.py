@@ -68,8 +68,8 @@ def protein(genome):
     protein = ""
     for i in range(0, len(dna), 3):  # increments of 3, i.e. one codon per iter
         codon = dna[i:i + 3]  # a trinucleotide that corresponds to a protein
-        print("Codon: ", codon)
-        print("Protein: ", dna_codons.get(codon, ''))
+        #print("Codon: ", codon)
+        #print("Protein: ", dna_codons.get(codon, ''))
         protein += dna_codons.get(codon, '')  # appends as str
 
     write_file(genome['name'], protein)  # Save Synthesised Protein
