@@ -27,7 +27,7 @@ SARS = coronaviridae[2]
 #Nucleotides.base_content(SARSCoV2)  # SARSCoV2
 
 # Polymer Bases Combinations
-dimers = Nucleotides.base_combinations(2)  # dinucleotide
+#dimers = Nucleotides.base_combinations(2)  # dinucleotide
 #trimers = Nucleotides.base_combinations(3)  # trinucleotide
 #tetramers = Nucleotides.base_combinations(4)  # tetranucledotide
 #pentamers = Nucleotides.base_combinations(5)  # pentanucledotide
@@ -78,7 +78,7 @@ Test run Jupyter Notebook version
 
 
 """ Testing """
-#test.run()
+test.run()
 
 
 print("END OF MAIN")

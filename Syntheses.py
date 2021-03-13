@@ -68,9 +68,8 @@ def protein(coronavirus):
     protein = ""
     for i in range(0, len(dna), 3):  # increments of 3, i.e. one codon per iter
         codon = dna[i:i + 3]  # a trinucleotide that corresponds to a protein
+        print("Codon: ", codon)
+        print("Protein: ", dna_codons.get(codon, ''))
         protein += dna_codons.get(codon, '')  # appends as str
-
-    if protein[-3:] == "END":  # removes word "END"
-        protein = protein[:-3]
 
     write_file(coronavirus['name'], protein)  # Save Synthesised Protein
