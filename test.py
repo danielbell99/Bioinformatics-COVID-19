@@ -81,7 +81,7 @@ class TestNucleotides(unittest.TestCase):
     #@given(st.floats(), st.floats())
     def test_normalised_frequencies(self, base_combinations, *genomes):
         """
-        Coronaviridae tend to have majority AT content over GC.
+        Genomes tend to have majority AT content over GC.
 
         """
         print("444444444444444444444444")
@@ -214,7 +214,7 @@ class TestStandardFunctions(unittest.TestCase):
             output_filenames_bio_type = []
             for f in filenames:
                 with open(d + f, 'r') as file:
-                    name = sf.output_filename(f)  # Coronavirus name
+                    name = sf.output_filename(f)  # Genome name
                 output_filenames_bio_type.append(name)
             output_filenames.append(output_filenames_bio_type)  # append 'bio_type' list of 'filenames'
         file.close()

@@ -58,7 +58,7 @@ def base_combinations_recursive(polymer, polymer_length, combinations):
 def base_content(genome):
     """Calculates the composition of each polymer, from 'base_combination', in a given genome as a %.
 
-    :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (Coronaviridae.py - .fasta/.fna file)
+    :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (data_import.py - .fasta/.fna file)
     """
     print("\n-- " + genome['name'] + " --")  # name
     print(genome['description'])
@@ -107,13 +107,13 @@ def composition_comparison(base_combinations, *genomes):
     """
     # To display relevant labels
     polymer_num = len(base_combinations[0])  # no. bases in each polymer
-    n_coronavirus = "Coronaviridae" if len(genomes) > 1 else "Coronavirus"  # plural or singular
+    n_genomes = "Genomes" if len(genomes) > 1 else "Genome"  # plural or singular
 
     # Plot
     x_width = 50 + min(512, (4**polymer_num))
     print("x_width", x_width)
     plt.figure(figsize=(x_width, 25))
-    plt.title(POLYNUCLEOTIDE[polymer_num] + " Composition of " + n_coronavirus, fontsize=15)
+    plt.title(POLYNUCLEOTIDE[polymer_num] + " Composition of " + n_genomes, fontsize=15)
 
     # X axis
     plt.xlabel(POLYNUCLEOTIDE[polymer_num], fontsize=10)
@@ -146,10 +146,10 @@ def composition_comparison(base_combinations, *genomes):
 
 def normalised_frequencies(base_combinations, genome):
     """Calculates no. appearances each polymer, as a subsequence, appears in a given genome, as a %.
-    Stores .csv - headers = polymers, nf = content (filename "nf_[polymers]_[coronavirus].csv").
+    Stores .csv - headers = polymers, nf = content (filename "nf_[polymers]_[genome].csv").
 
     :param list base_combinations: holds 'base_combinations()' output array, x axis
-    :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (Coronaviridae.py - .fasta/.fna file)
+    :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (data_import.py - .fasta/.fna file)
     :return ndarray normalised_freq: infinitesimals, for each polymer, to be plotted in 'composition_comparison()'
     """
     n = len(base_combinations[0])  # no. nucleotide units in polymer

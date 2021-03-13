@@ -15,7 +15,7 @@ def dna_alignment(sequence_filenames, seq_lengths, directory):
 
     for idx, val in enumerate(zip(seq_lengths, sequence_filenames)):
         with open(directory + val[1], 'r') as sequence:
-            name = sf.output_filename(val[1])  # Coronavirus name
+            name = sf.output_filename(val[1])  # Genome name
             # Content
             content = sf.ignore_firstline(directory + val[1])  # ignore top/ description line
             content = content.strip()  # sometimes there is a space at the end of a DNA sequence
@@ -45,7 +45,7 @@ def protein_alignment(sequence_filenames, seq_lengths, directory):
 
     for i, s in zip(seq_lengths, sequence_filenames):
         with open(directory + s, 'r') as sequence:
-            name = sf.output_filename(s)  # Coronavirus name
+            name = sf.output_filename(s)  # Genome name
             # Content
             content = sequence.read()
             blanks_list = ['-'] * (max(seq_lengths) - i)

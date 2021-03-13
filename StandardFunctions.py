@@ -21,7 +21,7 @@ def capture_filenames(bio_type):
 
 
 def output_name(genomes):
-    """Concatenates coronavirus names for an output filename.
+    """Concatenates genome names for an output filename.
 
     :param dict genomes: contains many entire genome data; 'name' value used
     :return str output: names of genomes of interest
@@ -34,7 +34,7 @@ def output_name(genomes):
 
 
 def output_filename(sequence_filename):
-    """Concatenates coronavirus names for Alignment file (.aln) setup, for DNA or Protein.
+    """Concatenates genome names for Alignment file (.aln) setup, for DNA or Protein.
     One at a time - for loops may have different constructs.
 
     :param str sequence_filename: subject to partition

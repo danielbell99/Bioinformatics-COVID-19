@@ -1,33 +1,33 @@
 DNA_ALPHABET = ['A', 'C', 'G', 'T']
 
-def write_file(coronavirus_name, protein):
+def write_file(genome_name, protein):
     """Stores synthesised protein w/ appropriate file naming convention.
 
-    :param str coronavirus_name: name of virus that we've synthesised
+    :param str genome_name: name of virus that we've synthesised
     :param protein: actual synthesised data from 'protein()'
     """
-    file = open('data\\Syntheses\\' + 'protein_' + coronavirus_name, 'w')
+    file = open('data\\Syntheses\\' + 'protein_' + genome_name, 'w')
     file.write(protein)
     file.close()
-    print("\nSynthesised Protein: " + coronavirus_name + "\n" + str(protein) + "\n")
+    print("\nSynthesised Protein: " + genome_name + "\n" + str(protein) + "\n")
 
     return
 
 
-def protein(coronavirus):
+def protein(genome):
     """DNA -(transcription)> mRNA -(translation)> Protein.
     Start codon: AUG (not needed for 'dna_codons' dict)
     Stop codons: TAA, TAG, TGA (denoted by '*')
 
-    :param coronavirus:
+    :param genome:
     """
     # Insufficient
-    if len(coronavirus['sequence']) < 3:
+    if len(genome['sequence']) < 3:
         print("Protein Syntheses CANCELLED:")
         print("Insufficient Polynucleotides. Synthesisation requires 3 or more.")
         return
     # Non-DNA Alphabet Character
-    for idx, val in enumerate(coronavirus['sequence']):
+    for idx, val in enumerate(genome['sequence']):
         if val not in DNA_ALPHABET:
             print("Protein Syntheses Halted:")
             print("non-DNA character '" + val + "' at position [" + str(idx) + "]")
@@ -45,7 +45,7 @@ def protein(coronavirus):
                 else:
                     print("input was a typo...")  # while loop prevents crashing if there's a bad input
 
-    dna = ''.join(coronavirus['sequence'])
+    dna = ''.join(genome['sequence'])
     if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
     if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, a mono or di-nucleotide
 
@@ -72,4 +72,4 @@ def protein(coronavirus):
         print("Protein: ", dna_codons.get(codon, ''))
         protein += dna_codons.get(codon, '')  # appends as str
 
-    write_file(coronavirus['name'], protein)  # Save Synthesised Protein
+    write_file(genome['name'], protein)  # Save Synthesised Protein
