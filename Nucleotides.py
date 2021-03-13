@@ -58,7 +58,7 @@ def base_combinations_recursive(polymer, polymer_length, combinations):
 def base_content(genome):
     """Calculates the composition of each polymer, from 'base_combination', in a given genome as a %.
 
-    :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (data_import.py - .fasta/.fna file)
+    :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (dataimport.py - .fasta/.fna file)
     """
     print("\n-- " + genome['name'] + " --")  # name
     print(genome['description'])
@@ -149,7 +149,7 @@ def normalised_frequencies(base_combinations, genome):
     Stores .csv - headers = polymers, nf = content (filename "nf_[polymers]_[genome].csv").
 
     :param list base_combinations: holds 'base_combinations()' output array, x axis
-    :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (data_import.py - .fasta/.fna file)
+    :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (dataimport.py - .fasta/.fna file)
     :return ndarray normalised_freq: infinitesimals, for each polymer, to be plotted in 'composition_comparison()'
     """
     n = len(base_combinations[0])  # no. nucleotide units in polymer
