@@ -7,7 +7,8 @@ from os.path import isfile, join
 
 
 def api(db, ids):
-    """Invokes API, conditionally. Additionally, imports Genome datasets from 'src/' folder.
+    """Invokes API, conditionally, for any dataset type.
+    Exception Handling: for bad HTTP requests
 
     :param str db: database name for type of data to extract
     :param list ids: list of str; IDs of datasets to download
