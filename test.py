@@ -227,13 +227,13 @@ class TestStandardFunctions(unittest.TestCase):
         self.assertEquals(self.protein_filenames, predicted_protein_filenames,
                           "FAILED: wrong filenames (Protein)")
 
-    def test_ignore_firstline(self):
+    def test_dna_sequence(self):
         test = open('test.fasta', 'w')
         test.write("first line" + "\n")
         test.write("second line" + "\n")
         test.close()
-        self.content = sf.ignore_firstline('test.fasta')
-        os.remove('test.fasta')
+        self.content = sf.dna_sequence('test.fasta')
+        os.remove('src/test.fasta')
         self.assertNotEqual(self.content, "first linesecond line", "FAILED: first line not ignored")
 
     def test_directory(self):
@@ -253,7 +253,7 @@ class TestStandardFunctions(unittest.TestCase):
         Thread(target=self.test_capture_filenames).start()
         Thread(target=self.test_output_name).start()
         Thread(target=self.test_output_filename).start()
-        Thread(target=self.test_ignore_firstline).start()
+        Thread(target=self.test_dna_sequence).start()
         Thread(target=self.test_directory).start()
         Thread(target=self.test_remove_prefix).start()
 

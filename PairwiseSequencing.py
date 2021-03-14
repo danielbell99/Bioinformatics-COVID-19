@@ -36,13 +36,13 @@ def gap_function(x, y):
     return round(-((log(y) / 2) + (2 + (y / 4))), 2)  # y = 1 ; return -2.25
 
 
-def run(bio_type, *genomes):
+def run(bio_type, *names):
     """Performes Pairwise Sequencing task.
     Matches subsequences of similarity that may indicate evolutionary, functional and structural relationships.
     Higher the score, higher the relationship.
 
     :param bio_type: "dna" or "protein"
-    :param ndarray genomes: array holds genome dictionaries, to be plotted ('*' >=1 genomes)
+    :param ndarray *names: array of str genome names ('*' >=1 genomes)
     """
     if bio_type.lower() == "dna":
         prefix = ""  # none
@@ -51,7 +51,7 @@ def run(bio_type, *genomes):
         prefix = "protein_"
         directory = 'data/Syntheses/'
     else:
-        print("Warning in PairwiseSequencing.py: biotype \"" + bio_type + "\" not recongnised. \nEnter \"DNA\" or \"Protein\"")
+        print("biotype: \'" + bio_type + "\' not recongnised. Enter \'DNA\' or \'Protein\'\n")
         return  # Exception Handling
 
     # Capture all filenames of 'bio_type'
@@ -59,21 +59,21 @@ def run(bio_type, *genomes):
     # filenames = [f.split(".")[0] for f in filenames if bio_type.lower() == "dna"]  # DNA - remove .fasta/.fna and/or .<num> in name
 
     # Captures two 'bio_type' sequences of interest
-    sequences = []  # Virus name, complete protein sequence
+    genomes = []  # Genome name, complete protein sequence
     for f in range(len(filenames)):
-        for g in range(len(genomes)):
-            if set(genomes[g]['name']).issubset(filenames[f]):
+        for name in names:  # range(len(genomes))
+            if set(name).issubset(filenames[f]):
                 with open(directory + filenames[f]) as s:
                     # DNA, remove top/ description line
-                    seq = ''.join([sf.ignore_firstline(directory + filenames[f]) if bio_type.lower() == "dna" else s.read()])  # else, protein
+                    seq = ''.join([sf.dna_sequence(sf.output_filename(filenames[f])) if bio_type.lower() == "dna" else s.read()])  # else, protein
                     seq = seq.strip()  # removes any spacing surrounding sequence
                     # Store sequences of interest
-                    seq_dict = {'name': genomes[g]['name'], 'sequence': seq}
-                    sequences.append(seq_dict)
+                    genome_dict = {'name': name, 'sequence': seq}
+                    genomes.append(genome_dict)
 
     # Concatenates char members of genome as a string object
-    seq1 = sequences[0]['sequence']  # Target seq
-    seq2 = sequences[1]['sequence']  # Query seq
+    seq1 = genomes[0]['sequence']  # Target seq
+    seq2 = genomes[1]['sequence']  # Query seq
 
     # Print Global Sequencing of our pair
     # Match Score - matched sequence chars found; otherwise - Mismatch Score
@@ -83,5 +83,5 @@ def run(bio_type, *genomes):
     # -2.25 pts, if when there's a next gap, right after an existing gap
     sequencing = pairwise2.align.globalmc(seq1[1:100], seq2[1:100], 2, -1, gap_function, gap_function,
                                           penalize_end_gaps=False)
-    output_name = sf.output_name(genomes)  # Appended to 'path_filename', in 'save()'
+    output_name = sf.output_name([genomes[0]['name'], genomes[1]['name']])  # Appended to 'path_filename', in 'save()'
     save(bio_type, output_name, sequencing)

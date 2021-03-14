@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 import StandardFunctions as sf
 
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
@@ -7,41 +7,41 @@ BASE = ['A', 'C', 'G', 'T']  # Nitrogenous Bases
 BASE_NAME = {"A": "Adenine", "C": "Cytosine", "G": "Guanine", "T": "Thymine"}
 POLYNUCLEOTIDE = {1: "Nucleotide", 2: "Dinucleotide", 3: "Trinucleotide", 4: "Tetranucleotide", 5: "Pentanucleotide",
                   6: "Hexanuceotide"}
-POLYMER = {1: "monomers", 2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers",
-           6: "hexamers"}  # lower-case for file names
+POLYMER = {2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers", 6: "hexamers"}  # lower-case for file names
 COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
 
 
-def base_combinations(polymer_length):
+def base_combinations(polymer_len):
     """Accumulator method for invoking recursive method (memory efficiency).
     Exception Handling: ensures at least dimers are passed.
 
-    :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
-    :return list combinations: all possible polymers, each of a given 'polymer_length'
+    :param int polymer_len: length of all polymer instances (e.g. 2 - dimers)
+    :return list combinations: all possible polymers, each of a given 'polymer_len'
     """
-    if polymer_length <= 1 or not (isinstance(polymer_length, int)):  # checks whole number is above 1
-        print("Warning in Nucleotides.py: must pass a positive whole number >= 2")
+    if polymer_len <= 1 or not (isinstance(polymer_len, int)):  # checks whole number is above 1
+        print("Polynucleotides' length must be 2 to 6")  # context term
         return  # Excepton Handling
 
     combinations = []  # Appended to by bases_combination_recursive(), externally
-    base_combinations_recursive("", polymer_length, combinations)
+    base_combinations_recursive("", polymer_len, combinations)
 
-    return combinations
+    # Store file - list of polynucleotides
+    np.savetxt('data/Polynucleotides/' + POLYMER[polymer_len], combinations, delimiter=',', fmt='%s')
 
 
-def base_combinations_recursive(polymer, polymer_length, combinations):
-    """Generates all possible polymers possible, each of a 'polymer_length'.
+def base_combinations_recursive(polymer, polymer_len, combinations):
+    """Generates all possible polymers possible, each of a 'polymer_len'.
     Each recursion, we append a complete 'polymer' to 'combinations'.
     We pass 'combinations' back to 'base_combinations()' and drop the Stack.
     Stack does not need to be unravelled, once threshold is met, per iteration.
 
     :param str polymer: an instance of a base combination passed to next recursion and appended to 'combinations'; initially blank ("")
-    :param int polymer_length: length of all polymer instances (e.g. 2 - dimers)
-    :param list combinations: all possible polymers, each of a given 'polymer_length'
+    :param int polymer_len: length of all polymer instances (e.g. 2 - dimers)
+    :param list combinations: all possible polymers, each of a given 'polymer_len'
     :return list combinations
     """
     # Base case - run out of character space for each 'polymer'
-    if polymer_length == 0:
+    if polymer_len == 0:
         combinations.append(polymer)
         # print(polymer)  # Complete polymer instance
         return  # continue back to previous recursion's active for loop iteration
@@ -50,26 +50,24 @@ def base_combinations_recursive(polymer, polymer_length, combinations):
     for i in range(len(BASE)):
         # Next Base appended
         new_polymer = polymer + BASE[i]  # we build upon a new instance
-        base_combinations_recursive(new_polymer, (polymer_length - 1), combinations)
+        base_combinations_recursive(new_polymer, (polymer_len - 1), combinations)
 
     return combinations
 
 
-def base_content(genome):
-    """Calculates the composition of each polymer, from 'base_combination', in a given genome as a %.
+def base_content(name):
+    """Calculates the composition of each polynucleotide in a given genome as a %.
 
-    :param dict genome: dictionary containing: 'name', 'description' & 'sequence' of genome (dataimport.py - .fasta/.fna file)
+    :param str name: name of genome
     """
-    print("\n-- " + genome['name'] + " --")  # name
-    print(genome['description'])
-    print(genome['sequence'])
+    sequence = sf.dna_sequence(name)
 
     for n in BASE:
-        n_count = genome['sequence'].count(n)
-        n_comp = round(n_count / len(genome['sequence']) * 100, 2)
+        n_count = sequence.count(n)
+        n_comp = round(n_count / len(sequence) * 100, 2)
         print(BASE_NAME[n] + " Composition: " + str(n_comp) + "%")
 
-    bases_content_plot(genome['name'], genome['sequence'])
+    bases_content_plot(name, sequence)
 
 
 def bases_content_plot(name, sequence):
@@ -77,8 +75,8 @@ def bases_content_plot(name, sequence):
     Guanine & Cytosine as % of DNA (always paired together),
     Adenine & Thymine as % of DNA (always paired together).
 
-    :param str name: official viral name
-    :param list sequence: genome broken down as individual monomer bases
+    :param str name: name of genome
+    :param list sequence: DNA as individual monomer bases
     """
     # Data
     gc = ((sequence.count("G") + sequence.count("C")) / len(sequence)) * 100  # GC Content (%)
@@ -99,18 +97,25 @@ def bases_content_plot(name, sequence):
     fig.savefig('data\\Content\\content_' + name + '.png', format='png')
 
 
-def composition_comparison(base_combinations, *genomes):
+def composition_comparison(polymer_len, *names):
     """Plots a chart - Normalised polynucleotide frequences of bases composition, for n genomes of interest.
 
-    :param list base_combinations: holds 'base_combinations()' output array, x axis
-    :param ndarray genomes: array holds genome dictionaries, to be plotted ('*' >=1 genomes)
+    :param int polymer_len: used in 'POLYMER[polymer_len]'
+    :param ndarray *names: array of str genome names ('*' >=1 genomes)
     """
+    if polymer_len <= 1 or not (isinstance(polymer_len, int)):  # checks whole number is above 1
+        print("Polynucleotides' length must be 2 to 6")  # context term
+        return  # Excepton Handling
+
+    # holds 'base_combinations()' output array, x axis
+    polynucleotides = sf.polynucleotides(polymer_len)
+
     # To display relevant labels
-    polymer_num = len(base_combinations[0])  # no. bases in each polymer
-    n_genomes = "Genomes" if len(genomes) > 1 else "Genome"  # plural or singular
+    polymer_num = len(polynucleotides[0])  # no. bases in each polymer
+    n_genomes = "Genomes" if len(names) > 1 else "Genome"  # plural or singular
 
     # Plot
-    x_width = 50 + min(512, (4**polymer_num))
+    x_width = 50 + min(512, (4 ** polymer_num))
     print("x_width", x_width)
     plt.figure(figsize=(x_width, 25))
     plt.title(POLYNUCLEOTIDE[polymer_num] + " Composition of " + n_genomes, fontsize=15)
@@ -121,16 +126,17 @@ def composition_comparison(base_combinations, *genomes):
 
     # Y axis
     tick = (0.001 * polymer_num if polymer_num > 2 else 0.01)
-    stop = 0.25 if polymer_num == 2 else (0.2 / polymer_num**2)
+    stop = 0.25 if polymer_num == 2 else (0.2 / polymer_num ** 2)
     plt.ylabel("Normalised " + POLYNUCLEOTIDE[polymer_num] + " Frequency", fontsize=10)
     plt.yticks(np.arange(0, stop, tick))
     plt.ylim(0, stop)
 
-    #[i for i in range(0, len(base_combinations), 2)]
-    for g, c in zip(genomes, COLOUR_MAP):
+    # [i for i in range(0, len(base_combinations), 2)]
+    for name, c in zip(names, COLOUR_MAP):
         # Parallel iteration - g (dictionaries in 'genomes') & c (colours in 'COLOUR_MAP')
-        nf = normalised_frequencies(base_combinations, g)
-        plt.plot(base_combinations, nf, linewidth=2, color=c, label=g['name'])
+        sequence = sf.dna_sequence(name)
+        nf = normalised_frequencies(polynucleotides, name, sequence)
+        plt.plot(polynucleotides, nf, linewidth=2, color=c, label=name)
     plt.legend()
 
     plt.grid(True)
@@ -140,29 +146,29 @@ def composition_comparison(base_combinations, *genomes):
     plt.draw()
     plt.show()
 
-    output_name = sf.output_name(genomes)  # Appended to output filename
+    output_name = sf.output_name(names)  # Appended to output filename
     fig.savefig('data\\Composition\\' + POLYNUCLEOTIDE[polymer_num] + output_name + '.png', format='png')
 
 
-def normalised_frequencies(base_combinations, genome):
+def normalised_frequencies(polynucleotides, name, sequence):
     """Calculates no. appearances each polymer, as a subsequence, appears in a given genome, as a %.
     Stores .csv - headers = polymers, nf = content (filename "nf_[polymers]_[genome].csv").
 
-    :param list base_combinations: holds 'base_combinations()' output array, x axis
-    :param dict genome: dictionary containing: 'name', 'description', 'sequence' of genome (dataimport.py - .fasta/.fna file)
+    :param list polynucleotides: holds 'base_combinations()' output file, x axis
+    :param str name: name of genome
+    :param str sequence: DNA of genome
     :return ndarray normalised_freq: infinitesimals, for each polymer, to be plotted in 'composition_comparison()'
     """
-    n = len(base_combinations[0])  # no. nucleotide units in polymer
-    sequence = ''.join(genome['sequence'])  # concatenates char members of genome as a string object
+    polymer_num = len(polynucleotides[0])  # no. nucleotide units in polymer
 
     normalised_freq = []
-    for p in base_combinations:
+    for p in polynucleotides:
         count = sequence.count(p)
-        nf = (count * n) / len(sequence)
+        nf = (count * polymer_num) / len(sequence)
         normalised_freq.append(nf)
 
-    # Store file - list of polymers & normalised frequency scores
-    np.savetxt('data\\Normalised Frequency\\' + POLYMER[n] + '\\nf_' + POLYMER[n] + '_' + genome['name'] + '.csv',
+    # Store file - normalised frequency scores
+    np.savetxt('data/Normalised Frequency/' + POLYMER[polymer_num] + '/nf_' + POLYMER[polymer_num] + '_' + name + '.csv',
                normalised_freq, delimiter=',')
 
     return normalised_freq
