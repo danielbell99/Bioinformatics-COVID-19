@@ -4,7 +4,7 @@ import StandardFunctions as sf
 
 # Constants - appropriate referencing (e.g. iteration, print, file name, visual)
 BASE = ['A', 'C', 'G', 'T']  # Nitrogenous Bases
-BASE_NAME = {"A": "Adenine", "C": "Cytosine", "G": "Guanine", "T": "Thymine"}
+BASE_NAME = {'A': "Adenine", 'C': "Cytosine", 'G': "Guanine", 'T': "Thymine"}
 POLYNUCLEOTIDE = {1: "Nucleotide", 2: "Dinucleotide", 3: "Trinucleotide", 4: "Tetranucleotide", 5: "Pentanucleotide",
                   6: "Hexanuceotide"}
 POLYMER = {2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers", 6: "hexamers"}  # lower-case for file names
@@ -62,16 +62,19 @@ def base_content(name):
     :param str name: name of genome
     """
     sequence = sf.dna_sequence(name)
+    print("unique chars: ", len(set(sequence)))  # 4
 
+    base_content = []
     for n in BASE:
         n_count = sequence.count(n)
         n_comp = round(n_count / len(sequence) * 100, 2)
+        base_content.append(n_comp)
         print(BASE_NAME[n] + " Composition: " + str(n_comp) + "%")
 
-    bases_content_plot(name, sequence)
+    base_content_plot(name, sequence)
 
 
-def bases_content_plot(name, sequence):
+def base_content_plot(name, sequence):
     """Nitrogenous Bases - AT/GC Ratio:
     Guanine & Cytosine as % of DNA (always paired together),
     Adenine & Thymine as % of DNA (always paired together).
@@ -80,22 +83,25 @@ def bases_content_plot(name, sequence):
     :param list sequence: DNA as individual monomer bases
     """
     # Data
-    gc = ((sequence.count("G") + sequence.count("C")) / len(sequence)) * 100  # GC Content (%)
-    at = ((sequence.count("A") + sequence.count("T")) / len(sequence)) * 100  # AT Content (%)
-    # ratio = (sequence.count("A") + sequence.count("T")) / (sequence.count("G") + sequence.count("C"))
+    gc = ((sequence.count('G') + sequence.count('C')) / len(sequence)) * 100
+    at = ((sequence.count('A') + sequence.count('T')) / len(sequence)) * 100
 
     # Plot
     plt.title(name + " Nitrogenous Base Pairs")
     plt.ylabel("Content as Percentage (%)")
-    x = ["G-C Content", "A-T Content"]
+    x = ["GC", "AT"]
     y = [gc, at]
+    plt.margins(y=0.1)
     plt.bar(x, y, color='blue')
+
+    # Values
+    for i, v in enumerate(y): plt.text(i, v, str(f"\n{v:.2f}%"), ha='center', va='bottom')
 
     # Display & Save
     fig = plt.gcf()
     plt.draw()
     plt.show()
-    fig.savefig('data\\Content\\content_' + name + '.png', format='png')
+    fig.savefig('data/Content/content_' + name + '.png', format='png')
 
 
 def composition_comparison(polymer_len, *names):
@@ -147,7 +153,7 @@ def composition_comparison(polymer_len, *names):
     plt.show()
 
     output_name = sf.output_name(names)  # Appended to output filename
-    fig.savefig('data\\Composition\\' + POLYNUCLEOTIDE[polymer_num] + output_name + '.png', format='png')
+    fig.savefig('data/Composition/' + POLYNUCLEOTIDE[polymer_num] + output_name + '.png', format='png')
 
 
 def normalised_frequencies(polynucleotides, name, sequence):

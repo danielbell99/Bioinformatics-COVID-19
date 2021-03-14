@@ -24,18 +24,18 @@ import test
 
 """ Nucleotide Composition """
 # AT/GC Content
-#Nucleotides.base_content("SARS-CoV-JQ316196")
-#Nucleotides.base_content("MERS-MT387202")
-#Nucleotides.base_content("SARS-CoV-2-MT873892")
+Nucleotides.base_content("SARS-CoV-JQ316196")
+Nucleotides.base_content("MERS-MT387202")
+Nucleotides.base_content("SARS-CoV-2-MT873892")
 
 
 #Nucleotides.base_combinations(2)  # Polymer Bases Combinations - 3, 4, 5, 6
 
-Nucleotides.composition_comparison(2, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-Nucleotides.composition_comparison(3, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-Nucleotides.composition_comparison(4, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-Nucleotides.composition_comparison(5, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-Nucleotides.composition_comparison(6, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#Nucleotides.composition_comparison(2, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#Nucleotides.composition_comparison(3, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#Nucleotides.composition_comparison(4, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#Nucleotides.composition_comparison(5, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#Nucleotides.composition_comparison(6, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
 
 
 """ Cluster Analysis """
