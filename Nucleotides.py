@@ -9,6 +9,7 @@ POLYNUCLEOTIDE = {1: "Nucleotide", 2: "Dinucleotide", 3: "Trinucleotide", 4: "Te
                   6: "Hexanuceotide"}
 POLYMER = {2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers", 6: "hexamers"}  # lower-case for file names
 COLOUR_MAP = ["red", "green", "blue", "yellow", "purple"]
+Y_AXIS_STOP = {2: 0.25, 3: 0.1, 4: 0.05, 5: 0.025, 6: 0.01}
 
 
 def base_combinations(polymer_len):
@@ -116,24 +117,23 @@ def composition_comparison(polymer_len, *names):
 
     # Plot
     x_width = 50 + min(512, (4 ** polymer_num))
-    print("x_width", x_width)
     plt.figure(figsize=(x_width, 25))
     plt.title(POLYNUCLEOTIDE[polymer_num] + " Composition of " + n_genomes, fontsize=15)
 
     # X axis
+    polynucleotides = polynucleotides[::polymer_num] if polymer_num > 2 else polynucleotides
     plt.xlabel(POLYNUCLEOTIDE[polymer_num], fontsize=10)
     plt.xticks(rotation=45)
 
     # Y axis
-    tick = (0.001 * polymer_num if polymer_num > 2 else 0.01)
-    stop = 0.25 if polymer_num == 2 else (0.2 / polymer_num) * 1.5
+    y_tick = (0.001 * polymer_num if polymer_num > 2 else 0.01)
+    stop = Y_AXIS_STOP[polymer_num]
     plt.ylabel("Normalised " + POLYNUCLEOTIDE[polymer_num] + " Frequency", fontsize=10)
-    plt.yticks(np.arange(0, stop, tick))
+    plt.yticks(np.arange(0, stop, y_tick))
     plt.ylim(0, stop)
 
-    # [i for i in range(0, len(base_combinations), 2)]
+    # Parallel iteration
     for name, c in zip(names, COLOUR_MAP):
-        # Parallel iteration - g (dictionaries in 'genomes') & c (colours in 'COLOUR_MAP')
         sequence = sf.dna_sequence(name)
         nf = normalised_frequencies(polynucleotides, name, sequence)
         plt.plot(polynucleotides, nf, linewidth=2, color=c, label=name)
