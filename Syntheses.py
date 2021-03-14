@@ -1,33 +1,37 @@
+import StandardFunctions as sf
+
 DNA_ALPHABET = ['A', 'C', 'G', 'T']
 
-def write_file(genome_name, protein):
+def write_file(name, protein):
     """Stores synthesised protein w/ appropriate file naming convention.
 
-    :param str genome_name: name of virus that we've synthesised
+    :param str name: name of genome
     :param protein: actual synthesised data from 'protein()'
     """
-    file = open('data\\Syntheses\\' + 'protein_' + genome_name, 'w')
+    file = open('data\\Syntheses\\' + 'protein_' + name, 'w')
     file.write(protein)
     file.close()
-    print("\nSynthesised Protein: " + genome_name + "\n" + str(protein) + "\n")
+    print("\nSynthesised Protein: " + name + "\n" + str(protein) + "\n")
 
     return
 
 
-def protein(genome):
+def protein(name):
     """DNA -(transcription)> mRNA -(translation)> Protein.
     Start codon: AUG (not needed for 'dna_codons' dict)
     Stop codons: TAA, TAG, TGA (denoted by '*')
 
-    :param genome:
+    :param str name: name of genome
     """
+    sequence = sf.dna_sequence(name)
+
     # Insufficient
-    if len(genome['sequence']) < 3:
+    if len(sequence) < 3:
         print("Protein Syntheses CANCELLED:")
         print("Insufficient Polynucleotides. Synthesisation requires 3 or more.")
         return
     # Non-DNA Alphabet Character
-    for idx, val in enumerate(genome['sequence']):
+    for idx, val in enumerate(sequence):
         if val not in DNA_ALPHABET:
             print("Protein Syntheses Halted:")
             print("non-DNA character '" + val + "' at position [" + str(idx) + "]")
@@ -45,7 +49,7 @@ def protein(genome):
                 else:
                     print("input was a typo...")  # while loop prevents crashing if there's a bad input
 
-    dna = ''.join(genome['sequence'])
+    dna = ''.join(sequence)
     if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
     if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, a mono or di-nucleotide
 
@@ -72,4 +76,4 @@ def protein(genome):
         #print("Protein: ", dna_codons.get(codon, ''))
         protein += dna_codons.get(codon, '')  # appends as str
 
-    write_file(genome['name'], protein)  # Save Synthesised Protein
+    write_file(name, protein)  # Save Synthesised Protein

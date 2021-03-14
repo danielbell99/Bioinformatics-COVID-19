@@ -3,6 +3,8 @@ from os.path import isfile, join
 
 """ Abstract functions used across Application """
 
+POLYMER = {2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers", 6: "hexamers"}  # lower-case for file names
+
 
 def capture_filenames(bio_type):
     """Captures all file names in directory, based on 'bio_type'.
@@ -19,17 +21,27 @@ def capture_filenames(bio_type):
 
     return filenames
 
+def polynucleotides(polymer_len):
+    """Returns list of polynucleotides of interest
 
-def output_name(genomes):
+    :param int polymer_len: used in 'POLYMER[polymer_len]'
+    :return str output: concatenated names of genomes of interest
+    """
+    file = open('data/Polynucleotides/' + POLYMER[polymer_len], 'r')
+    polynucleotides = file.read().splitlines()
+    file.close()
+
+    return polynucleotides
+
+def output_name(names):
     """Concatenates genome names for an output filename.
 
-    :param dict genomes: contains many entire genome data; 'name' value used
-    :return str output: names of genomes of interest
+    :param list names: names of genomes
+    :return str output: concatenated names of genomes of interest
     """
-    print("genomes SF", genomes)
     output = ""
-    for i in range(len(genomes)):
-        output += '_' + genomes[i]['name']  # separated by '_'
+    for name in names:
+        output += '_' + name  # separated by '_'
     return output
 
 
@@ -50,15 +62,19 @@ def output_filename(sequence_filename):
     return name
 
 
-def ignore_firstline(directory_filename):
+def dna_sequence(filename):
     """e.g. DNA datasets have a description line on top, followed by a line break.
 
     :param str directory_filename: absolute file path
     :return str content: holds the sequence data
     """
-    file = open(directory_filename, 'r')
+    try:
+        file = open('src/' + filename + '.fasta', 'r')
+    except:
+        file = open('src/' + filename + '.fna', 'r')
     content = file.readlines()[1:]
     content = ''.join(content)
+    content = ''.join(content.splitlines())  # bc splitlines() removes '\n' but returns list
     file.close()
 
     return content
