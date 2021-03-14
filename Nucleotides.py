@@ -126,7 +126,7 @@ def composition_comparison(polymer_len, *names):
 
     # Y axis
     tick = (0.001 * polymer_num if polymer_num > 2 else 0.01)
-    stop = 0.25 if polymer_num == 2 else (0.2 / polymer_num ** 2)
+    stop = 0.25 if polymer_num == 2 else (0.2 / polymer_num) * 1.5
     plt.ylabel("Normalised " + POLYNUCLEOTIDE[polymer_num] + " Frequency", fontsize=10)
     plt.yticks(np.arange(0, stop, tick))
     plt.ylim(0, stop)

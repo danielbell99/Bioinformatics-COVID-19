@@ -48,9 +48,8 @@ def seaborn_scatterplot(model, results, genome_names, polymer_len):
 
     :param str model: String literal name of model for saving figure as filename
     :param ndarray results: contains entire genome data; 'name' value used (*others is optional)
-    :param list polynucleotides: combination of nucleic acids of n length each
     :param list genome_names: names extracted from included genomes['name']
-    :param int polymer_name: len(polynucleotides[0]) used to get polymer name from POLYMER dict
+    :param int polymer_len: used in 'POLYMER[polymer_len]'
     """
     str_names = '_'.join(genome_names)
     polynucleotides = sf.polynucleotides(polymer_len)
@@ -77,9 +76,8 @@ def principal_component_analysis(df, genome_names, polymer_len):
     Time in seconds, printed.
 
     :param DataFrame df: holds normalised frequency scores for fit & transformation
-    :param list polynucleotides: combination of nucleic acids of n length each
     :param list genome_names: names extracted from included genomes['name']
-    :param int polymer_name: len(polynucleotides[0]) used to get polymer name from POLYMER dict
+    :param int polymer_len: used in 'POLYMER[polymer_len]'
     """
     time_start = time.time()
     pca = PCA(n_components=2)
@@ -91,19 +89,19 @@ def principal_component_analysis(df, genome_names, polymer_len):
     seaborn_scatterplot("PCA", pca_results, genome_names, polymer_len)
 
 
-def tSNE(pca_results, genome_names, polymer_len):
+def tSNE(df, genome_names, polymer_len):
     """t-distributed Stochastic Neighbour Embedding. Machine Learning algorithm for Cluster visualisation.
     Time in seconds, printed.
 
-    :param ndarray pca_results: normalised frequency scores, reduced to 2 features, for fit & transformation
+    :param DataFrame df: holds normalised frequency scores for fit & transformation
     :param list genome_names: names extracted from included genomes['name']
-    :param int polymer_name: len(polynucleotides[0]) used to get polymer name from POLYMER dict
+    :param int polymer_len: used in 'POLYMER[polymer_len]'
     """
     np.random.seed(42)  # Reproducability of results
 
     time_start = time.time()
     tsne = TSNE(n_components=2, perplexity=30, early_exaggeration=12)
-    tsne_results = tsne.fit_transform(pca_results)
+    tsne_results = tsne.fit_transform(df)
     print("\nt-SNE complete. Time elapsed: {0:.2f}secs".format(time.time() - time_start))
 
     print("\n" + str(tsne_results), type(tsne_results))
