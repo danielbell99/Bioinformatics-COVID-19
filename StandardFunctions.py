@@ -3,8 +3,6 @@ from os.path import isfile, join
 
 """ Abstract functions used across Application """
 
-POLYMER = {2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers", 6: "hexamers"}  # lower-case for file names
-
 
 def capture_filenames(bio_type):
     """Captures all file names in directory, based on 'bio_type'.
@@ -21,17 +19,6 @@ def capture_filenames(bio_type):
 
     return filenames
 
-def polynucleotides(polymer_len):
-    """Returns list of polynucleotides of interest
-
-    :param int polymer_len: used in 'POLYMER[polymer_len]'
-    :return str output: concatenated names of genomes of interest
-    """
-    file = open('data/Polynucleotides/' + POLYMER[polymer_len], 'r')
-    polynucleotides = file.read().splitlines()
-    file.close()
-
-    return polynucleotides
 
 def output_name(names):
     """Concatenates genome names for an output filename.
@@ -94,6 +81,21 @@ def directory(bio_type):
         return  # invoker handles exception
 
     return directory
+
+
+def polynucleotides(polymer_len):
+    """Returns list of polynucleotides of interest
+
+    :param int polymer_len: used in 'POLYMER[polymer_len]'
+    :return str output: concatenated names of genomes of interest
+    """
+    POLYMER = {2: "dimers", 3: "trimers", 4: "tetramers", 5: "pentamers", 6: "hexamers"}  # lower-case for file names
+
+    file = open('data/Polynucleotides/' + POLYMER[polymer_len], 'r')
+    polynucleotides = file.read().splitlines()
+    file.close()
+
+    return polynucleotides
 
 
 # Not in use

@@ -7,7 +7,7 @@ from os.path import isfile, join
 
 
 def api(db, ids):
-    """Invokes API, conditionally, for any dataset type.
+    """Establishes connection to NCBI servers
     Exception Handling: for bad HTTP requests
 
     :param str db: database name for type of data to extract
