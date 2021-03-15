@@ -1,0 +1,7 @@
+*ICSLNEL*NLCGCHSAACLVHSRSIINN*LLSLTGHE*LVYLLQAAYGFVRVAADHQHI*VLSGCDRKVRWRALSLVSTRKHTSNSVCL-FY--RFA--TCSY--------------------------------------------------------------------------------------
+                                                                                         | ||  |..  | |                                                                                       
+-----------------------------------------------------------------------------------------LGFYLPRKSQPT-S-ISCRSVL*TNFKICVAVARLHA*CTYAV*TIINFTVVDKKRVTRPSSADCLRFRPCCSRSSAYLGFVRV*PKGKMESLVLGVNEKT
+  Score=3
+
+Sequence Identity: 3.16%
+Gapless Identity: 75.0%

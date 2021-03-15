@@ -1,6 +1,0 @@
------------------------------------------------TGTAGATCTGTTCTCTAAACGA-ACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACT
-CACGCAGTATAATTAATAACTAATTACTG
-                                               |||||||||||||||||||||| ||||||||||||||||.||||||.|||||                                                
-TATTAGGTTTTTACCTACCCAGGAAAAGCCAACCAACCTCGATCTCTTGTAGATCTGTTCTCTAAACGA
-ACTTTAAAATCTGTGTAGCTGTCGCTCGG------------------------------------------------
-  Score=95
