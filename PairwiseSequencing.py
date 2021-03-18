@@ -1,6 +1,7 @@
 import os
 from math import log
 from Bio import pairwise2
+from Bio.Align import substitution_matrices
 from Bio.pairwise2 import format_alignment
 from joblib.numpy_pickle_utils import xrange
 import StandardFunctions as sf
@@ -16,7 +17,8 @@ def save(bio_type, output_name, alignments, seq_id, gapless_seq_id):
     :param float gapless_seq_id: match % w/out gaps
     """
     # File
-    path_filename = os.path.join('data/Pairwise Sequencing', bio_type + output_name + '.txt')  # Defines path and filename
+    path_filename = os.path.join('data/Pairwise Sequencing',
+                                 bio_type + output_name + '.txt')  # Defines path and filename
     file = open(path_filename, 'w')
 
     # Contents
@@ -50,8 +52,8 @@ def gap_function(x, y):
 def sequence_identity(align1, align2):
     """Calculates matches btwn a pair of aligned sequences, as %
 
-    :param str align1:
-    :param str align1:
+    :param str align1: seqA, optimally aligned with align2
+    :param str align1: seqB, optimally aligned with align1
     :return: float seq_id: match % w/ gaps
     :return: float gapless_seq_id: match % w/out gaps
     """
@@ -124,8 +126,19 @@ def run(bio_type, *names):
     alignments = pairwise2.align.globalmc(seqA[1:100], seqB[1:100], 2, -1, gap_function, gap_function,
                                           penalize_end_gaps=False)
 
+    dna_submat = {('A', 'A'): 2, ('A', 'C'): -1, ('A', 'G'): 1, ('A', 'T'): -1,
+                  ('C', 'A'): -1, ('C', 'C'): 2, ('C', 'G'): -1, ('C', 'T'): 1,
+                  ('G', 'A'): -1, ('G', 'C'): -1, ('G', 'G'): 2, ('G', 'T'): -1,
+                  ('T', 'A'): -1, ('T', 'C'): -1, ('T', 'G'): -1, ('T', 'T'): 2}
+
+    #alignments = pairwise2.align.localds(seqA[1:100], seqB[1:100], dna_submat, -2, -1, penalize_end_gaps=False)
+    """
+    matrix = substitution_matrices.load("BLOSUM62")
+    #print(matrix)
+    """
+
     # Model Metrics
-    best_aln = alignments[0]
+    best_aln = alignments[0]  # , one_alignment_only=True)
     align1, align2, score, begin, end = best_aln
     print("best_aln", best_aln)
     print("align1", align1)

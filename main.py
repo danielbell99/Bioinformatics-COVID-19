@@ -54,12 +54,12 @@ import test
 
 """ Pairwise Sequencing """
 PairwiseSequencing.run("DNA", "SARS-CoV-JQ316196", "MERS-MT387202")
-PairwiseSequencing.run("DNA", "MERS-MT387202", "SARS-CoV-2-MT873892")
-PairwiseSequencing.run("DNA", "SARS-CoV-JQ316196", "SARS-CoV-2-MT873892")
+#PairwiseSequencing.run("DNA", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#PairwiseSequencing.run("DNA", "SARS-CoV-JQ316196", "SARS-CoV-2-MT873892")
 
-PairwiseSequencing.run("Protein", "SARS-CoV-JQ316196", "MERS-MT387202")
-PairwiseSequencing.run("Protein", "MERS-MT387202", "SARS-CoV-2-MT873892")
-PairwiseSequencing.run("Protein", "SARS-CoV-JQ316196", "SARS-CoV-2-MT873892")
+#PairwiseSequencing.run("Protein", "SARS-CoV-JQ316196", "MERS-MT387202")
+#PairwiseSequencing.run("Protein", "MERS-MT387202", "SARS-CoV-2-MT873892")
+#PairwiseSequencing.run("Protein", "SARS-CoV-JQ316196", "SARS-CoV-2-MT873892")
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
