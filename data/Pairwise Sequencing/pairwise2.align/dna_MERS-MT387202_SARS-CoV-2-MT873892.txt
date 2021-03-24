@@ -1,0 +1,7 @@
+---------------------GA--TTTAAGTGAATA-GCT-TGGCTATCTCACTTCCCCT-CGTTCTCT--TGCAGT-ACTTTG-A-T-T--TTAACGAACTTAAATAAAAGCCCTGTTGTTTAGCGTATTGT
+                     ||  |||||   |||. | | ||||  |.|||| ||..|| |.|.|| |  ||||.| ||   | | | |  |||| .||| |||.||      ||||               
+TTGTAGATCTGTTCTCTAAACGAACTTTAA---AATCTG-TGTGGC--TGTCAC-TCGGCTGCATGCT-TAGTGCACTCAC---GCAGTATAATTAA-TAAC-TAATTA------CTGT---------------
+  Score=74.6
+
+Sequence Identity: 42.54%
+Gapless Identity: 86.36%

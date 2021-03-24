@@ -1,0 +1,7 @@
+DLSE*LGYLTSPRSLAVL*F*RT*IKALLFSVLLHLSGGIVAL-IC-L--LI*AVDIC-STLGIILIEYYFSVRASCLLYV-SVTI---------------------YGFVRCVA-----IRGTS-C--------LSWLV*---------------------
+                                          | || |  | |....| |              |.| | | |..|                     ||||| ||     |...| |        || ||                      
+------------------------------------------L*ICSLNEL-*NLCGCHS--------------AAC-L-VHSRSIINN*LLSLTGHE*LVYLLQAAYGFVR-VAADHQHI*VLSGCDRKVRWRALS-LV-STRKHTSNSVCLFYRFATCSY
+  Score=8.32
+
+Sequence Identity: 17.28%
+Gapless Identity: 73.68%

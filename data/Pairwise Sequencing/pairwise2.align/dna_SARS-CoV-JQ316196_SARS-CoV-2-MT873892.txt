@@ -1,0 +1,7 @@
+ATATTAGGTTTTTACCTACCCAGGAAAAGCCAACCAACCTCGATCTCTTGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTAGCTGTCGCTCGGC-----------------------------------------------
+                                               |||||||||||||||||||||||||||||||||||||||.||||||.||||||                                               
+-----------------------------------------------TTGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGT
+  Score=100
+
+Sequence Identity: 34.69%
+Gapless Identity: 96.23%

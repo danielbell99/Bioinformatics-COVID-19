@@ -6,7 +6,7 @@ def write_file(name, protein):
     """Stores synthesised protein w/ appropriate file naming convention.
 
     :param str name: name of genome
-    :param protein: actual synthesised data from 'protein()'
+    :param protein: synthesised data from 'protein()'
     """
     file = open('data\\Syntheses\\' + 'protein_' + name, 'w')
     file.write(protein)

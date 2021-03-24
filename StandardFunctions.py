@@ -1,7 +1,7 @@
 from os import listdir
 from os.path import isfile, join
 
-""" Abstract functions used across Application """
+''' Abstract functions used across Application '''
 
 
 def capture_filenames(bio_type):
@@ -52,7 +52,7 @@ def output_filename(sequence_filename):
 def dna_sequence(filename):
     """e.g. DNA datasets have a description line on top, followed by a line break.
 
-    :param str directory_filename: absolute file path
+    :param str filename: one filename of interest, w/out extension
     :return str content: holds the sequence data
     """
     try:
@@ -60,6 +60,24 @@ def dna_sequence(filename):
     except:
         file = open('src/' + filename + '.fna', 'r')
     content = file.readlines()[1:]
+    content = ''.join(content)
+    content = ''.join(content.splitlines())  # bc splitlines() removes '\n' but returns list
+    file.close()
+
+    return content
+
+
+def protein_sequence(filename):
+    """Retrieves Protein sequence as str.
+
+    :param str filename: one filename of interest, w/out extension
+    :return str content: holds the sequence data
+    """
+    try:
+        file = open('data/Syntheses/protein_' + filename + '.txt', 'r')
+    except:
+        file = open('data/Syntheses/protein_' + filename, 'r')
+    content = file.readlines()
     content = ''.join(content)
     content = ''.join(content.splitlines())  # bc splitlines() removes '\n' but returns list
     file.close()
