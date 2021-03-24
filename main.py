@@ -3,6 +3,7 @@ import Nucleotides
 import Clustering
 import Syntheses
 import PairwiseSequencing
+from PairwiseSequencingAlgorithms import NeedlemanWunsch, SmithWaterman
 import Alignment
 import MultipleSequenceAlignment
 import test
@@ -10,16 +11,9 @@ import test
 
 """ Import Genomes """
 # API Parameters
-#db = 'nucleotide'  # 'protein'
-#ids = ['844174433']  # append list of IDs you want to fetch from NCBI
-#genomes = dataimport.read_genomes(db, ids)  # static
-
-# Genome Dictionaries
-# MERS = genomes[0]
-# SARSCoV2 = genomes[1]
-# SARS = genomes[2]
-# Create a variable here for a new genome sequence, following the above format e.g.
-# NewStrain = genomes[3]
+db = 'nucleotide'  # 'protein'
+ids = ['844174433']  # append list of IDs you want to fetch from NCBI
+genomes = dataimport.read_genomes(db, ids)  # static
 
 
 """ Nucleotide Composition """
@@ -53,18 +47,21 @@ import test
 
 
 """ Pairwise Sequencing """
-PairwiseSequencing.run("DNA", "SARS-CoV-JQ316196", "MERS-MT387202")
-#PairwiseSequencing.run("DNA", "MERS-MT387202", "SARS-CoV-2-MT873892")
-#PairwiseSequencing.run("DNA", "SARS-CoV-JQ316196", "SARS-CoV-2-MT873892")
+bio_type = "DNA" # "Protein"
+#genomes = ["SARS-CoV-JQ316196", "MERS-MT387202"]
+#genomes = ["MERS-MT387202", "SARS-CoV-2-MT873892"]
+genomes = ["SARS-CoV-JQ316196", "SARS-CoV-2-MT873892"]
+points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}
 
-#PairwiseSequencing.run("Protein", "SARS-CoV-JQ316196", "MERS-MT387202")
-#PairwiseSequencing.run("Protein", "MERS-MT387202", "SARS-CoV-2-MT873892")
-#PairwiseSequencing.run("Protein", "SARS-CoV-JQ316196", "SARS-CoV-2-MT873892")
+NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **points_scheme)
+SmithWaterman.SmithWaterman(bio_type, genomes, **points_scheme)
+#PairwiseSequencing.run(bio_type, genomes, **points_scheme)
+
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
-#Alignment.create_file("DNA")
-#Alignment.create_file("Protein")
+#Alignment.create("DNA")
+#Alignment.create("Protein")
 
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)

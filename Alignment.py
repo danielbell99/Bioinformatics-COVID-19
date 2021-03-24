@@ -82,7 +82,7 @@ def sequence_lengths(sequence_filenames, bio_type, directory):
     return seq_lengths
 
 
-def create_file(bio_type):
+def create(bio_type):
     """Wrap-around function conditions 'bio_type' to create an .aln file of 'bio_type' sequences.
     Invokes: 'sequence_lengths()' & 'establish_alignment_file()'.
     Establishes: 'directory' & 'sequence_filenames', based on 'bio_type' sequences.
