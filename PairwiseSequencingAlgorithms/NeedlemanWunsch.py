@@ -3,8 +3,7 @@ import StandardFunctions as sf
 
 
 def NeedlemanWunsch(bio_type, *args, **kwargs):
-    """
-    Global sequence alignment algorithm
+    """Global sequence alignment algorithm.
 
     :param bio_type: "dna" or "protein"
     :param tuple *args: pair of genomes' str names
@@ -16,7 +15,7 @@ def NeedlemanWunsch(bio_type, *args, **kwargs):
     m, n = len(seqA), len(seqB)  # let m, n denote the lengths of two sequences
 
     # Dynamic Programming Table
-    score_matrix = tasks.zeros((m + 1, n + 1))  # empty
+    score_matrix = tasks.empty_matrix(m+1, n+1)  # '+1' - far-left col & top row represent indexes of sequences' chars
 
     # Initial Contents
     for i in range(0, m+1): score_matrix[i][0] = i * gap_points
@@ -29,9 +28,9 @@ def NeedlemanWunsch(bio_type, *args, **kwargs):
             deletion = score_matrix[i-1][j] + gap_points
             score_matrix[i][j] = max(match_result, insertion, deletion)
 
-    # Dynamic Programming Table - Perform Traceback
-    i, j = m, n  # Starting point - bottom-right cell
     align1, align2 = '', ''
+    i, j = m, n  # Starting point - bottom-right cell
+    # Dynamic Programming Table - Perform Traceback
     while i > 0 and j > 0:  # '>0' - exclude top and far-left indexes
         score = score_matrix[i][j]
         above_score = score_matrix[i][j-1]
@@ -64,8 +63,8 @@ def NeedlemanWunsch(bio_type, *args, **kwargs):
 
 
     # Score & Alignment
-    align1, symbols, align2, str_score = tasks.score_alignment(align1, align2, points_scheme)
-    alignments = [align1, symbols, align2, str_score]  # naming convention - only one alignment in actuality
+    align1, signs, align2, str_score = tasks.score_alignment(align1, align2, points_scheme)
+    alignments = [align1, signs, align2, str_score]  # naming convention - only one alignment in actuality
 
     # Sequence Identity
     seq_identity = tasks.sequence_identity(align1, align2)  # tuple (seq_id, gapless_seq_id)

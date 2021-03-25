@@ -13,7 +13,6 @@ def run(bio_type, *args, **kwargs):
     :param dict **kwargs: user-defined point scheme for scoring, and readability
     """
     seqA, seqB, match_points, mismatch_points, gap_points = tasks.preparation(bio_type, *args, **kwargs)
-    points_scheme = [match_points, mismatch_points, gap_points]  # deterministic
 
     # Print Global Sequencing of pair
     # Match Score - matched sequence chars found; otherwise - Mismatch Score

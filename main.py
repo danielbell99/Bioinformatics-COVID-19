@@ -55,7 +55,7 @@ points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}
 
 NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **points_scheme)
 SmithWaterman.SmithWaterman(bio_type, genomes, **points_scheme)
-#PairwiseSequencing.run(bio_type, genomes, **points_scheme)
+PairwiseSequencing.run(bio_type, genomes, **points_scheme)
 
 
 """ Alignment Files """
