@@ -50,8 +50,8 @@ def protein(name):
                     print("input was a typo...")  # while loop prevents crashing if there's a bad input
 
     dna = ''.join(sequence)
-    if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
-    if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, a mono or di-nucleotide
+    #if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
+    #if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, a mono or di-nucleotide
 
     dna_codons = {
         'AAA': 'K', 'AAC': 'N', 'AAG': 'K', 'AAT': 'N', 'ACA': 'T',
@@ -75,5 +75,7 @@ def protein(name):
         #print("Codon: ", codon)
         #print("Protein: ", dna_codons.get(codon, ''))
         protein += dna_codons.get(codon, '')  # appends as str
+
+    print(protein)
 
     write_file(name, protein)  # Save Synthesised Protein

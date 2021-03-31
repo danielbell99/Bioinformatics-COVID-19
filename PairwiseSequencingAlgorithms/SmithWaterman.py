@@ -14,10 +14,10 @@ def SmithWaterman(bio_type, *args, **kwargs):
 
     m, n = len(seqA), len(seqB)  # let m, n denote the lengths of two sequences
 
+    # Path Traceback - pointer matrix
+    pointer_matrix = tasks.empty_matrix(m + 1, n + 1)  # stores traceback path (same dimensions)
     # Dynamic Programming Table - score matrix
     score_matrix = tasks.empty_matrix(m+1, n+1)  # '+1' - far-left col & top row represent indexes of sequences' chars
-    # Path Traceback - pointer matrix
-    pointer_matrix = tasks.empty_matrix(m+1, n+1)  # stores traceback path (same dimensions)
 
     max_score = 0  # Initial maximum score obtainable
     # Contents & Declare Pointers
@@ -26,7 +26,7 @@ def SmithWaterman(bio_type, *args, **kwargs):
             above_score = score_matrix[i][j-1] + gap_points
             left_score = score_matrix[i-1][j] + gap_points
             above_left_score = score_matrix[i-1][j-1] + tasks.match(seqA[i-1], seqB[j-1], points_scheme)  # Assign points to position
-            score_matrix[i][j] = max(0, above_score, left_score, above_left_score)  # cannot be a negative number
+            score_matrix[i][j] = max(above_score, left_score, above_left_score, 0)  # cannot be a negative number
 
             # Update w/ Optimal Traceback Path
             if score_matrix[i][j] == above_score:

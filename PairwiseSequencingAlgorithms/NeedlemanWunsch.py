@@ -23,10 +23,11 @@ def NeedlemanWunsch(bio_type, *args, **kwargs):
 
     for i in range(1, m+1):
         for j in range(1, n+1):
-            match_result = score_matrix[i-1][j-1] + tasks.match(seqA[i-1], seqB[j-1], points_scheme)  # Assign points to position
             insertion = score_matrix[i][j-1] + gap_points
             deletion = score_matrix[i-1][j] + gap_points
-            score_matrix[i][j] = max(match_result, insertion, deletion)
+            match_result = score_matrix[i - 1][j - 1] + tasks.match(seqA[i - 1], seqB[j - 1],
+                                                                    points_scheme)  # Assign points to position
+            score_matrix[i][j] = max(insertion, deletion, match_result)
 
     align1, align2 = '', ''
     i, j = m, n  # Starting point - bottom-right cell

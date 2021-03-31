@@ -4,7 +4,7 @@ from os.path import isfile, join
 import random
 import copy
 import unittest
-#from hypothesis import given, strategies as st
+from hypothesis import given, strategies as st
 from threading import Thread
 import Nucleotides
 import Syntheses
@@ -78,7 +78,7 @@ class TestNucleotides(unittest.TestCase):
         print("33333333333333333333333333")
         return
 
-    #@given(st.floats(), st.floats())
+    @given(st.floats(), st.floats())
     def test_normalised_frequencies(self, base_combinations, *genomes):
         """
         Genomes tend to have majority AT content over GC.
@@ -90,9 +90,9 @@ class TestNucleotides(unittest.TestCase):
 
     def run_test_cases(self):
         #Thread(target=self.generate_sequence).start()
-        Thread(target=self.test_base_combinations_dimers).start()
+        #Thread(target=self.test_base_combinations_dimers).start()
         #Thread(target=self.test_base_content).start()
-        #Thread(target=self.test_normalised_frequencies).start()
+        Thread(target=self.test_normalised_frequencies).start()
 
 
 class TestSyntheses(unittest.TestCase):
@@ -256,6 +256,10 @@ class TestStandardFunctions(unittest.TestCase):
         Thread(target=self.test_dna_sequence).start()
         Thread(target=self.test_directory).start()
         Thread(target=self.test_remove_prefix).start()
+
+
+class TestPairwiseSequencingAlgorithms(unittest.TestCase):
+    """ NeedlemanWunsh.py, SmithWaterman.py, PairwiseSequencing.py, tasks.py """
 
 
 def run():

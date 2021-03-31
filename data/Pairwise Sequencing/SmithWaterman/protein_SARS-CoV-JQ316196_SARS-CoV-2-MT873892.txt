@@ -1,7 +1,7 @@
-AYLGFVRV
-|..|||||
-AAYGFVRV
+GFVRV
+|||||
+GFVRV
   Score=10.0
 
-Sequence Identity: 75.0%
-Gapless Identity: 75.0%
+Sequence Identity: 100.0%
+Gapless Identity: 100.0%
