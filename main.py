@@ -11,9 +11,9 @@ import test
 
 """ Import Genomes """
 # API Parameters
-db = 'nucleotide'  # 'protein'
-ids = ['844174433']  # append list of IDs you want to fetch from NCBI
-genomes = dataimport.read_genomes(db, ids)  # static
+#db = 'nucleotide'  # 'protein'
+#ids = ['844174433']  # append list of IDs you want to fetch from NCBI
+#genomes = dataimport.read_genomes(db, ids)  # static
 
 
 """ Nucleotide Composition """
@@ -47,15 +47,15 @@ genomes = dataimport.read_genomes(db, ids)  # static
 
 
 """ Pairwise Sequencing """
-bio_type = "DNA" # "Protein"
+#bio_type = "Protein" # "DNA"
 #genomes = ["SARS-CoV-JQ316196", "MERS-MT387202"]
 #genomes = ["MERS-MT387202", "SARS-CoV-2-MT873892"]
-genomes = ["SARS-CoV-JQ316196", "SARS-CoV-2-MT873892"]
-points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}
+#genomes = ["SARS-CoV-JQ316196", "SARS-CoV-2-MT873892"]
+#points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}
 
-NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **points_scheme)
-SmithWaterman.SmithWaterman(bio_type, genomes, **points_scheme)
-PairwiseSequencing.run(bio_type, genomes, **points_scheme)
+#NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **points_scheme)
+#SmithWaterman.SmithWaterman(bio_type, genomes, **points_scheme)
+#PairwiseSequencing.run(bio_type, genomes, **points_scheme)
 
 
 """ Alignment Files """
@@ -71,7 +71,7 @@ Test run Jupyter Notebook version
 """
 
 """ Testing """
-#test.run()
+test.run()
 
 
 print("END OF MAIN")
