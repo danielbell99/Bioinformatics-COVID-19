@@ -8,12 +8,40 @@ def write_file(name, protein):
     :param str name: name of genome
     :param protein: synthesised data from 'protein()'
     """
-    file = open('data\\Syntheses\\' + 'protein_' + name, 'w')
+    file = open('data/Syntheses/' + 'protein_' + name, 'w')
     file.write(protein)
     file.close()
     print("\nSynthesised Protein: " + name + "\n" + str(protein) + "\n")
 
     return
+
+
+def alphabet_check(name, sequence, alphabet):
+    """Compares all characters/ elements of 'sequence' against its bio_type 'alphabet'.
+
+    :param str name: name of genome
+    :param list sequence: holds the sequence data
+
+    :return bool flag: cancel synthesisation
+    """
+    # Non-DNA Alphabet Character
+    # for idx, val in enumerate(sequence)
+    if any(c not in alphabet for c in list(sequence)):
+        print("Protein Syntheses Halted:")
+        print(name + "contains non-DNA character(s)'")
+        # User Decision
+        print("Do you want to continue synthesisation by skipping over these characters?")
+        decided = False
+        while not decided:
+            decision = input("'Yes' or 'No'")
+            if decision.lower() == 'no':
+                print("cancelled")
+                return 1
+            elif decision.lower() == 'yes':
+                decided = True
+                print("continuing")
+            else:
+                print("try again...")
 
 
 def protein(name):
@@ -30,24 +58,9 @@ def protein(name):
         print("Protein Syntheses CANCELLED:")
         print("Insufficient Polynucleotides. Synthesisation requires 3 or more.")
         return
-    # Non-DNA Alphabet Character
-    for idx, val in enumerate(sequence):
-        if val not in DNA_ALPHABET:
-            print("Protein Syntheses Halted:")
-            print("non-DNA character '" + val + "' at position [" + str(idx) + "]")
-            # User Decision
-            print("Do you want to continue synthesisation by skipping character" + val + " or cancel?")
-            decided = False
-            while(decided == False):
-                decision = input("('cancel' / 'continue')")
-                if decision == 'cancel':
-                    print("Synthesisation cancelled")  # feedback
-                    return
-                elif decision == 'continue':
-                    decided = True
-                    print("Continuing synthesisation")  # feedback
-                else:
-                    print("input was a typo...")  # while loop prevents crashing if there's a bad input
+
+    # Non-DNA Characters
+    if alphabet_check(name, sequence, DNA_ALPHABET): return
 
     dna = ''.join(sequence)
     #if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
@@ -74,8 +87,6 @@ def protein(name):
         codon = dna[i:i + 3]  # a trinucleotide that corresponds to a protein
         #print("Codon: ", codon)
         #print("Protein: ", dna_codons.get(codon, ''))
-        protein += dna_codons.get(codon, '')  # appends as str
+        protein += dna_codons.get(codon, '')  # append as str
 
-    print(protein)
-
-    write_file(name, protein)  # Save Synthesised Protein
+    write_file(name, protein)

@@ -20,9 +20,6 @@ def save(algorithm_name, bio_type, output_name, alignments, seq_identity):
     path_filename = os.path.join('data/Pairwise Sequencing/' + algorithm_name + '/', bio_type.lower() + output_name + '.txt')  # Defines path and filename
     file = open(path_filename, 'w')
 
-    print(type(alignments))
-    print(alignments)
-
     # Contents
     if algorithm_name == "pairwise2.align":
         file.write(format_alignment(*alignments[0]))  # *alignments[0] - best alignment
@@ -99,6 +96,7 @@ def match(seqA_c, seqB_c, points_scheme):
 
 def gap_function(idx, len):  # mandatory pass of 'idx' by 'pairwise2.align's 'x'
     """Deducts points for gaps when matching up sequencing, using a logarithmic scale.
+    Used exclusively by 'Biopython.pairwise2.align'
 
     :param int idx: index to start of gap
     :param int len: gap length

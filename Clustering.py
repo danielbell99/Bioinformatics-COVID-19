@@ -32,12 +32,10 @@ def read_normalised_frequencies(polymer_len, *names):
     nf_df = pd.DataFrame()  # DataFrame passed to PCA (dimensionality reduction algorithm)
     for file, cv_name in zip(os.listdir(PATH + polymer_name + '/'), genome_names):
         file_dir = PATH + polymer_name + '/' + 'nf_' + polymer_name + '_' + cv_name + '.csv'
-        print(file_dir)
         if os.path.isfile(os.path.join(file_dir)):
             column = pd.read_csv(os.path.join(file_dir), header=None)
             nf_df = pd.concat([nf_df, column], axis=1)
     # nf_df = nf_df.T  # transpose - rows = viruses, cols = normalised freqs.
-    print(nf_df)
 
     principal_component_analysis(nf_df, genome_names, polymer_len)
     tSNE(nf_df, genome_names, polymer_len)
@@ -58,8 +56,7 @@ def seaborn_scatterplot(model, results, genome_names, polymer_len):
     # df = pd.DataFrame(data=results)
     # df = pd.concat([df, polynucleotides], axis=1)
     # results = df.to_numpy()
-    # print("HELLO")
-    # print(results)
+    # print("results", results)
 
     sns.scatterplot(x=results[:, 0], y=results[:, 1], alpha=1, s=100).plot()
     fig = plt.gcf()
