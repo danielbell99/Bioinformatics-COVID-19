@@ -17,3 +17,5 @@ bokeh;
 hypothesis;
 attr;
 attrs;
+prettytable;
+wcwidth;

@@ -72,12 +72,12 @@ def sequence_lengths(sequence_filenames, bio_type, directory):
         if bio_type.upper() == "DNA":  # ignore top line
             seq = sf.dna_sequence(sf.output_filename(s))
             seq = seq.strip()  # removes any spacing surrounding sequence
-            print("SEQUENCE: " + str(len(seq)) + "\n" + str(seq))
+            # print("SEQUENCE: " + str(len(seq)) + "\n" + str(seq))
         else:  # i.e. - bio_type.upper() == "PROTEIN":
             with open(directory + s, 'r') as f:
                 seq = f.read()
         seq_lengths.append(len(seq))  # length of each sequence
-    print(seq_lengths)
+    # print(seq_lengths)
 
     return seq_lengths
 

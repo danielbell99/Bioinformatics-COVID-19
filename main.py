@@ -47,7 +47,7 @@ import test
 
 
 """ Pairwise Sequencing """
-#bio_type = "Protein" # "DNA"
+#bio_type = "DNA" # "Protein"
 #genomes = ["SARS-CoV-JQ316196", "MERS-MT387202"]
 #genomes = ["MERS-MT387202", "SARS-CoV-2-MT873892"]
 #genomes = ["SARS-CoV-JQ316196", "SARS-CoV-2-MT873892"]

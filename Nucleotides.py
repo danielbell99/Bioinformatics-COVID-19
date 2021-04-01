@@ -43,8 +43,7 @@ def base_combinations_recursive(polymer, polymer_len, combinations):
     """
     # Base case - run out of character space for each 'polymer'
     if polymer_len == 0:
-        combinations.append(polymer)
-        # print(polymer)  # Complete polymer instance
+        combinations.append(polymer)  # Complete polymer instance
         return  # continue back to previous recursion's active for loop iteration
 
     # Starting with all that begin with 'A' ...
@@ -110,9 +109,9 @@ def composition_comparison(polymer_len, *names):
     :param int polymer_len: used in 'POLYMER[polymer_len]'
     :param ndarray *names: array of str genome names ('*' >=1 genomes)
     """
-    if polymer_len <= 1 or not (isinstance(polymer_len, int)):  # checks whole number is above 1
+    if polymer_len <= 1 or not (isinstance(polymer_len, int)):  # integer > 1
         print("Polynucleotides' length must be 2 to 6")  # context term
-        return  # Excepton Handling
+        return
 
     # holds 'base_combinations()' output array, x axis
     polynucleotides = sf.polynucleotides(polymer_len)
