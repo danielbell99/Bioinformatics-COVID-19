@@ -33,18 +33,14 @@ import test
 
 
 """ Cluster Analysis """
-#Clustering.read_normalised_frequencies(2, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-#Clustering.read_normalised_frequencies(3, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-#Clustering.read_normalised_frequencies(4, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-#Clustering.read_normalised_frequencies(5, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-#Clustering.read_normalised_frequencies(6, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")
-
+#Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")  # 'n_reads'
+Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892", "StaphylococcusAureus-AP017922")
 
 """ Protein Syntheses """
 #Syntheses.protein("SARS-CoV-JQ316196")
 #Syntheses.protein("MERS-MT387202")
 #Syntheses.protein("SARS-CoV-2-MT873892")
-Syntheses.protein("StaphylococcusAureus-AP017922")
+#Syntheses.protein()
 
 
 """ Pairwise Sequencing """
@@ -61,8 +57,8 @@ Syntheses.protein("StaphylococcusAureus-AP017922")
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
-Alignment.create("DNA")
-Alignment.create("Protein")
+#Alignment.create("DNA")
+#Alignment.create("Protein")
 
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
