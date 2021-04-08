@@ -96,11 +96,11 @@ class TestNucleotides(unittest.TestCase):
         return
 
     def run_test_cases(self):
+        # Thread(target=self.generate_sequence).start()
+        # Thread(target=self.test_base_combinations_dimers).start()
+        # Thread(target=self.test_base_content).start()
+        # Thread(target=self.test_normalised_frequencies).start()
         None
-# Thread(target=self.generate_sequence).start()
-# Thread(target=self.test_base_combinations_dimers).start()
-# Thread(target=self.test_base_content).start()
-# Thread(target=self.test_normalised_frequencies).start()
 
 
 class TestSyntheses(unittest.TestCase):
@@ -193,7 +193,6 @@ class TestSyntheses(unittest.TestCase):
         # Empty
         Syntheses.protein(str(test_genome['name']))
         os.remove('src/' + str(test_genome['name'] + '.fasta'))
-        #'data/Syntheses/protein_' + str(test_genome['name'])
         self.flag = file_exists('data/Syntheses/', 'protein_' + test_genome['name'] + '.fasta')
         self.assertFalse(self.flag, 'FAILED: Protein Syntheses was not cancelled (empty)')
 
@@ -204,7 +203,6 @@ class TestSyntheses(unittest.TestCase):
         Thread(target=self.test_word).start()
         Thread(target=self.test_insufficient).start()
         Thread(target=self.test_empty).start()
-        #os.remove('data/Syntheses/protein_test')
 
 
 class TestStandardFunctions(unittest.TestCase):
@@ -220,9 +218,6 @@ class TestStandardFunctions(unittest.TestCase):
         self.assertFalse(sf.capture_filenames("foo"))  # no return
         self.assertNotEqual(self.dna_filenames, self.protein_filenames,
                             "FAILED: Same directory and files as each other")
-        print("%%%")
-        print(frozenset(predicted_dna_filenames))
-        print(frozenset(self.dna_filenames))
         self.assertEquals(frozenset(predicted_dna_filenames), frozenset(self.dna_filenames),
                           "FAILED: wrong filenames (DNA)")  # frozenset() - alphabetical asc. order in dictionary
         self.assertEquals(frozenset(predicted_protein_filenames), frozenset(self.protein_filenames),
@@ -283,9 +278,6 @@ class TestStandardFunctions(unittest.TestCase):
         test.close()
         self.content = sf.protein_sequence(self.test_name_ps)
         os.remove(self.directory_prefix + self.test_name_ps)
-        print("&&&")
-        print(str(self.content))
-        print(str(PREDICTED_OUTPUT))
         self.assertEqual(str(self.content), str(PREDICTED_OUTPUT),
                          "FAILED: either incorrect protein sequence stored or collected")
 
@@ -402,9 +394,9 @@ class TestPairwiseSequencingAlgorithms(unittest.TestCase):
             table = PrettyTable(["Algorithm", "Time"])
             table.add_row(["Needleman-Wunsch", nw_time])
             table.add_row(["Smith-Waterman", sw_time])
-            table.add_row(["BioPython", ps_time])
+            table.add_row(["Bio.pairwise2", ps_time])
             table.title = bio_type
-            print(table)
+            print(table, flush=True)
 
     def run_test_cases(self):
         Thread(target=self.test_sequence_identity).start()
@@ -420,14 +412,14 @@ class TestPairwiseSequencingAlgorithms(unittest.TestCase):
 
 def run():
     """ Instantiates Test Classes, run all methods """
-    # tn = TestNucleotides()
-    # tn.run_test_cases()
+    tn = TestNucleotides()
+    tn.run_test_cases()
 
-    ts = TestSyntheses()
-    ts.run_test_cases()
+    # ts = TestSyntheses()
+    # ts.run_test_cases()
 
-    tsf = TestStandardFunctions()
-    tsf.run_test_cases()
+    # tsf = TestStandardFunctions()
+    # tsf.run_test_cases()
 
-    tpsa = TestPairwiseSequencingAlgorithms()
-    tpsa.run_test_cases()
+    # tpsa = TestPairwiseSequencingAlgorithms()
+    # tpsa.run_test_cases()

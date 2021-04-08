@@ -12,7 +12,7 @@ import test
 """ Import Genomes """
 # API Parameters
 #db = 'nucleotide'  # 'protein'
-#ids = ['']  # append list of IDs you want to fetch from NCBI  # 844174433, AP017922
+#ids = ['AP017922']  # append list of IDs you want to fetch from NCBI  # 844174433, AP017922
 #genomes = dataimport.read_genomes(db, ids)  # static
 
 
@@ -34,13 +34,14 @@ import test
 
 """ Cluster Analysis """
 #Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")  # 'n_reads'
-Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892", "StaphylococcusAureus-AP017922")
+#Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892", "StaphylococcusAureus-AP017922")
+
 
 """ Protein Syntheses """
 #Syntheses.protein("SARS-CoV-JQ316196")
 #Syntheses.protein("MERS-MT387202")
 #Syntheses.protein("SARS-CoV-2-MT873892")
-#Syntheses.protein()
+#Syntheses.protein("StaphylococcusAureus-AP017922")
 
 
 """ Pairwise Sequencing """

@@ -58,7 +58,7 @@ def seaborn_scatterplot(model, results, labels, genome_names):
     plt.show()
 
     fig = sns_plot.get_figure()
-    fig.savefig('data/Cluster Analysis/' + model + '_' + str_names + '.png')
+    fig.savefig('data/Cluster Analysis/' + model + '/' + model + '_' + str_names + '.png')
 
 
 def principal_component_analysis(data, labels, genome_names):
@@ -67,6 +67,7 @@ def principal_component_analysis(data, labels, genome_names):
 
     :param ndarray data: holds 100 reads across 32 columns, per genome
     :param list labels: a label is assigned to an instance, appears as a key in the legend
+    :param list genome_names: genome names of interest
     """
     time_start = time.time()
     pca = PCA(n_components=2)
@@ -84,6 +85,7 @@ def tSNE(data, labels, genome_names):
 
     :param ndarray data: holds 'n_reads' across 32 columns, per genome
     :param list labels: a label is assigned to an instance, appears as a key in the legend
+    :param list genome_names: genome names of interest
     """
     np.random.seed(42)  # Reproducibility of results
 
@@ -99,8 +101,6 @@ def tSNE(data, labels, genome_names):
 
 def run(n_reads, *names):
     """Imports reads from genomes of interest.
-    Normalised Frequencies are passed through Dimentionality Reduction algorithms for Cluster Analysis.
-    Measuring time elapsed.
     Minimum of 2 Genome names required - '*others' is optional.
 
     :param int n_reads: no. reads/ instances per genome (typically 100)

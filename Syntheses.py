@@ -2,6 +2,7 @@ import StandardFunctions as sf
 
 DNA_ALPHABET = ['A', 'C', 'G', 'T']
 
+
 def write_file(name, protein):
     """Stores synthesised protein w/ appropriate file naming convention.
 
@@ -63,9 +64,7 @@ def protein(name):
     if alphabet_check(name, sequence, DNA_ALPHABET): return
 
     dna = ''.join(sequence)
-    #if len(dna) % 3 == 2: dna = dna[:-2]  # Ribosome molecular machine only transcribes tri-nucletides
-    #if len(dna) % 3 == 1: dna = dna[:-1]  # so ignores any remaining, a mono or di-nucleotide
-
+    # Ribosome molecular machine only transcribes tri-nucletides
     dna_codons = {
         'AAA': 'K', 'AAC': 'N', 'AAG': 'K', 'AAT': 'N', 'ACA': 'T',
         'ACC': 'T', 'ACG': 'T', 'ACT': 'T', 'AGA': 'R', 'AGC': 'S',
@@ -84,9 +83,9 @@ def protein(name):
 
     protein = ""
     for i in range(0, len(dna), 3):  # increments of 3, i.e. one codon per iter
-        codon = dna[i:i + 3]  # a trinucleotide that corresponds to a protein
+        codon = dna[i:i + 3]  # a tri-nucleotide that corresponds to a protein
         #print("Codon: ", codon)
         #print("Protein: ", dna_codons.get(codon, ''))
-        protein += dna_codons.get(codon, '')  # append as str
+        protein += dna_codons.get(codon, '')  # '' - ignore any remaining chars, mono or di-nucleotide
 
     write_file(name, protein)
