@@ -1,4 +1,4 @@
-from PairwiseSequencingAlgorithms import tasks
+from PairwiseSequenceAlignment import tasks
 from Bio import pairwise2
 import StandardFunctions as sf
 
