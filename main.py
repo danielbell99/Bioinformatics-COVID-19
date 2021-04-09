@@ -45,16 +45,16 @@ import test
 
 
 """ Pairwise Sequencing """
-bio_type = "DNA"  # "Protein"
-genomes = ["SARS-CoV-JQ316196", "MERS-MT387202"]
+#bio_type = "DNA"  # "Protein"
+#genomes = ["SARS-CoV-JQ316196", "MERS-MT387202"]
 #genomes = ["MERS-MT387202", "SARS-CoV-2-MT873892"]
 #genomes = ["SARS-CoV-JQ316196", "SARS-CoV-2-MT873892"]
 
-nw_points_scheme = {'match': 1.0, 'mismatch': -1.0, 'gap': -1.0}  # wiki
+#nw_points_scheme = {'match': 1.0, 'mismatch': -1.0, 'gap': -1.0}  # wiki
 #sw_points_scheme = {'match': 3.0, 'mismatch': -3.0, 'gap': -2.0}  # wiki
 #ps_points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}  # Biopython documentation
 
-NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **nw_points_scheme)
+#NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **nw_points_scheme)
 #SmithWaterman.SmithWaterman(bio_type, genomes, **sw_points_scheme)
 #PairwiseSequencing.run(bio_type, genomes, **ps_points_scheme)
 

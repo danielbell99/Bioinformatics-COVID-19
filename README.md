@@ -1,6 +1,6 @@
 # CSC3002: Computer Science Project (2201_FYR) AY 2020/21 - FYR
 
-##### Bioinformatics & Computational Genomics for SARS-CoV-2 and Variants, Sequence Alignment of spike proteins, and Molecular Docking of Receptor-Binding Domain
+##### Bioinformatics & Computational Genomics of SARS-CoV-2 and other Coronaviridae: Nucleotide Composition, Cluster Analysis, and Mathematical Optimisation of Pairwise Sequence Alignment Algorithms
 
 **Supervisor:**
 
