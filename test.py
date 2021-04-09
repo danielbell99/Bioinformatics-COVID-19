@@ -13,7 +13,7 @@ from threading import Thread
 import Nucleotides
 import Syntheses
 import PairwiseSequencing
-from PairwiseSequencingAlgorithms import NeedlemanWunsch, SmithWaterman, tasks
+from PairwiseSequenceAlignment import NeedlemanWunsch, SmithWaterman, tasks
 import StandardFunctions as sf
 
 BASES = ['A', 'C', 'G', 'T']
@@ -310,7 +310,7 @@ class TestStandardFunctions(unittest.TestCase):
         Thread(target=self.test_protein_sequence).start()
 
 
-class TestPairwiseSequencingAlgorithms(unittest.TestCase):
+class TestPairwiseSequenceAlignment(unittest.TestCase):
     """ NeedlemanWunsh.py, SmithWaterman.py, PairwiseSequencing.py, tasks.py """
     bio_types = ['DNA', 'Protein']
     genomes = ["SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892"]
@@ -421,5 +421,5 @@ def run():
     # tsf = TestStandardFunctions()
     # tsf.run_test_cases()
 
-    # tpsa = TestPairwiseSequencingAlgorithms()
+    # tpsa = TestPairwiseSequenceAlignment()
     # tpsa.run_test_cases()

@@ -1,7 +1,7 @@
-DL--SE*-LGYLTSPRSLAVL*F*RT*IKALLFSVLLHLSGGIVALICLLI*AVDICSTLGIILIEYYFSVRASCLLYVSLTIYGFVRCVAIRGTSCLSWLSY
-..  |.. |..|....|.|.|...|..|...|.|...|...............|.........|......||...|..|| |.......|...........  
-L*ICSLNEL*NLCGCHSAACLVHSRSIINN*LLSLTGHE*LVYLLQAAYGFVRVAADHQHI*VLSGCDRKVRWRALSLVS-TRKHTSNSVCLFYRFATCSY--
-  Score=-67.0
+DL---S--E*LGYLTSPRSLAVL*F*RT*IKA-LLFSVLLHLSGGIVALICLLI*A---VDICSTLGII--LIEYYFSVR--A-SCLLYVSVTIYGF---VRCVAIRG-TSCLSWLV*
+ |   |  | |..|....|.|.|...|..|.. || | |.   |... |..||..|   |........|  |......||  | | |  || |....   | |...|. | | |.   
+-L*ICSLNE-L*NLCGCHSAACLVHSRSIINN*LL-S-LT---GHE*-LVYLLQAAYGFVRVAADHQHI*VLSGCDRKVRWRALS-L--VS-TRKHTSNSV-CLFYRFAT-C-SY---
+  Score=-46.0
 
-Sequence Identity: 19.42%
-Gapless Identity: 20.62%
+Sequence Identity: 30.51%
+Gapless Identity: 43.9%

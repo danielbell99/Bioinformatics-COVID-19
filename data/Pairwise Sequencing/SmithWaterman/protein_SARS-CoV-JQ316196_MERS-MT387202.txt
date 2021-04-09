@@ -1,7 +1,7 @@
-RSSAYLGFVRV*PK
-||.|.|.|.|.|.|
-RSLAVL*F*RT*IK
-  Score=10.0
+FVRV
+   |
+---V
+  Score=-3.0
 
-Sequence Identity: 57.14%
-Gapless Identity: 57.14%
+Sequence Identity: 25.0%
+Gapless Identity: 100.0%
