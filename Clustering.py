@@ -120,7 +120,7 @@ def kmeans(data, labels, genome_names):
         wcss.append(km.inertia_)  # sum of distance-squared, per cluster
 
     plt.plot(range(2, 11), wcss)
-    plt.title('k-Means Elbow Method')
+    plt.title('Elbow Method ' + str_names.replace('_', ' '), size=7)
     plt.xlabel('Clusters')
     plt.ylabel('WCSS')
     plt.savefig('data/Cluster Analysis/k-Means/ElbowMethod_' + str_names + '.png')
@@ -137,6 +137,7 @@ def kmeans(data, labels, genome_names):
     seaborn_scatterplot("k-Means", km_results, labels, genome_names)
 
     # Centroid Clustering
+    plt.title('k-Means Centroids ' + str_names.replace('_', ' '), size=7)
     plt.scatter(data[:, 0], data[:, 1])
     plt.scatter(km.cluster_centers_[:, 0], km.cluster_centers_[:, 1], s=100, c='red')
     plt.savefig('data/Cluster Analysis/k-Means/Centroids_' + str_names + '.png')
@@ -162,6 +163,6 @@ def run(n_reads, *names):
     data = data[n_reads:, :]  # first 'n_reads' rows are empty (so as to establish a shape for appending)
     labels = np.array(labels)
 
-    #principal_component_analysis(data, labels, genome_names)
-    #tsne(data, labels, genome_names)
+    principal_component_analysis(data, labels, genome_names)
+    tsne(data, labels, genome_names)
     kmeans(data, labels, genome_names)
