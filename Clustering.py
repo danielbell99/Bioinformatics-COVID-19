@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
+from sklearn.cluster import KMeans
 import time
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -79,7 +80,7 @@ def principal_component_analysis(data, labels, genome_names):
     seaborn_scatterplot("PCA", pca_results, labels, genome_names)
 
 
-def tSNE(data, labels, genome_names):
+def tsne(data, labels, genome_names):
     """t-distributed Stochastic Neighbour Embedding. Machine Learning algorithm for Cluster visualisation.
     Time in seconds, printed.
 
@@ -97,6 +98,49 @@ def tSNE(data, labels, genome_names):
     print("\n" + str(tsne_results), type(tsne_results))
 
     seaborn_scatterplot("t-SNE", tsne_results, labels, genome_names)
+
+
+def kmeans(data, labels, genome_names):
+    """k-Means Clustering - no. clusters defined by no. genomes.
+    Elbow Method - Experiment w/ different 'n_clusters' and plot results.
+    Machine Learning algorithm for Cluster visualisation.
+    Time in seconds, printed.
+
+    :param ndarray data: holds 'n_reads' across 32 columns, per genome
+    :param list labels: a label is assigned to an instance, appears as a key in the legend
+    :param list genome_names: genome names of interest
+    """
+    str_names = '_'.join(genome_names)
+
+    # Elbow Method
+    wcss = []  # sum of distance-squared of each data point, in a given cluster, w/ respect to their centroid
+    for n_clusters in range(2, 11):  # 'n_clusters' of 2 to 10
+        km = KMeans(n_clusters=n_clusters, init='k-means++', max_iter=300, n_init=10)  # init='k-means++' - prevents "Random Initialisation Trap"
+        km.fit(data)
+        wcss.append(km.inertia_)  # sum of distance-squared, per cluster
+
+    plt.plot(range(2, 11), wcss)
+    plt.title('k-Means Elbow Method')
+    plt.xlabel('Clusters')
+    plt.ylabel('WCSS')
+    plt.savefig('data/Cluster Analysis/k-Means/ElbowMethod_' + str_names + '.png')
+    plt.show()
+
+    # Cluster Analysis
+    time_start = time.time()
+    km = KMeans(n_clusters=len(genome_names), init='k-means++', max_iter=300, n_init=10, random_state=0)
+    km_results = km.fit_transform(data)
+    print("\nk-Means complete. Time elapsed: {0:.2f}s".format(time.time() - time_start))
+
+    print("\n" + str(km_results), type(km_results))
+
+    seaborn_scatterplot("k-Means", km_results, labels, genome_names)
+
+    # Centroid Clustering
+    plt.scatter(data[:, 0], data[:, 1])
+    plt.scatter(km.cluster_centers_[:, 0], km.cluster_centers_[:, 1], s=100, c='red')
+    plt.savefig('data/Cluster Analysis/k-Means/Centroids_' + str_names + '.png')
+    plt.show()
 
 
 def run(n_reads, *names):
@@ -118,5 +162,6 @@ def run(n_reads, *names):
     data = data[n_reads:, :]  # first 'n_reads' rows are empty (so as to establish a shape for appending)
     labels = np.array(labels)
 
-    principal_component_analysis(data, labels, genome_names)
-    tSNE(data, labels, genome_names)
+    #principal_component_analysis(data, labels, genome_names)
+    #tsne(data, labels, genome_names)
+    kmeans(data, labels, genome_names)
