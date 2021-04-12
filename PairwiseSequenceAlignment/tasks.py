@@ -68,9 +68,9 @@ def empty_matrix(x, y):
     :return: empty matrix of defined size (0 values)
     """
     matrix = []
-    for y_ in range(y):
+    for x_ in range(x):
         matrix.append([])
-        for x_ in range(x):
+        for y_ in range(y):
             matrix[-1].append(0)  # 0 values
 
     return matrix
@@ -163,8 +163,8 @@ def preparation(bio_type, *args, **kwargs):
     else:  # Exception Handling
         return print("biotype: \'" + bio_type + "\' not recongnised. Enter \'DNA\' or \'Protein\'\n")
 
-    seqA = seqA[:100]  # !
-    seqB = seqB[:100]
+    #seqA = seqA[:100]  # !
+    #seqB = seqB[:100]
 
     # Points Scheme - extract or default
     match_points = kwargs.get('match', 2.0)
