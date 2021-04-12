@@ -53,8 +53,9 @@ def seaborn_scatterplot(model, results, labels, genome_names):
 
     plt.title(model + ' ' + str_names.replace('_', ' '), fontsize=8)
     sns_plot = sns.scatterplot(x=results[:, 0], y=results[:, 1], hue=labels)
-    plt.xlabel(model + ' 1')
-    plt.ylabel(model + ' 2')
+    if model.lower() == 'pca':
+        plt.xlabel(model + ' 1')
+        plt.ylabel(model + ' 2')
     plt.draw()
     plt.show()
 
