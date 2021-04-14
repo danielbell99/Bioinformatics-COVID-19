@@ -22,7 +22,7 @@ def dna_alignment(sequence_filenames, seq_lengths, directory):
             # print("MAX VALUE IN SEQUENCE: " + str(max(seq_lengths)))
             # print("THIS VALUE IN SEQUENCE: " + str(seq_lengths[i]))
             # print("difference: " + str((max(seq_lengths) - seq_lengths[i])))
-            blanks_list = ['-'] * int((max(seq_lengths) - val[0]) - (2 + (2 * idx)))
+            blanks_list = ['-'] * int((max(seq_lengths) - val[0]))
             blanks = ''.join(blanks_list)
             content = content + blanks
             content = str.join('', content.splitlines())
@@ -74,10 +74,10 @@ def sequence_lengths(sequence_filenames, bio_type, directory):
             seq = seq.strip()  # removes any spacing surrounding sequence
             # print("SEQUENCE: " + str(len(seq)) + "\n" + str(seq))
         else:  # i.e. - bio_type.upper() == "PROTEIN":
-            with open(directory + s, 'r') as f:
-                seq = f.read()
+            seq = sf.protein_sequence(sf.output_filename(s))
+            seq = seq.strip()
         seq_lengths.append(len(seq))  # length of each sequence
-    # print(seq_lengths)
+    print(seq_lengths)
 
     return seq_lengths
 

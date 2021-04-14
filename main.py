@@ -13,7 +13,7 @@ import test
 # API Parameters
 #db = 'nucleotide'  # 'protein'
 #ids = ['AP017922']  # append list of IDs you want to fetch from NCBI  # 844174433, AP017922
-#genomes = dataimport.read_genomes(db, ids)  # static
+#dataimport.read_genomes(db, ids)  # static
 
 
 """ Nucleotide Composition """
@@ -50,9 +50,9 @@ import test
 #genomes = ["MERS-MT387202", "SARS-CoV-2-MT873892"]
 #genomes = ["SARS-CoV-JQ316196", "SARS-CoV-2-MT873892"]
 
-nw_points_scheme = {'match': 1.0, 'mismatch': -1.0, 'gap': -1.0}  # wiki
-sw_points_scheme = {'match': 3.0, 'mismatch': -3.0, 'gap': -2.0}  # wiki
-ps_points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}  # Biopython documentation
+#nw_points_scheme = {'match': 1.0, 'mismatch': -1.0, 'gap': -1.0}  # wiki
+#sw_points_scheme = {'match': 3.0, 'mismatch': -3.0, 'gap': -2.0}  # wiki
+#ps_points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}  # Biopython documentation
 
 '''
 SmithWaterman.SmithWaterman("DNA", ["SARS-CoV-JQ316196", "MERS-MT387202"], **sw_points_scheme)
@@ -79,6 +79,7 @@ print("done")
 # All sequences considered in Alignment files (.aln)
 #Alignment.create("DNA")
 #Alignment.create("Protein")
+
 
 """ Multiple Sequence Alignment """
 """ Bokeh does not support outputs w/ PyCharm (Google for evidence)
