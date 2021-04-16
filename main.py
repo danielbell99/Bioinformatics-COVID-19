@@ -11,9 +11,9 @@ import test
 
 """ Import Genomes """
 # API Parameters
-#db = 'nucleotide'  # 'protein'
-#ids = ['AP017922']  # append list of IDs you want to fetch from NCBI  # 844174433, AP017922
-#dataimport.read_genomes(db, ids)  # static
+db = 'nucleotide'  # 'protein'
+ids = ['AP017922']  # append list of IDs you want to fetch from NCBI  # 844174433, AP017922
+dataimport.read_genomes(db, ids)  # static
 
 
 """ Nucleotide Composition """
@@ -33,7 +33,7 @@ import test
 
 
 """ Cluster Analysis """
-#Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")  # 'n_reads'
+Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892")  # 'n_reads'
 #Clustering.run(100, "SARS-CoV-JQ316196", "MERS-MT387202", "SARS-CoV-2-MT873892", "StaphylococcusAureus-AP017922")
 
 
