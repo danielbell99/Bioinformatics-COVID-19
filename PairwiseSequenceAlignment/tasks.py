@@ -163,8 +163,8 @@ def preparation(bio_type, *args, **kwargs):
     else:  # Exception Handling
         return print("biotype: \'" + bio_type + "\' not recongnised. Enter \'DNA\' or \'Protein\'\n")
 
-    #seqA = seqA[:100]  # !
-    #seqB = seqB[:100]
+    seqA = seqA[:100]  # !
+    seqB = seqB[:100]
 
     # Points Scheme - extract or default
     match_points = kwargs.get('match', 2.0)

@@ -1,7 +1,7 @@
----VA
-   ||
-FVRVA
-  Score=0.0
+YGFVRCVA
+|||||..|
+YGFVRVAA
+  Score=10.0
 
-Sequence Identity: 40.0%
-Gapless Identity: 100.0%
+Sequence Identity: 75.0%
+Gapless Identity: 75.0%

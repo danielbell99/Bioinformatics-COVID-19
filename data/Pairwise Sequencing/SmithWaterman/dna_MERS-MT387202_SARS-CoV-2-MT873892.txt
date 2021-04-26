@@ -1,7 +1,7 @@
--TAA-GTGAATAG-C-TTGGCT-ATC-T-CACT-TCC-C-CTCGT-TCTCTT-GCAG--TAC-T-T-TG-ATTT-TAAC-G-AAC-TTA-A-ATA-AAAG--CC-CTGT
- |.  || ..|.. .   .|..  |  | .|.| | . . ..| | ||.||. ||.|  |.| |   || |.|. . .| |  |.   |   | | ||..  .. ||||
-ATC-TGT-TCTCTAAA--CGAAC-T-TTAAAATCT-GTGTGGC-TGTCACTCGGCTGCATGCTTA-GTGCACTCAC-GCAGT-ATA--AT-TA-ATAACTAATTACTGT
-  Score=-56.0
+TTGCAGTACTTTGATTTTAACGAACTTAAATAAAAGCCCTGTTGTTTAGCGTAT
+|||.||..||.|..|.|.|||||||||.||.|...|....|.|||....||..|
+TTGTAGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGCT
+  Score=36.0
 
-Sequence Identity: 34.86%
-Gapless Identity: 57.58%
+Sequence Identity: 55.56%
+Gapless Identity: 55.56%

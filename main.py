@@ -54,14 +54,14 @@ nw_points_scheme = {'match': 1.0, 'mismatch': -1.0, 'gap': -1.0}  # wiki
 #sw_points_scheme = {'match': 3.0, 'mismatch': -3.0, 'gap': -2.0}  # wiki
 #ps_points_scheme = {'match': 2.0, 'mismatch': -1.0, 'gap': -5.0}  # Biopython documentation
 
-NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **nw_points_scheme)
+#NeedlemanWunsch.NeedlemanWunsch(bio_type, genomes, **nw_points_scheme)
 #SmithWaterman.SmithWaterman(bio_type, genomes, **sw_points_scheme)
 #PairwiseSequencing.run(bio_type, genomes, **ps_points_scheme)
 
 
 """ Alignment Files """
 # All sequences considered in Alignment files (.aln)
-#Alignment.create("DNA")
+Alignment.create("DNA")
 #Alignment.create("Protein")
 
 

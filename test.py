@@ -8,7 +8,6 @@ import itertools
 import time
 from prettytable import PrettyTable
 import unittest
-from hypothesis import given, strategies as st
 from threading import Thread
 import Nucleotides
 import Syntheses
@@ -80,27 +79,20 @@ class TestNucleotides(unittest.TestCase):
         self.assertEqual(frozenset(self.content), frozenset(predicted),
                          'FAILED: Incorrect elemented generated for dimers list')  # frozenset() - alphabetical asc. order of lists
 
-    def test_base_content(self, base_combinations):
-        # Nucleotides.bases_content_plot("Test", )
-        print("33333333333333333333333333")
-        return
-
-    @given(st.floats(), st.floats())
-    def test_normalised_frequencies(self, base_combinations, *genomes):
-        """
-        Genomes tend to have majority AT content over GC.
-
-        """
-        print("444444444444444444444444")
-        # Nucleotides.composition_comparison(base_combinations, *genomes, test_genome)
-        return
+    def test_normalised_frequencies_dimers(self):
+        polynucleotides = sf.polynucleotides(2)  # dimer base combinations
+        test_genome = copy.deepcopy(GENOME)
+        test_sequence = ''.join(test_genome['sequence'])
+        # Nomalised Frequencies - of their own dimer combination
+        predicted_output = [0.17, 0.0, 0.33, 0.0, 0.17, 0.17, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.17, 0.17, 0.17, 0.0]
+        output = [round(nf, 2) for nf in Nucleotides.normalised_frequencies(polynucleotides, 'test', test_sequence)]
+        os.remove('data/Normalised Frequency/dimers/nf_dimers_test.csv')
+        self.assertEqual(output, predicted_output, 'FAILED: incorrect normalised frequencies')
 
     def run_test_cases(self):
-        # Thread(target=self.generate_sequence).start()
-        # Thread(target=self.test_base_combinations_dimers).start()
-        # Thread(target=self.test_base_content).start()
-        # Thread(target=self.test_normalised_frequencies).start()
-        None
+        Thread(target=self.generate_sequence).start()
+        Thread(target=self.test_base_combinations_dimers).start()
+        Thread(target=self.test_normalised_frequencies_dimers).start()
 
 
 class TestSyntheses(unittest.TestCase):
@@ -415,11 +407,11 @@ def run():
     tn = TestNucleotides()
     tn.run_test_cases()
 
-    # ts = TestSyntheses()
-    # ts.run_test_cases()
+    ts = TestSyntheses()
+    ts.run_test_cases()
 
-    # tsf = TestStandardFunctions()
-    # tsf.run_test_cases()
+    tsf = TestStandardFunctions()
+    tsf.run_test_cases()
 
-    # tpsa = TestPairwiseSequenceAlignment()
-    # tpsa.run_test_cases()
+    tpsa = TestPairwiseSequenceAlignment()
+    tpsa.run_test_cases()
